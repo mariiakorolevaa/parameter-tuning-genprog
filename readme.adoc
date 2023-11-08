@@ -1,0 +1,63 @@
+= Seminar: Parameter Tuning for Software Analysis
+:icons: font
+
+// links
+
+:link-island-of-tex: https://gitlab.com/islandoftex/images/texlive
+:link-presentation-guidelines: https://www.infosun.fim.uni-passau.de/se2/presentation-guidelines.html
+:link-git-lfs: https://git-lfs.github.com/
+:link-git-submodules: https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
+
+[abstract]
+--
+Space for replication packages as part of the seminar paper submission.
+--
+
+
+You may use this repo already during writing your seminar paper, but as part of handing in your finished paper it should contain at least
+
+* the LaTeX sources to build the PDF of the document,
+** We recommend that you set up a CI task for GitLab that builds your PDF every time you push commits.  We recommend to use the Docker image from the link:{link-island-of-tex}[Island of TeX] project, which provides a very recent version of TeX Live.
+* scripts and information about how to replicate your experiments.
+
+[TIP]
+--
+We have compiled a list of link:{link-presentation-guidelines}[recommendations for preparing your thesis presentation].
+Read them carefully before preparing your presentation and follow them.
+--
+
+
+== Experiment Replication Package
+
+Please add the necessary scripts to make your experiments repeatable.
+The supporting documentation should at least answer the following questions:
+
+* Which Python/Java/… package versions are needed?
+* Which other repositories are needed?
+    Which subdirectories should they be checked out in?
+** There is no need to copy files from other chair or publicly available projects into this repository.
+    Instead, please refer to concrete branches/commits/releases that should be checked out.
++
+[TIP]
+--
+You can use the link:{link-git-submodules}[Git submodule] feature to automate parts of that setup.
+--
+
+* Which dataset did you use?
+    Where should it be placed when running the script?
++
+[IMPORTANT]
+--
+Please do not push large (𝒪(GiB)) datasets to this repository.
+Ask your supervisor where the data can be stored instead.
+--
+* Which commands have to be run to re-create the experiment?
+* Where can I find the different results of the experiments?
+    What do the resulting files contain?
+
+[TIP]
+--
+For smaller binary files (e.g., figures) you can use link:{link-git-lfs}[Git LFS] to speed up cloning the repo.
+--
+
