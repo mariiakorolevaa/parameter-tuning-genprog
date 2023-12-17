@@ -1,7 +1,6 @@
-import numpy as np
 from scipy.optimize import differential_evolution, NonlinearConstraint
 
-from fitness.fitness_functions import fitness_function
+from fitness.fitness_functions import callable_function
 from fitness.fitness_parameters import FitnessParameters
 from tools.json_utils import JsonUtils
 
@@ -26,7 +25,7 @@ def de_float(scipy_parameters):
     original_json = json_utils.get_json_file()
 
     fitness_parameters = FitnessParameters(rand_parameters=initial_values, general_parameters=scipy_parameters)
-    result = differential_evolution(fitness_function, bounds,
+    result = differential_evolution(callable_function, bounds,
                                     args=(fitness_parameters,),
                                     strategy='best1bin',
                                     popsize=scipy_parameters.pop_size,
@@ -75,7 +74,7 @@ def de_int(scipy_parameters):
     initial_values = [population_size, elitism_size]
 
     fitness_parameters = FitnessParameters(rand_parameters=initial_values, general_parameters=scipy_parameters)
-    result = differential_evolution(fitness_function, bounds,
+    result = differential_evolution(callable_function, bounds,
                                     args=(fitness_parameters,),
                                     strategy='best1bin',
                                     popsize=scipy_parameters.pop_size,

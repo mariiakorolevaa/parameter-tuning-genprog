@@ -65,7 +65,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Parameter tuning for Scratch program repair.")
     parser.add_argument("--is_rationals", default=False, action="store_true",
                         help="Use rational numbers for parameters")
-    parser.add_argument("--mode", choices=["rs", "de"], default="rs", help="Optimization mode (random search or "
+    parser.add_argument("--mode", choices=["rs", "de"], default="de", help="Optimization mode (random search or "
                                                                            "differential evolution)")
     parser.add_argument("--n_jobs", type=int, default=4, help="Number of parallel jobs")
     parser.add_argument("--is_headless", default=False, action="store_true", help="Run in headless mode")

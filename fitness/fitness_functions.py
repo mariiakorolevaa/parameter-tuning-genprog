@@ -1,9 +1,10 @@
+from fitness.fitness_parameters import FitnessParameters
 from tools.json_utils import JsonUtils
 from tools.run_cmd import run_cmd_and_get_tests
 
 
 # Fitness function for the optimization
-def fitness_function(parameters):
+def fitness_function(parameters: FitnessParameters):
     json_utils = JsonUtils(parameters.general_parameters.json_path)
     if parameters.general_parameters.is_rationals:
         if parameters.general_parameters.is_headless:
@@ -11,7 +12,7 @@ def fitness_function(parameters):
             json_utils.replace_json_float_headless(crossover_rate, mutation_rate)
         else:
 
-            if len(parameters.rand_parameters) == 2:
+            if len(parameters.rand_params) == 2:
                 crossover_rate, mutation_change_rate = parameters.rand_params
                 mutation_insertion_rate = mutation_deletion_rate = 0
             else:
@@ -31,3 +32,8 @@ def fitness_function(parameters):
     passed_tests, total_tests = run_cmd_and_get_tests(parameters.general_parameters)
 
     return -passed_tests / total_tests  # use negative value for minimization
+
+
+# To use in scipy algorithms
+def callable_function(x, args: FitnessParameters):
+    return fitness_function(parameters=args)
