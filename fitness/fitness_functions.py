@@ -33,6 +33,7 @@ def fitness_function(parameters: FitnessParameters):
 
     return -passed_tests / total_tests  # use negative value for minimization
 
+
 # To use in scipy algorithms
 def callable_function(x, args: FitnessParameters):
     return fitness_function(parameters=args)
