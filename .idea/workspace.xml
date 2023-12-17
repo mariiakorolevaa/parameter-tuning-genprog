@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="refactoring and bug fix of the parallelization of RS and DE">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/de_scipy.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/de_scipy.py" afterDir="false" />
+    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="bug fix RS and DE">
       <change beforePath="$PROJECT_DIR$/algorithm/rs_scipy.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/rs_scipy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fitness/fitness_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitness/fitness_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/run_cmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/cmd_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/generation_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701881365074</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="bug fix RS and DE">
+      <option name="closed" value="true" />
+      <created>1702836220572</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702836220572</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,23 +167,19 @@
     <MESSAGE value="refactoring and add &quot;headless&quot; mode" />
     <MESSAGE value="added DE, RS algorithms using scipy lib" />
     <MESSAGE value="refactoring and bug fix of the parallelization of RS and DE" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring and bug fix of the parallelization of RS and DE" />
+    <MESSAGE value="bug fix RS and DE" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix RS and DE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fitness/fitness_functions.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tools/run_cmd.py</url>
+          <url>file://$PROJECT_DIR$/tools/cmd_utils.py</url>
           <line>27</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tools/run_cmd.py</url>
+          <url>file://$PROJECT_DIR$/tools/cmd_utils.py</url>
           <line>20</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>

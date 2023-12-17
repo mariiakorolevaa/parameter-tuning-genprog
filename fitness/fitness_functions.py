@@ -1,6 +1,6 @@
 from fitness.fitness_parameters import FitnessParameters
 from tools.json_utils import JsonUtils
-from tools.run_cmd import run_cmd_and_get_tests
+from tools.cmd_utils import run_cmd_and_get_tests
 
 
 # Fitness function for the optimization
@@ -32,7 +32,6 @@ def fitness_function(parameters: FitnessParameters):
     passed_tests, total_tests = run_cmd_and_get_tests(parameters.general_parameters)
 
     return -passed_tests / total_tests  # use negative value for minimization
-
 
 # To use in scipy algorithms
 def callable_function(x, args: FitnessParameters):

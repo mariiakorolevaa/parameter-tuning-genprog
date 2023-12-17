@@ -4,7 +4,7 @@ from scipy import optimize
 from fitness.fitness_functions import callable_function
 from fitness.fitness_parameters import FitnessParameters
 from tools.json_utils import JsonUtils
-from tools.utils import generate_valid_population_and_elitism
+from tools.generation_utils import generate_valid_population_and_elitism
 
 
 # Random Search for rational numbers using SciPy
