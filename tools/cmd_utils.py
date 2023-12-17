@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-from general_parameters import GeneralParameters
+from parameters.general_parameters import GeneralParameters
 
 
 # run the command in command line

@@ -1,4 +1,4 @@
-from fitness.fitness_parameters import FitnessParameters
+from parameters.fitness_parameters import FitnessParameters
 from tools.json_utils import JsonUtils
 from tools.cmd_utils import run_cmd_and_get_tests
 

@@ -1,7 +1,7 @@
 import argparse
 
 from algorithm.de_scipy import de_int, de_float
-from general_parameters import GeneralParameters
+from parameters.general_parameters import GeneralParameters
 from algorithm.rs_scipy import rs_int, rs_float
 
 # For testing

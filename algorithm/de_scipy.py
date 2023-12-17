@@ -1,7 +1,7 @@
 from scipy.optimize import differential_evolution, NonlinearConstraint
 
 from fitness.fitness_functions import callable_function
-from fitness.fitness_parameters import FitnessParameters
+from parameters.fitness_parameters import FitnessParameters
 from tools.json_utils import JsonUtils
 
 

@@ -2,7 +2,7 @@ import numpy as np
 from scipy import optimize
 
 from fitness.fitness_functions import callable_function
-from fitness.fitness_parameters import FitnessParameters
+from parameters.fitness_parameters import FitnessParameters
 from tools.json_utils import JsonUtils
 from tools.generation_utils import generate_valid_population_and_elitism
 

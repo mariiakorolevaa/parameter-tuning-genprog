@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="bug fix RS and DE">
+    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="files renamed">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/de_scipy.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/de_scipy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithm/rs_scipy.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/rs_scipy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fitness/fitness_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitness/fitness_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/run_cmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/cmd_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/generation_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitness/fitness_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/parameters/fitness_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/general_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/parameters/general_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/cmd_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/cmd_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +55,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kiris\Documents\GitHub\parameter_tuning_genprog\parameters" />
+      <recent name="C:\Users\kiris\Documents\GitHub\parameter_tuning_genprog\cmd" />
       <recent name="C:\Users\kiris\Documents\GitHub\parameter_tuning_genprog" />
       <recent name="C:\Users\kiris\Documents\GitHub\parameter_tuning_genprog\tools" />
       <recent name="C:\Users\kiris\Documents\GitHub\parameter_tuning_genprog\algorithm" />
-      <recent name="C:\Users\kiris\Documents\GitHub\parameter_tuning_genprog\fitness" />
     </key>
   </component>
   <component name="RunManager">
@@ -143,7 +149,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702836220572</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="files renamed">
+      <option name="closed" value="true" />
+      <created>1702836620528</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702836620528</updated>
+    </task>
+    <task id="LOCAL-00009" summary="files renamed">
+      <option name="closed" value="true" />
+      <created>1702836639942</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702836639942</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,7 +190,8 @@
     <MESSAGE value="added DE, RS algorithms using scipy lib" />
     <MESSAGE value="refactoring and bug fix of the parallelization of RS and DE" />
     <MESSAGE value="bug fix RS and DE" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fix RS and DE" />
+    <MESSAGE value="files renamed" />
+    <option name="LAST_COMMIT_MESSAGE" value="files renamed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
