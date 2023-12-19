@@ -12,7 +12,11 @@ path_to_output = "C:/Users/kiris/Documents/GitHub/output_repair/"
 json_path_full = "C:/Users/kiris/WebstormProjects/whisker-main/config/repair/genProg.json"
 json_path_headless = "C:/Users/kiris/WebstormProjects/whisker-main/config/repair/genProg-headless-chicken.json"
 whisker_folder_path = "C:/Users/kiris/WebstormProjects/whisker-main/"
-acceleration_factor = "10"
+acceleration_factor = 10
+n_jobs = 4
+mode = "de"
+is_headless = False
+is_rationals = False
 
 
 # Main function
@@ -63,13 +67,13 @@ def main(arguments):
 # --is_headless: run in headless mode
 def parse_args():
     parser = argparse.ArgumentParser(description="Parameter tuning for Scratch program repair.")
-    parser.add_argument("--is_rationals", default=False, action="store_true",
+    parser.add_argument("--is_rationals", default=is_rationals, action="store_true",
                         help="Use rational numbers for parameters")
-    parser.add_argument("--mode", choices=["rs", "de"], default="de", help="Optimization mode (random search or "
+    parser.add_argument("--mode", choices=["rs", "de"], default=mode, help="Optimization mode (random search or "
                                                                            "differential evolution)")
-    parser.add_argument("--n_jobs", type=int, default=4, help="Number of parallel jobs")
-    parser.add_argument("--is_headless", default=False, action="store_true", help="Run in headless mode")
-    parser.add_argument("--acceleration_factor", type=int, default=10, help="Acceleration factor")
+    parser.add_argument("--n_jobs", type=int, default=n_jobs, help="Number of parallel jobs")
+    parser.add_argument("--is_headless", default=is_headless, action="store_true", help="Run in headless mode")
+    parser.add_argument("--acceleration_factor", type=int, default=acceleration_factor, help="Acceleration factor")
     parser.add_argument("--path_to_repair", default=path_to_repair, type=str, help="Path to the scratch project to be "
                                                                                    "repaired")
     parser.add_argument("--path_to_test", default=path_to_test, type=str, help="Path to the file with the tests")

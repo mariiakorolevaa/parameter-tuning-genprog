@@ -1,0 +1,11 @@
+python main.py
+--mode de
+--n_jobs 2
+--acceleration_factor 10
+--path_to_repair "C:/Users/kiris/Documents/GitHub/scratch-repair-study-dataset/0-toy-examples/repair-subjects/Max-1.sb3"
+--path_to_test "C:/Users/kiris/Documents/GitHub/scratch-repair-study-dataset/0-toy-examples/tests/Max-manual.js"
+--path_to_output "C:/Users/kiris/Documents/GitHub/output_repair/"
+--path_to_csv "C:/Users/kiris/Documents/GitHub/output_repair/result.csv"
+--json_path_full "C:/Users/kiris/WebstormProjects/whisker-main/config/repair/genProg.json"
+--json_path_headless "C:/Users/kiris/WebstormProjects/whisker-main/config/repair/genProg-headless-chicken.json"
+--whisker_path "C:/Users/kiris/WebstormProjects/whisker-main/"

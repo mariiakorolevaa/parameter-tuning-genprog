@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="files renamed">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="new directories created and files reorganized">
+      <change afterPath="$PROJECT_DIR$/example_cmd_command.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/de_scipy.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/de_scipy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/rs_scipy.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/rs_scipy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitness/fitness_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitness/fitness_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitness/fitness_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/parameters/fitness_parameters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/general_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/parameters/general_parameters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/cmd_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/cmd_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702836639942</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="new directories created and files reorganized">
+      <option name="closed" value="true" />
+      <created>1702837359652</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702837359652</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,7 +193,8 @@
     <MESSAGE value="refactoring and bug fix of the parallelization of RS and DE" />
     <MESSAGE value="bug fix RS and DE" />
     <MESSAGE value="files renamed" />
-    <option name="LAST_COMMIT_MESSAGE" value="files renamed" />
+    <MESSAGE value="new directories created and files reorganized" />
+    <option name="LAST_COMMIT_MESSAGE" value="new directories created and files reorganized" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
