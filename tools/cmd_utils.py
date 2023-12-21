@@ -21,17 +21,18 @@ def run_command_to_repair(parameters: GeneralParameters):
     os.system(command)
 
 
-def run_cmd_and_get_tests(parameters):
+def run_cmd_and_get_fitness(parameters):
     run_command_to_repair(parameters)
 
     # process the csv file with the results
     df = pd.read_csv(parameters.path_to_csv)
-    # get line from the table where viable value is true
-    viable_row = df.loc[df['viable']]
-    if viable_row.empty:
-        return 0, 0
-    # get the number of passed tests and total tests
-    passed_tests = viable_row['numPass'].values[0]
-    total_tests = viable_row['numFail'].values[0]
+    # remove all reconds where viable is false
+    df = df[df.viable == True]
+    if df.empty:
+        return 1
+    # sort by fitness (descending) and time (ascending)
+    df = df.sort_values(by=['fitness', 'time'], ascending=[False, True])
+    # get the best fitness
+    best_fitness = df.iloc[0]['fitness']
 
-    return passed_tests, total_tests
+    return best_fitness

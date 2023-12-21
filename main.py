@@ -13,9 +13,9 @@ json_path_full = "C:/Users/kiris/WebstormProjects/whisker-main/config/repair/gen
 json_path_headless = "C:/Users/kiris/WebstormProjects/whisker-main/config/repair/genProg-headless-chicken.json"
 whisker_folder_path = "C:/Users/kiris/WebstormProjects/whisker-main/"
 acceleration_factor = 10
-n_jobs = 4
+n_jobs = 16
 mode = "de"
-is_headless = False
+is_headless = True
 is_rationals = False
 
 

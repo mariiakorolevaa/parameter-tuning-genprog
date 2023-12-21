@@ -1,7 +1,9 @@
+import numpy as np
 from scipy.optimize import differential_evolution, NonlinearConstraint
 
 from fitness.fitness_functions import callable_function
 from parameters.fitness_parameters import FitnessParameters
+from tools.generation_utils import generate_valid_population_and_elitism
 from tools.json_utils import JsonUtils
 
 
@@ -55,42 +57,39 @@ def divisibility_constraint(x):
     return round(x[0]) % 4, round(x[1]) % 2
 
 
-def de_int(scipy_parameters):
+def de_int(gen_parameters):
     # Bounds for integer-encoded parameters
-    bounds = [(4, 48), (2, 20)]
+    b = [(12, 48), (2, 8)]
 
     nlc = NonlinearConstraint(fun=divisibility_constraint, lb=[0, 0], ub=[0, 0])
+    population_size_bounds = (12, 48)
+    elitism_size_bounds = (2, 8)
 
-    json_utils = JsonUtils(scipy_parameters.json_path)
+    json_utils = JsonUtils(gen_parameters.json_path)
     original_json = json_utils.get_json_file()
 
-    if scipy_parameters.is_headless:
-        population_size = 48
-        elitism_size = 4
-    else:
-        population_size = 20
-        elitism_size = 2
+    # Generate initial values using the custom function
+    initial_population_size, initial_elitism_size = generate_valid_population_and_elitism(population_size_bounds,
+                                                                                          elitism_size_bounds)
+    x = [initial_population_size, initial_elitism_size]
+    args = FitnessParameters(rand_parameters=x, general_parameters=gen_parameters)
 
-    initial_values = [population_size, elitism_size]
-
-    fitness_parameters = FitnessParameters(rand_parameters=initial_values, general_parameters=scipy_parameters)
-    result = differential_evolution(callable_function, bounds,
-                                    args=(fitness_parameters,),
+    result = differential_evolution(callable_function, bounds=b,
+                                    x0=x,
+                                    args=(args,),
                                     strategy='best1bin',
-                                    popsize=scipy_parameters.pop_size,
-                                    maxiter=scipy_parameters.max_iter,
                                     tol=0.01,
                                     mutation=(0.5, 1),
                                     recombination=0.7,
                                     seed=None, callback=None,
                                     disp=False, polish=True,
-                                    workers=scipy_parameters.n_jobs,
+                                    workers=gen_parameters.n_jobs,
                                     constraints=nlc)
 
     # Get the best parameters
     best_params = result.x
 
     # Restore the original JSON
-    json_utils.return_initial_json(original_json, scipy_parameters.is_headless)
+    json_utils.return_initial_json(original_json, gen_parameters.is_headless)
 
     return best_params

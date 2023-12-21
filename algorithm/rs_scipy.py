@@ -24,9 +24,9 @@ def rs_float(gen_parameters):
     x = initial_values
     args = FitnessParameters(rand_parameters=x, general_parameters=gen_parameters)
 
-    results = minimize_function([callable_function, x, b, args])
+    results = maximize_function([callable_function, x, b, args])
 
-    best_params_list = [result.x for result in results]
+    best_params_list = results.x
 
     json_utils.return_initial_json(original_json, gen_parameters.is_headless)
     return best_params_list
@@ -47,15 +47,15 @@ def rs_int(gen_parameters):
     x = [initial_population_size, initial_elitism_size]
     args = FitnessParameters(rand_parameters=x, general_parameters=gen_parameters)
 
-    results = minimize_function([callable_function, x, b, args])
+    results = maximize_function([callable_function, x, b, args])
 
-    best_params_list = [result.x for result in results]
+    best_params_list = results.x
     json_utils.return_initial_json(original_json, gen_parameters.is_headless)
     return best_params_list
 
 
-def minimize_function(args):
+def maximize_function(args):
     f, x, b, a = args
-    result = optimize.minimize(fun=f, x0=x, args=a, method='BFGS', jac=True, bounds=b)
+    result = optimize.minimize(fun=f, x0=x, args=a, method='BFGS', jac=False, bounds=b)
     return result
 

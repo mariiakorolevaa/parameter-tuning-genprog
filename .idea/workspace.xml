@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="new directories created and files reorganized">
-      <change afterPath="$PROJECT_DIR$/example_cmd_command.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/de_scipy.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/de_scipy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/rs_scipy.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/rs_scipy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitness/fitness_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitness/fitness_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/cmd_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/cmd_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +34,9 @@
     <setting file="file://$USER_HOME$/anaconda3/envs/parameter_tuning_genprog/Lib/site-packages/scipy/optimize/_differentialevolution.py" root0="SKIP_INSPECTION" />
     <setting file="file://$USER_HOME$/anaconda3/envs/parameter_tuning_genprog/Lib/site-packages/scipy/optimize/_minimize.py" root0="SKIP_INSPECTION" />
     <setting file="file://$USER_HOME$/anaconda3/envs/parameter_tuning_genprog/Lib/site-packages/scipy/optimize/optimize.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2YU9rtQb1ifcV1X4OyqJzzY14TA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -200,46 +206,18 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tools/cmd_utils.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tools/cmd_utils.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/anaconda3/envs/parameter_tuning_genprog/Lib/site-packages/scipy/optimize/_differentialevolution.py</url>
-          <line>1145</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/algorithm/rs_scipy.py</url>
-          <line>51</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/algorithm/rs_scipy.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/algorithm/rs_scipy.py</url>
-          <line>58</line>
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fitness/fitness_functions.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/algorithm/rs_scipy.py</url>
-          <line>26</line>
-          <option name="timeStamp" value="75" />
+          <url>file://$PROJECT_DIR$/algorithm/de_scipy.py</url>
+          <line>89</line>
+          <option name="timeStamp" value="94" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>
