@@ -7,8 +7,8 @@ from tools.generation_utils import generate_valid_population_and_elitism
 from tools.json_utils import JsonUtils
 
 
-def de_float(scipy_parameters):
-    if scipy_parameters.is_headless:
+def de_float(gen_parameters):
+    if gen_parameters.is_headless:
         # Crossover rate, Mutation rate
         bounds = [(0, 1), (0, 1)]
         mutation_rate = 0.5
@@ -23,15 +23,15 @@ def de_float(scipy_parameters):
         crossover_rate = 0.7
         initial_values = [crossover_rate, mutation_insert_rate, mutation_delete_rate, mutation_change_rate]
 
-    json_utils = JsonUtils(scipy_parameters.json_path)
+    json_utils = JsonUtils(gen_parameters.path_to_config)
     original_json = json_utils.get_json_file()
 
-    fitness_parameters = FitnessParameters(rand_parameters=initial_values, general_parameters=scipy_parameters)
+    fitness_parameters = FitnessParameters(rand_parameters=initial_values, general_parameters=gen_parameters)
     result = differential_evolution(callable_function, bounds,
                                     args=(fitness_parameters,),
                                     strategy='best1bin',
-                                    popsize=scipy_parameters.pop_size,
-                                    maxiter=scipy_parameters.max_iter,
+                                    popsize=gen_parameters.pop_size,
+                                    maxiter=gen_parameters.max_iter,
                                     tol=0.01,
                                     mutation=(0.5, 1),
                                     recombination=0.7,
@@ -39,13 +39,13 @@ def de_float(scipy_parameters):
                                     callback=None,
                                     disp=False,
                                     polish=True,
-                                    workers=scipy_parameters.n_jobs)
+                                    workers=gen_parameters.n_jobs)
 
     # Get the best parameters
     best_params = result.x
 
     # Restore the original JSON
-    json_utils.return_initial_json(original_json, scipy_parameters.is_headless)
+    json_utils.return_initial_json(original_json, gen_parameters.is_headless)
 
     return best_params
 
@@ -65,7 +65,7 @@ def de_int(gen_parameters):
     population_size_bounds = (12, 48)
     elitism_size_bounds = (2, 8)
 
-    json_utils = JsonUtils(gen_parameters.json_path)
+    json_utils = JsonUtils(gen_parameters.path_to_config)
     original_json = json_utils.get_json_file()
 
     # Generate initial values using the custom function

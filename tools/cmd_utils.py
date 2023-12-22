@@ -13,7 +13,7 @@ def run_command_to_repair(parameters: GeneralParameters):
         os.remove(parameters.path_to_csv)
 
     command = "node servant repair -s " + parameters.path_to_repair + " -t " + parameters.path_to_test + \
-              " -v " + parameters.path_to_csv + " -o " + parameters.path_to_output + \
+              " -v " + parameters.path_to_csv + " -c " + parameters.path_to_config + " -o " + parameters.path_to_output + \
               " -a " + str(parameters.acceleration_factor) + " -k -l"
     if parameters.is_headless:
         command += " -d"

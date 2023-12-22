@@ -16,7 +16,7 @@ def rs_float(gen_parameters):
         # Crossover rate, Mutation insertion rate, Mutation deletion rate, Mutation change rate
         b = [(0, 1), (0, 1), (0, 1), (0, 1)]
 
-    json_utils = JsonUtils(gen_parameters.json_path)
+    json_utils = JsonUtils(gen_parameters.path_to_config)
     original_json = json_utils.get_json_file()
 
     initial_values = np.random.rand(len(b))
@@ -38,7 +38,7 @@ def rs_int(gen_parameters):
     population_size_bounds = (4, 48)
     elitism_size_bounds = (2, 20)
 
-    json_utils = JsonUtils(gen_parameters.json_path)
+    json_utils = JsonUtils(gen_parameters.path_to_config)
     original_json = json_utils.get_json_file()
 
     # Generate initial values using the custom function

@@ -5,7 +5,7 @@ from tools.cmd_utils import run_cmd_and_get_fitness
 
 # Fitness function for the optimization
 def fitness_function(parameters: FitnessParameters):
-    json_utils = JsonUtils(parameters.general_parameters.json_path)
+    json_utils = JsonUtils(parameters.general_parameters.path_to_config)
     if parameters.general_parameters.is_rationals:
         print("rationals mode")
         if parameters.general_parameters.is_headless:
