@@ -14,8 +14,7 @@ def fitness_function(parameters: FitnessParameters):
             print("crossover_rate: ", crossover_rate)
             print("mutation_rate: ", mutation_rate)
 
-            # TODO: solve the problem with parallelism
-            json_utils.replace_json_float_headless(crossover_rate, mutation_rate)
+            copy_path = json_utils.replace_json_float_headless(crossover_rate, mutation_rate)
         else:
             print("full mode, number of parameters: ", len(parameters.rand_params))
             if len(parameters.rand_params) == 2:
@@ -28,11 +27,10 @@ def fitness_function(parameters: FitnessParameters):
                 print("mutation_deletion_rate: ", mutation_deletion_rate)
                 print("mutation_change_rate: ", mutation_change_rate)
 
-            # TODO: solve the problem with parallelism
-            json_utils.replace_json_float_full(crossover_rate,
-                                               mutation_insertion_rate,
-                                               mutation_deletion_rate,
-                                               mutation_change_rate)
+            copy_path = json_utils.replace_json_float_full(crossover_rate,
+                                                           mutation_insertion_rate,
+                                                           mutation_deletion_rate,
+                                                           mutation_change_rate)
 
     else:
         print("integers mode")
@@ -42,12 +40,11 @@ def fitness_function(parameters: FitnessParameters):
         print("population_size: ", population_size)
         print("elitism_size: ", elitism_size)
 
-        # TODO: solve the problem with parallelism
-        json_utils.replace_json_int(population_size, elitism_size)
+        copy_path = json_utils.replace_json_int(population_size, elitism_size)
 
-    fitness = run_cmd_and_get_fitness(parameters.general_parameters)
+    fitness = run_cmd_and_get_fitness(parameters.general_parameters, copy_path)
 
-    return 1/fitness
+    return 1 / fitness
 
 
 # To use in scipy algorithms

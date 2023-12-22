@@ -5,7 +5,7 @@ from parameters.general_parameters import GeneralParameters
 
 
 # run the command in command line
-def run_command_to_repair(parameters: GeneralParameters):
+def run_command_to_repair(parameters: GeneralParameters, copy_path):
     os.chdir(parameters.whisker_path)
 
     # delete csv file if it exists
@@ -13,7 +13,7 @@ def run_command_to_repair(parameters: GeneralParameters):
         os.remove(parameters.path_to_csv)
 
     command = "node servant repair -s " + parameters.path_to_repair + " -t " + parameters.path_to_test + \
-              " -v " + parameters.path_to_csv + " -c " + parameters.path_to_config + " -o " + parameters.path_to_output + \
+              " -v " + parameters.path_to_csv + " -c " + copy_path + " -o " + parameters.path_to_output + \
               " -a " + str(parameters.acceleration_factor) + " -k -l"
     if parameters.is_headless:
         command += " -d"
@@ -21,8 +21,8 @@ def run_command_to_repair(parameters: GeneralParameters):
     os.system(command)
 
 
-def run_cmd_and_get_fitness(parameters):
-    run_command_to_repair(parameters)
+def run_cmd_and_get_fitness(parameters, copy_path):
+    run_command_to_repair(parameters, copy_path)
 
     # process the csv file with the results
     df = pd.read_csv(parameters.path_to_csv)

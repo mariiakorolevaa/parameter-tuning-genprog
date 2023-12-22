@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="bug fix">
+    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="config file path as cmd option">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parameters/general_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/parameters/general_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/de_scipy.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/de_scipy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/rs_scipy.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/rs_scipy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitness/fitness_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitness/fitness_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/cmd_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/cmd_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/json_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/json_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703182374539</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="config file path as cmd option">
+      <option name="closed" value="true" />
+      <created>1703265075111</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1703265075111</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,15 +217,21 @@
     <MESSAGE value="files renamed" />
     <MESSAGE value="new directories created and files reorganized" />
     <MESSAGE value="bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
+    <MESSAGE value="config file path as cmd option" />
+    <option name="LAST_COMMIT_MESSAGE" value="config file path as cmd option" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/algorithm/de_scipy.py</url>
-          <line>89</line>
+          <line>80</line>
           <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tools/json_utils.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

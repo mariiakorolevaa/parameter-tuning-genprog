@@ -23,9 +23,6 @@ def de_float(gen_parameters):
         crossover_rate = 0.7
         initial_values = [crossover_rate, mutation_insert_rate, mutation_delete_rate, mutation_change_rate]
 
-    json_utils = JsonUtils(gen_parameters.path_to_config)
-    original_json = json_utils.get_json_file()
-
     fitness_parameters = FitnessParameters(rand_parameters=initial_values, general_parameters=gen_parameters)
     result = differential_evolution(callable_function, bounds,
                                     args=(fitness_parameters,),
@@ -44,9 +41,6 @@ def de_float(gen_parameters):
     # Get the best parameters
     best_params = result.x
 
-    # Restore the original JSON
-    json_utils.return_initial_json(original_json, gen_parameters.is_headless)
-
     return best_params
 
 
@@ -64,9 +58,6 @@ def de_int(gen_parameters):
     nlc = NonlinearConstraint(fun=divisibility_constraint, lb=[0, 0], ub=[0, 0])
     population_size_bounds = (12, 48)
     elitism_size_bounds = (2, 8)
-
-    json_utils = JsonUtils(gen_parameters.path_to_config)
-    original_json = json_utils.get_json_file()
 
     # Generate initial values using the custom function
     initial_population_size, initial_elitism_size = generate_valid_population_and_elitism(population_size_bounds,
@@ -88,8 +79,5 @@ def de_int(gen_parameters):
 
     # Get the best parameters
     best_params = result.x
-
-    # Restore the original JSON
-    json_utils.return_initial_json(original_json, gen_parameters.is_headless)
 
     return best_params

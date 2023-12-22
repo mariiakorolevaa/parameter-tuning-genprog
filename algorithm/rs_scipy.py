@@ -3,7 +3,6 @@ from scipy import optimize
 
 from fitness.fitness_functions import callable_function
 from parameters.fitness_parameters import FitnessParameters
-from tools.json_utils import JsonUtils
 from tools.generation_utils import generate_valid_population_and_elitism
 
 
@@ -16,9 +15,6 @@ def rs_float(gen_parameters):
         # Crossover rate, Mutation insertion rate, Mutation deletion rate, Mutation change rate
         b = [(0, 1), (0, 1), (0, 1), (0, 1)]
 
-    json_utils = JsonUtils(gen_parameters.path_to_config)
-    original_json = json_utils.get_json_file()
-
     initial_values = np.random.rand(len(b))
 
     x = initial_values
@@ -28,7 +24,6 @@ def rs_float(gen_parameters):
 
     best_params_list = results.x
 
-    json_utils.return_initial_json(original_json, gen_parameters.is_headless)
     return best_params_list
 
 
@@ -37,9 +32,6 @@ def rs_int(gen_parameters):
     b = ((4, 48), (2, 20),)
     population_size_bounds = (4, 48)
     elitism_size_bounds = (2, 20)
-
-    json_utils = JsonUtils(gen_parameters.path_to_config)
-    original_json = json_utils.get_json_file()
 
     # Generate initial values using the custom function
     initial_population_size, initial_elitism_size = generate_valid_population_and_elitism(population_size_bounds,
@@ -50,7 +42,7 @@ def rs_int(gen_parameters):
     results = maximize_function([callable_function, x, b, args])
 
     best_params_list = results.x
-    json_utils.return_initial_json(original_json, gen_parameters.is_headless)
+
     return best_params_list
 
 
