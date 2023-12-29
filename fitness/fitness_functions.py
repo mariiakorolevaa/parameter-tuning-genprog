@@ -37,6 +37,10 @@ def fitness_function(parameters: FitnessParameters):
         population_size, elitism_size = parameters.rand_params
         population_size = round(population_size)
         elitism_size = round(elitism_size)
+        if population_size % 4 != 0:
+            return 0
+        if elitism_size % 2 != 0:
+            return 0
         print("population_size: ", population_size)
         print("elitism_size: ", elitism_size)
 

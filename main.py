@@ -2,7 +2,7 @@ import argparse
 
 from algorithm.de_scipy import de_int, de_float
 from parameters.general_parameters import GeneralParameters
-from algorithm.rs_scipy import rs_int, rs_float
+from algorithm.rs_scipy import rs
 
 # For testing
 path_to_repair = "C:/Users/kiris/Documents/GitHub/scratch-repair-study-dataset/0-toy-examples/repair-subjects/Max-1.sb3"
@@ -12,10 +12,10 @@ path_to_output = "C:/Users/kiris/Documents/GitHub/output_repair/"
 whisker_folder_path = "C:/Users/kiris/WebstormProjects/whisker-main/"
 path_to_config = "C:/Users/kiris/WebstormProjects/whisker-main/config/repair/genProg-headless-chicken.json"
 acceleration_factor = 10
-n_jobs = 16
-mode = "de"
+n_jobs = 2
+mode = "rs"
 is_headless = True
-is_rationals = False
+is_rationals = True
 
 
 # Main function
@@ -35,11 +35,11 @@ def main(arguments):
                                    arguments.whisker_path)
 
     if arguments.mode == "rs" and arguments.is_rationals:
-        results = rs_float(gen_params)
+        results = rs(gen_params)
         print(results)
 
     elif arguments.mode == "rs" and not arguments.is_rationals:
-        results = rs_int(gen_params)
+        results = rs(gen_params)
         print("results: ", results)
 
     elif arguments.mode == "de" and arguments.is_rationals:

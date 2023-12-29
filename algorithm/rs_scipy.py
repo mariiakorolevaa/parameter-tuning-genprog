@@ -1,53 +1,64 @@
+import os
+
 import numpy as np
-from scipy import optimize
+from joblib import Parallel, delayed
 
-from fitness.fitness_functions import callable_function
+from fitness.fitness_functions import fitness_function
 from parameters.fitness_parameters import FitnessParameters
-from tools.generation_utils import generate_valid_population_and_elitism
+from parameters.general_parameters import GeneralParameters
 
 
-# Random Search for rational numbers using SciPy
-def rs_float(gen_parameters):
-    if gen_parameters.is_headless:
-        # Crossover rate, Mutation rate
-        b = [(0, 1), (0, 1)]
+def rs(gen_parameters: GeneralParameters):
+    # if csv file is not exist, create it
+
+    n_iterations = 20
+
+    results = parallel_random_search(n_iterations, gen_parameters.n_jobs, gen_parameters)
+
+    for result in results:
+        print(result)
+
+
+def generate_random_parameters_int():
+    population_size = np.random.randint(12, 49)
+    population_size -= population_size % 4
+    elitism_size = np.random.randint(2, 9)
+    elitism_size -= elitism_size % 2
+
+    return [population_size, elitism_size]
+
+
+def generate_random_parameters_float(is_headless: bool):
+    if is_headless:
+        crossover_rate = np.random.uniform(0, 1)
+        mutation_rate = np.random.uniform(0, 1)
+        return [crossover_rate, mutation_rate]
     else:
-        # Crossover rate, Mutation insertion rate, Mutation deletion rate, Mutation change rate
-        b = [(0, 1), (0, 1), (0, 1), (0, 1)]
-
-    initial_values = np.random.rand(len(b))
-
-    x = initial_values
-    args = FitnessParameters(rand_parameters=x, general_parameters=gen_parameters)
-
-    results = maximize_function([callable_function, x, b, args])
-
-    best_params_list = results.x
-
-    return best_params_list
+        crossover_rate = np.random.uniform(0, 1)
+        mutation_insert_rate = np.random.uniform(0, 1)
+        mutation_delete_rate = np.random.uniform(0, 1)
+        mutation_change_rate = np.random.uniform(0, 1)
+        return [crossover_rate, mutation_insert_rate, mutation_delete_rate, mutation_change_rate]
 
 
-# Random Search for integers using SciPy
-def rs_int(gen_parameters):
-    b = ((4, 48), (2, 20),)
-    population_size_bounds = (4, 48)
-    elitism_size_bounds = (2, 20)
-
-    # Generate initial values using the custom function
-    initial_population_size, initial_elitism_size = generate_valid_population_and_elitism(population_size_bounds,
-                                                                                          elitism_size_bounds)
-    x = [initial_population_size, initial_elitism_size]
-    args = FitnessParameters(rand_parameters=x, general_parameters=gen_parameters)
-
-    results = maximize_function([callable_function, x, b, args])
-
-    best_params_list = results.x
-
-    return best_params_list
+def run_optimization(gen_parameters: GeneralParameters):
+    if gen_parameters.is_rationals:
+        rand_params = generate_random_parameters_float(gen_parameters.is_headless)
+    else:
+        rand_params = generate_random_parameters_int()
+    fitness_parameters = FitnessParameters(rand_parameters=rand_params, general_parameters=gen_parameters)
+    fitness = fitness_function(parameters=fitness_parameters)
+    return rand_params, fitness
 
 
-def maximize_function(args):
-    f, x, b, a = args
-    result = optimize.minimize(fun=f, x0=x, args=a, method='BFGS', jac=False, bounds=b)
-    return result
+def parallel_random_search(n_iterations, n_jobs, gen_parameters: GeneralParameters):
+    results = Parallel(n_jobs=n_jobs)(delayed(run_optimization)(gen_parameters) for _ in range(n_iterations))
 
+    results.sort(key=lambda x: x[1], reverse=True)
+
+    best_params = results[0]
+    best_fitness = best_params[1]
+    print("best fitness: ", best_fitness)
+    print("best params: ", best_params)
+
+    return best_params

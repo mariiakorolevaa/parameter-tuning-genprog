@@ -13,19 +13,17 @@ class JsonUtils:
         return original_content
 
     def create_copy(self):
-        copy_path = f"{os.path.splitext(self.json_path)[0]}_copy.json"
+        # create a copy with unique name
+        thread_id = os.getpid()
+        copy_path = self.json_path.replace(".json", "_" + str(thread_id) + ".json")
         shutil.copyfile(self.json_path, copy_path)
         return copy_path
 
-    # TODO How to pass as parameter the path to config json file?
     def replace_json_float_headless(self, crossover_rate, mutation_rate):
         copy_path = self.create_copy()
 
         with open(copy_path, "r") as file:
             json_data = json.load(file)
-        json_data['algorithm']['populationSize'] = 4
-        json_data['stoppingCondition']['conditions'][1]['iterations'] = 10
-        json_data['stoppingCondition']['conditions'][2]['duration'] = 10000
         json_data['mutation']['probability'] = mutation_rate
         json_data['crossover']['probability'] = crossover_rate
 
@@ -34,7 +32,6 @@ class JsonUtils:
 
         return copy_path
 
-    # TODO How to pass as parameter the path to config json file?
     def replace_json_float_full(self, crossover_rate, mutation_insert_rate, mutation_delete_rate,
                                 mutation_change_rate):
         copy_path = self.create_copy()
@@ -42,8 +39,6 @@ class JsonUtils:
         with open(copy_path, "r") as file:
             json_data = json.load(file)
 
-        json_data['algorithm']['populationSize'] = 4
-        json_data['stoppingCondition']['conditions'][1]['duration'] = 10000
         json_data['mutation']['probability']['insertion'] = mutation_insert_rate
         json_data['mutation']['probability']['deletion'] = mutation_delete_rate
         json_data['mutation']['probability']['change'] = mutation_change_rate
@@ -54,7 +49,6 @@ class JsonUtils:
 
         return copy_path
 
-    # TODO How to pass as parameter the path to config json file?
     def replace_json_int(self, population_size, elitism_size):
         copy_path = self.create_copy()
 
