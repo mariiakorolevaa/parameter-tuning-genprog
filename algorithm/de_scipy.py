@@ -1,83 +1,71 @@
 import numpy as np
-from scipy.optimize import differential_evolution, NonlinearConstraint
+from scipy.optimize import differential_evolution
 
-from fitness.fitness_functions import callable_function
+from fitness.fitness_functions import fitness_function_de, stopping_criteria, get_best_params
 from parameters.fitness_parameters import FitnessParameters
-from tools.generation_utils import generate_valid_population_and_elitism
-from tools.json_utils import JsonUtils
+from parameters.general_parameters import GeneralParameters
 
 
-def de_float(gen_parameters):
-    if gen_parameters.is_headless:
-        # Crossover rate, Mutation rate
-        bounds = [(0, 1), (0, 1)]
-        mutation_rate = 0.5
-        crossover_rate = 0.7
-        initial_values = [crossover_rate, mutation_rate]
+def generate_random_parameters_int():
+    population_size = np.random.randint(12, 49)
+    population_size -= population_size % 4
+    elitism_size = np.random.randint(2, 9)
+    elitism_size -= elitism_size % 2
+    return [population_size, elitism_size]
+
+
+def generate_random_parameters_float(is_headless: bool):
+    if is_headless:
+        crossover_rate = np.random.uniform(0, 1)
+        mutation_rate = np.random.uniform(0, 1)
+        return [crossover_rate, mutation_rate]
     else:
-        # Crossover rate, Mutation insertion rate, Mutation deletion rate, Mutation change rate
-        bounds = [(0, 1), (0, 1), (0, 1), (0, 1)]
-        mutation_insert_rate = 0.3333
-        mutation_delete_rate = 0.3333
-        mutation_change_rate = 0.3333
-        crossover_rate = 0.7
-        initial_values = [crossover_rate, mutation_insert_rate, mutation_delete_rate, mutation_change_rate]
-
-    fitness_parameters = FitnessParameters(rand_parameters=initial_values, general_parameters=gen_parameters)
-    result = differential_evolution(callable_function, bounds,
-                                    args=(fitness_parameters,),
-                                    strategy='best1bin',
-                                    popsize=gen_parameters.pop_size,
-                                    maxiter=gen_parameters.max_iter,
-                                    tol=0.01,
-                                    mutation=(0.5, 1),
-                                    recombination=0.7,
-                                    seed=None,
-                                    callback=None,
-                                    disp=False,
-                                    polish=True,
-                                    workers=gen_parameters.n_jobs)
-
-    # Get the best parameters
-    best_params = result.x
-
-    return best_params
+        crossover_rate = np.random.uniform(0, 1)
+        mutation_insert_rate = np.random.uniform(0, 1)
+        mutation_delete_rate = np.random.uniform(0, 1)
+        mutation_change_rate = np.random.uniform(0, 1)
+        return [crossover_rate, mutation_insert_rate, mutation_delete_rate, mutation_change_rate]
 
 
-# Function defining the divisibility constraints:
-# 1) Population size (x[0]) should be divisible by 4
-# 2) Elitism size (x[1]) should be divisible by 2
-def divisibility_constraint(x):
-    return round(x[0]) % 4, round(x[1]) % 2
+def de(gen_parameters: GeneralParameters):
+    if gen_parameters.is_rationals:
+        if gen_parameters.is_headless:
+            bounds = [(0, 1), (0, 1)]
+        else:
+            bounds = [(0, 1), (0, 1), (0, 1), (0, 1)]
+    else:
+        bounds = [(8, 17), (2, 4)]
+    rand_params = generate_random_parameters_int() if not gen_parameters.is_rationals else generate_random_parameters_float(
+        gen_parameters.is_headless)
+    fitness_parameters = FitnessParameters(rand_parameters=rand_params, general_parameters=gen_parameters)
 
+    result = differential_evolution(
+        func=fitness_function_de,
+        bounds=bounds,
+        args=(fitness_parameters,),
+        strategy='best1bin',
+        tol=0.01,
+        mutation=(0.5, 1),
+        recombination=0.7,
+        seed=None,
+        disp=False,
+        maxiter=5,
+        popsize=4,
+        callback=stopping_criteria
+    )
 
-def de_int(gen_parameters):
-    # Bounds for integer-encoded parameters
-    b = [(12, 48), (2, 8)]
+    best_params = get_best_params()
+    # get as many elements as there are parameters
+    if gen_parameters.is_rationals:
+        if gen_parameters.is_headless:
+            best_params = best_params[:2]
+        else:
+            best_params = best_params[:4]
+    else:
+        best_params = best_params[:2]
+    best_fitness = result.fun
 
-    nlc = NonlinearConstraint(fun=divisibility_constraint, lb=[0, 0], ub=[0, 0])
-    population_size_bounds = (12, 48)
-    elitism_size_bounds = (2, 8)
-
-    # Generate initial values using the custom function
-    initial_population_size, initial_elitism_size = generate_valid_population_and_elitism(population_size_bounds,
-                                                                                          elitism_size_bounds)
-    x = [initial_population_size, initial_elitism_size]
-    args = FitnessParameters(rand_parameters=x, general_parameters=gen_parameters)
-
-    result = differential_evolution(callable_function, bounds=b,
-                                    x0=x,
-                                    args=(args,),
-                                    strategy='best1bin',
-                                    tol=0.01,
-                                    mutation=(0.5, 1),
-                                    recombination=0.7,
-                                    seed=None, callback=None,
-                                    disp=False, polish=True,
-                                    workers=gen_parameters.n_jobs,
-                                    constraints=nlc)
-
-    # Get the best parameters
-    best_params = result.x
+    print("best fitness: ", best_fitness)
+    print("best params: ", best_params)
 
     return best_params

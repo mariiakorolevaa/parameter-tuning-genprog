@@ -1,6 +1,6 @@
 import argparse
 
-from algorithm.de_scipy import de_int, de_float
+from algorithm.de_scipy import de
 from parameters.general_parameters import GeneralParameters
 from algorithm.rs_scipy import rs
 
@@ -34,20 +34,12 @@ def main(arguments):
                                    0,
                                    arguments.whisker_path)
 
-    if arguments.mode == "rs" and arguments.is_rationals:
+    if arguments.mode == "rs":
         results = rs(gen_params)
         print(results)
 
-    elif arguments.mode == "rs" and not arguments.is_rationals:
-        results = rs(gen_params)
-        print("results: ", results)
-
-    elif arguments.mode == "de" and arguments.is_rationals:
-        results = de_float(gen_params)
-        print("results: ", results)
-
-    elif arguments.mode == "de" and not arguments.is_rationals:
-        results = de_int(gen_params)
+    elif arguments.mode == "de":
+        results = de(gen_params)
         print("results: ", results)
 
     else:
