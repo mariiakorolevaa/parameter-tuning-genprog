@@ -26,14 +26,24 @@ def run_cmd_and_get_fitness(parameters, copy_path):
 
     # process the csv file with the results
     try:
-        df = pd.read_csv(path_to_csv)
+        df = pd.read_csv(path_to_csv, converters={'viable': lambda x: True if x == 'true' else False})
     except pd.errors.EmptyDataError:
         return 1
     # remove all records where viable is false
-    df = df[df.viable == True]
     # sort by fitness (descending) and time (ascending)
     df = df.sort_values(by=['fitness', 'time'], ascending=[False, True])
-    # get the best fitness
-    best_fitness = df.iloc[0]['fitness']
+    fitness_column = df['fitness']
+    time_column = df['time']
+    best_fitness = 1
+    time = 0
+    for i in range(len(fitness_column)):
+        if fitness_column.iloc[i] != "fitness":
+            best_fitness = fitness_column.iloc[i]
+            break
 
-    return best_fitness
+    for i in range(len(time_column)):
+        if time_column.iloc[i] != "time":
+            time = time_column.iloc[i]
+            break
+
+    return int(best_fitness), int(time)

@@ -5,6 +5,7 @@ from tools.cmd_utils import run_cmd_and_get_fitness
 best_fitness = 1
 stopping_criteria_reached = False
 best_params = [0, 0, 0, 0]
+time_for_best_params = 0
 population_size = 0
 elitism_size = 0
 crossover_rate = 0
@@ -18,11 +19,19 @@ def get_best_params():
     return best_params
 
 
+def get_time_for_best_params():
+    return time_for_best_params
+
+
+def get_best_fitness():
+    return best_fitness
+
+
 # Fitness function for the optimization
 def fitness_function(parameters: FitnessParameters):
     global best_fitness, best_params, population_size, \
         elitism_size, crossover_rate, mutation_rate, \
-        mutation_insertion_rate, mutation_deletion_rate, mutation_change_rate
+        mutation_insertion_rate, mutation_deletion_rate, mutation_change_rate, time_for_best_params
 
     json_utils = JsonUtils(parameters.general_parameters.path_to_config)
     if parameters.general_parameters.is_rationals:
@@ -57,14 +66,14 @@ def fitness_function(parameters: FitnessParameters):
         population_size = round(population_size)
         elitism_size = round(elitism_size)
         if population_size % 4 != 0 or elitism_size % 2 != 0:
-            return best_fitness
+            return best_fitness, time_for_best_params
 
         print("population_size: ", population_size)
         print("elitism_size: ", elitism_size)
 
         copy_path = json_utils.replace_json_int(population_size, elitism_size)
 
-    fitness = run_cmd_and_get_fitness(parameters.general_parameters, copy_path)
+    fitness, time = run_cmd_and_get_fitness(parameters.general_parameters, copy_path)
 
     current_fitness = 1 / fitness
     if current_fitness < best_fitness:
@@ -81,13 +90,15 @@ def fitness_function(parameters: FitnessParameters):
             best_params[2] = mutation_deletion_rate
             best_params[3] = mutation_change_rate
 
-    return current_fitness
+        time_for_best_params = time
+
+    return current_fitness, time
 
 
 def fitness_function_de(x, *args):
     global best_fitness, population_size, elitism_size, best_params, \
         crossover_rate, mutation_rate, mutation_insertion_rate, \
-        mutation_deletion_rate, mutation_change_rate
+        mutation_deletion_rate, mutation_change_rate, time_for_best_params
     parameters = args[0]
     json_utils = JsonUtils(parameters.general_parameters.path_to_config)
 
@@ -106,10 +117,10 @@ def fitness_function_de(x, *args):
         population_size = round(population_size)
         elitism_size = round(elitism_size)
         if population_size % 4 != 0 or elitism_size % 2 != 0:
-            return best_fitness
+            return best_fitness, time_for_best_params
         copy_path = json_utils.replace_json_int(population_size, elitism_size)
 
-    fitness = run_cmd_and_get_fitness(parameters.general_parameters, copy_path)
+    fitness, time = run_cmd_and_get_fitness(parameters.general_parameters, copy_path)
     current_fitness = 1 / fitness
 
     if current_fitness < best_fitness:
@@ -125,6 +136,8 @@ def fitness_function_de(x, *args):
             best_params[1] = mutation_insertion_rate
             best_params[2] = mutation_deletion_rate
             best_params[3] = mutation_change_rate
+
+        time_for_best_params = time
 
     if best_fitness < 0.12:
         global stopping_criteria_reached
@@ -145,3 +158,4 @@ def stopping_criteria(xk, convergence):
             xk[3] = best_params[3]
 
         return True
+    return False

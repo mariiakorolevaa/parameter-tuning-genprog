@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.optimize import differential_evolution
 
-from fitness.fitness_functions import fitness_function_de, stopping_criteria, get_best_params
+from fitness.fitness_functions import fitness_function_de, stopping_criteria, get_best_params, get_time_for_best_params
 from parameters.fitness_parameters import FitnessParameters
 from parameters.general_parameters import GeneralParameters
 
@@ -67,5 +67,7 @@ def de(gen_parameters: GeneralParameters):
 
     print("best fitness: ", best_fitness)
     print("best params: ", best_params)
+    print("time for best params: ", get_time_for_best_params())
 
-    return best_params
+    tabulate_results = [["best params", "best fitness"], [best_params, best_fitness]]
+    return tabulate_results
