@@ -96,33 +96,55 @@ def fitness_function(parameters: FitnessParameters):
 
 
 def fitness_function_de(x, *args):
-    global best_fitness, population_size, elitism_size, best_params, \
-        crossover_rate, mutation_rate, mutation_insertion_rate, \
-        mutation_deletion_rate, mutation_change_rate, time_for_best_params
+    global best_fitness, best_params, population_size, \
+        elitism_size, crossover_rate, mutation_rate, \
+        mutation_insertion_rate, mutation_deletion_rate, mutation_change_rate, time_for_best_params
+
     parameters = args[0]
     json_utils = JsonUtils(parameters.general_parameters.path_to_config)
 
     if parameters.general_parameters.is_rationals:
+        print("rationals mode")
         if parameters.general_parameters.is_headless:
+            print("headless mode, number of parameters: ", len(x))
             crossover_rate, mutation_rate = x
+            print("crossover_rate: ", crossover_rate)
+            print("mutation_rate: ", mutation_rate)
+
             copy_path = json_utils.replace_json_float_headless(crossover_rate, mutation_rate)
         else:
+            print("full mode, number of parameters: ", len(x))
             crossover_rate, mutation_insertion_rate, mutation_deletion_rate, mutation_change_rate = x
+            print("crossover_rate: ", crossover_rate)
+            print("mutation_insertion_rate: ", mutation_insertion_rate)
+            print("mutation_deletion_rate: ", mutation_deletion_rate)
+            print("mutation_change_rate: ", mutation_change_rate)
+
             copy_path = json_utils.replace_json_float_full(crossover_rate,
                                                            mutation_insertion_rate,
                                                            mutation_deletion_rate,
                                                            mutation_change_rate)
+
     else:
-        population_size, elitism_size = x
+        print("integers mode")
+        if len(x) == 1:
+            population_size, = x
+            elitism_size = best_params[1]  # Use the existing value for elitism_size
+        else:
+            population_size, elitism_size = x
         population_size = round(population_size)
         elitism_size = round(elitism_size)
         if population_size % 4 != 0 or elitism_size % 2 != 0:
-            return best_fitness, time_for_best_params
+            return best_fitness
+
+        print("population_size: ", population_size)
+        print("elitism_size: ", elitism_size)
+
         copy_path = json_utils.replace_json_int(population_size, elitism_size)
 
     fitness, time = run_cmd_and_get_fitness(parameters.general_parameters, copy_path)
-    current_fitness = 1 / fitness
 
+    current_fitness = 1 / fitness
     if current_fitness < best_fitness:
         best_fitness = current_fitness
         if not parameters.general_parameters.is_rationals:
@@ -147,6 +169,8 @@ def fitness_function_de(x, *args):
 
 
 def stopping_criteria(xk, convergence):
+    global stopping_criteria_reached
+
     if stopping_criteria_reached:
         if len(xk) == 2:
             xk[0] = best_params[0]
@@ -158,4 +182,5 @@ def stopping_criteria(xk, convergence):
             xk[3] = best_params[3]
 
         return True
+
     return False
