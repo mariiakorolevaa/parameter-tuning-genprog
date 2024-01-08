@@ -57,7 +57,6 @@ def parse_args():
     parser.add_argument("--whisker_path", type=str, help="Path to the whisker project folder")
     parser.add_argument("--population_size", type=int, help="Population size")
     parser.add_argument("--max_iter", type=int, help="Maximum number of iterations")
-    parser.add_argument("--is_cluster", default=False, action="store_true", help="Run on cluster")
 
     return parser.parse_args()
 
