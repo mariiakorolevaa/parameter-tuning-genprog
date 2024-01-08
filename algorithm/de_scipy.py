@@ -44,13 +44,14 @@ def de(gen_parameters: GeneralParameters):
         bounds=bounds,
         args=(fitness_parameters,),
         strategy='best1bin',
-        tol=0.01,
+        tol=0.12,
         mutation=(0.5, 1),
         recombination=0.7,
         seed=None,
         disp=False,
         maxiter=5,
-        popsize=4,
+        popsize=10,
+        workers=1,
         callback=stopping_criteria
     )
 

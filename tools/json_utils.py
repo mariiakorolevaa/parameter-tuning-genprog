@@ -12,31 +12,18 @@ class JsonUtils:
             original_content = file.read()
         return original_content
 
-    def create_copy(self):
-        # create a copy with unique name
-        thread_id = os.getpid()
-        copy_path = self.json_path.replace(".json", "_" + str(thread_id) + ".json")
-        shutil.copyfile(self.json_path, copy_path)
-        return copy_path
-
     def replace_json_float_headless(self, crossover_rate, mutation_rate):
-        copy_path = self.create_copy()
-
-        with open(copy_path, "r") as file:
+        with open(self.json_path, "r") as file:
             json_data = json.load(file)
         json_data['mutation']['probability'] = mutation_rate
         json_data['crossover']['probability'] = crossover_rate
 
-        with open(copy_path, "w") as file:
+        with open(self.json_path, "w") as file:
             json.dump(json_data, file, indent=2)
-
-        return copy_path
 
     def replace_json_float_full(self, crossover_rate, mutation_insert_rate, mutation_delete_rate,
                                 mutation_change_rate):
-        copy_path = self.create_copy()
-
-        with open(copy_path, "r") as file:
+        with open(self.json_path, "r") as file:
             json_data = json.load(file)
 
         json_data['mutation']['probability']['insertion'] = mutation_insert_rate
@@ -44,20 +31,15 @@ class JsonUtils:
         json_data['mutation']['probability']['change'] = mutation_change_rate
         json_data['crossover']['probability'] = crossover_rate
 
-        with open(copy_path, "w") as file:
+        with open(self.json_path, "w") as file:
             json.dump(json_data, file, indent=2)
 
-        return copy_path
-
     def replace_json_int(self, population_size, elitism_size):
-        copy_path = self.create_copy()
-
-        with open(copy_path, "r") as file:
+        with open(self.json_path, "r") as file:
             json_data = json.load(file)
         json_data['algorithm']['populationSize'] = population_size
         json_data['algorithm']['elitismSize'] = elitism_size
 
-        with open(copy_path, "w") as file:
+        with open(self.json_path, "w") as file:
             json.dump(json_data, file, indent=2)
 
-        return copy_path

@@ -42,7 +42,7 @@ def fitness_function(parameters: FitnessParameters):
             print("crossover_rate: ", crossover_rate)
             print("mutation_rate: ", mutation_rate)
 
-            copy_path = json_utils.replace_json_float_headless(crossover_rate, mutation_rate)
+            json_utils.replace_json_float_headless(crossover_rate, mutation_rate)
         else:
             print("full mode, number of parameters: ", len(parameters.rand_params))
             if len(parameters.rand_params) == 2:
@@ -55,10 +55,10 @@ def fitness_function(parameters: FitnessParameters):
                 print("mutation_deletion_rate: ", mutation_deletion_rate)
                 print("mutation_change_rate: ", mutation_change_rate)
 
-            copy_path = json_utils.replace_json_float_full(crossover_rate,
-                                                           mutation_insertion_rate,
-                                                           mutation_deletion_rate,
-                                                           mutation_change_rate)
+            json_utils.replace_json_float_full(crossover_rate,
+                                               mutation_insertion_rate,
+                                               mutation_deletion_rate,
+                                               mutation_change_rate)
 
     else:
         print("integers mode")
@@ -71,9 +71,9 @@ def fitness_function(parameters: FitnessParameters):
         print("population_size: ", population_size)
         print("elitism_size: ", elitism_size)
 
-        copy_path = json_utils.replace_json_int(population_size, elitism_size)
+        json_utils.replace_json_int(population_size, elitism_size)
 
-    fitness, time = run_cmd_and_get_fitness(parameters.general_parameters, copy_path)
+    fitness, time = run_cmd_and_get_fitness(parameters.general_parameters)
 
     current_fitness = 1 / fitness
     if current_fitness < best_fitness:
@@ -111,7 +111,7 @@ def fitness_function_de(x, *args):
             print("crossover_rate: ", crossover_rate)
             print("mutation_rate: ", mutation_rate)
 
-            copy_path = json_utils.replace_json_float_headless(crossover_rate, mutation_rate)
+            json_utils.replace_json_float_headless(crossover_rate, mutation_rate)
         else:
             print("full mode, number of parameters: ", len(x))
             crossover_rate, mutation_insertion_rate, mutation_deletion_rate, mutation_change_rate = x
@@ -120,10 +120,10 @@ def fitness_function_de(x, *args):
             print("mutation_deletion_rate: ", mutation_deletion_rate)
             print("mutation_change_rate: ", mutation_change_rate)
 
-            copy_path = json_utils.replace_json_float_full(crossover_rate,
-                                                           mutation_insertion_rate,
-                                                           mutation_deletion_rate,
-                                                           mutation_change_rate)
+            json_utils.replace_json_float_full(crossover_rate,
+                                               mutation_insertion_rate,
+                                               mutation_deletion_rate,
+                                               mutation_change_rate)
 
     else:
         print("integers mode")
@@ -140,9 +140,9 @@ def fitness_function_de(x, *args):
         print("population_size: ", population_size)
         print("elitism_size: ", elitism_size)
 
-        copy_path = json_utils.replace_json_int(population_size, elitism_size)
+        json_utils.replace_json_int(population_size, elitism_size)
 
-    fitness, time = run_cmd_and_get_fitness(parameters.general_parameters, copy_path)
+    fitness, time = run_cmd_and_get_fitness(parameters.general_parameters)
 
     current_fitness = 1 / fitness
     if current_fitness < best_fitness:

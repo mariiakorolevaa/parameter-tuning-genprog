@@ -1,5 +1,4 @@
 import os
-from datetime import datetime
 
 import pandas as pd
 
@@ -7,26 +6,25 @@ from parameters.general_parameters import GeneralParameters
 
 
 # run the command in command line
-def run_command_to_repair(parameters: GeneralParameters, copy_path, path_to_csv):
+def run_command_to_repair(parameters: GeneralParameters):
     os.chdir(parameters.whisker_path)
 
-    command = "node servant repair -s " + parameters.path_to_repair + " -t " + parameters.path_to_test + \
-              " -v " + path_to_csv + " -c " + copy_path + " -o " + parameters.path_to_output + \
-              " -a " + str(parameters.acceleration_factor)
-    if parameters.is_headless:
-        command += " -d"
+    command = "./prepare_experiment.py settings/repair.ini"
+    os.system(command)
 
+    command = "./1_submit_cluster_job.sh"
+    os.system(command)
+
+    command = "python utils/collect_results.py -r results/"
     os.system(command)
 
 
-def run_cmd_and_get_fitness(parameters, copy_path):
-    path_to_csv = parameters.path_to_csv.replace(".csv",
-                                                 f"_{os.getpid()}_{datetime.now().strftime('%Y%m%d%H%M%S')}.csv")
-    run_command_to_repair(parameters, copy_path, path_to_csv)
+def run_cmd_and_get_fitness(parameters):
+    run_command_to_repair(parameters)
 
     # process the csv file with the results
     try:
-        df = pd.read_csv(path_to_csv, converters={'viable': lambda x: True if x == 'true' else False})
+        df = pd.read_csv("results/result.csv", converters={'viable': lambda x: True if x == 'true' else False})
     except pd.errors.EmptyDataError:
         return 1
     # remove all records where viable is false
