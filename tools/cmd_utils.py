@@ -24,7 +24,7 @@ def run_cmd_and_get_fitness(parameters):
 
     # process the csv file with the results
     try:
-        df = pd.read_csv("results/result.csv", converters={'viable': lambda x: True if x == 'true' else False})
+        df = pd.read_csv(parameters.path_to_csv, converters={'viable': lambda x: True if x == 'true' else False})
     except pd.errors.EmptyDataError:
         return 1
     # remove all records where viable is false
