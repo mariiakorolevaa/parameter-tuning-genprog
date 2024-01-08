@@ -19,7 +19,7 @@ def main(arguments):
                                    arguments.acceleration_factor,
                                    arguments.is_headless,
                                    arguments.is_rationals,
-                                   arguments.n_jobs,
+                                   1,
                                    arguments.population_size,
                                    arguments.max_iter,
                                    arguments.whisker_path)
@@ -46,7 +46,6 @@ def parse_args():
                         help="Use rational numbers for parameters")
     parser.add_argument("--mode", choices=["rs", "de"], default="rs", help="Optimization mode (random search or "
                                                                            "differential evolution)")
-    parser.add_argument("--n_jobs", type=int, default=1, help="Number of parallel jobs")
     parser.add_argument("--is_headless", default=True, action="store_true", help="Run in headless mode")
     parser.add_argument("--acceleration_factor", type=int, help="Acceleration factor")
     parser.add_argument("--path_to_repair", type=str,

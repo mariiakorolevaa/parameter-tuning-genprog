@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="thread class deleted">
-      <change afterPath="$PROJECT_DIR$/tools/install_whisker_repair.sh" afterDir="false" />
+    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="changes for cluster execution">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/de_scipy.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/de_scipy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/rs_scipy.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/rs_scipy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitness/fitness_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitness/fitness_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/cmd_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/cmd_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/json_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/json_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/stopping_condition.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704475443911</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="changes for cluster execution">
+      <option name="closed" value="true" />
+      <created>1704739827077</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1704739827077</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -267,7 +266,8 @@
     <MESSAGE value="RS parallel execution.&#10;formatted output of the results." />
     <MESSAGE value="DE parallel execution.&#10;formatted output of the results." />
     <MESSAGE value="thread class deleted" />
-    <option name="LAST_COMMIT_MESSAGE" value="thread class deleted" />
+    <MESSAGE value="changes for cluster execution" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes for cluster execution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
