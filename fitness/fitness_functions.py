@@ -13,6 +13,7 @@ mutation_rate = 0
 mutation_insertion_rate = 0
 mutation_deletion_rate = 0
 mutation_change_rate = 0
+iteration = 0
 
 
 def get_best_params():
@@ -25,6 +26,10 @@ def get_time_for_best_params():
 
 def get_best_fitness():
     return best_fitness
+
+
+def get_iteration():
+    return iteration
 
 
 # Fitness function for the optimization
@@ -98,8 +103,9 @@ def fitness_function(parameters: FitnessParameters):
 def fitness_function_de(x, *args):
     global best_fitness, best_params, population_size, \
         elitism_size, crossover_rate, mutation_rate, \
-        mutation_insertion_rate, mutation_deletion_rate, mutation_change_rate, time_for_best_params
+        mutation_insertion_rate, mutation_deletion_rate, mutation_change_rate, time_for_best_params, iteration
 
+    iteration += 1
     parameters = args[0]
     json_utils = JsonUtils(parameters.general_parameters.path_to_config)
 
@@ -161,7 +167,7 @@ def fitness_function_de(x, *args):
 
         time_for_best_params = time
 
-    if best_fitness < 0.12:
+    if best_fitness < parameters.desired_fitness:
         global stopping_criteria_reached
         stopping_criteria_reached = True
 

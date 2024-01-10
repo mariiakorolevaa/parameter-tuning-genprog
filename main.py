@@ -22,6 +22,7 @@ def main(arguments):
                                    1,
                                    arguments.population_size,
                                    arguments.max_iter,
+                                   arguments.desired_fitness,
                                    arguments.whisker_path)
 
     if arguments.mode == "rs":
@@ -48,15 +49,15 @@ def parse_args():
                                                                            "differential evolution)")
     parser.add_argument("--is_headless", default=True, action="store_true", help="Run in headless mode")
     parser.add_argument("--acceleration_factor", type=int, help="Acceleration factor")
-    parser.add_argument("--path_to_repair", type=str,
-                        help="Path to the scratch project to be "                                                                               "repaired")
+    parser.add_argument("--path_to_repair", type=str, help="Path to the scratch project to be repaired")
     parser.add_argument("--path_to_test", type=str, help="Path to the file with the tests")
     parser.add_argument("--path_to_output", type=str, help="Path to the output folder")
     parser.add_argument("--path_to_csv", type=str, help="Path to the csv file")
     parser.add_argument("--path_to_config", type=str, help="Path to the config file")
     parser.add_argument("--whisker_path", type=str, help="Path to the whisker project folder")
     parser.add_argument("--population_size", type=int, help="Population size")
-    parser.add_argument("--max_iter", type=int, help="Maximum number of iterations")
+    parser.add_argument("--max_iter", type=int, default=10, help="Maximum number of iterations")
+    parser.add_argument("--desired_fitness", default=0.12, type=float, help="Desired fitness")
 
     return parser.parse_args()
 

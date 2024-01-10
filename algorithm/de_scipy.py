@@ -1,7 +1,10 @@
+import time
+
 import numpy as np
 from scipy.optimize import differential_evolution
 
-from fitness.fitness_functions import fitness_function_de, stopping_criteria, get_best_params, get_time_for_best_params
+from fitness.fitness_functions import fitness_function_de, stopping_criteria, get_best_params, get_time_for_best_params, \
+    get_iteration
 from parameters.fitness_parameters import FitnessParameters
 from parameters.general_parameters import GeneralParameters
 
@@ -39,6 +42,9 @@ def de(gen_parameters: GeneralParameters):
         gen_parameters.is_headless)
     fitness_parameters = FitnessParameters(rand_parameters=rand_params, general_parameters=gen_parameters)
 
+    start_time = time.time()
+    end_time = start_time
+
     result = differential_evolution(
         func=fitness_function_de,
         bounds=bounds,
@@ -49,11 +55,13 @@ def de(gen_parameters: GeneralParameters):
         recombination=0.7,
         seed=None,
         disp=False,
-        maxiter=5,
+        maxiter=gen_parameters.max_iter,
         popsize=10,
         workers=1,
         callback=stopping_criteria
     )
+    stop_time = time.time()
+    iteration = get_iteration()
 
     best_params = get_best_params()
     # get as many elements as there are parameters
@@ -69,6 +77,17 @@ def de(gen_parameters: GeneralParameters):
     print("best fitness: ", best_fitness)
     print("best params: ", best_params)
     print("time for best params: ", get_time_for_best_params())
+
+    if iteration >= gen_parameters.max_iter:
+        end_time = time.time()
+        message = "Maximum number of iterations reached"
+    else:
+        message = "Desired fitness reached in iteration " + str(iteration)
+
+    # time in format hh:mm:ss
+    formatted_time = time.strftime("%H:%M:%S", time.gmtime(end_time - start_time))
+    tabulate_results = [["best params", "best fitness", "time", "search time", "result"],
+                        [best_params, 1 / best_fitness, formatted_time, message]]
 
     tabulate_results = [["best params", "best fitness"], [best_params, best_fitness]]
     return tabulate_results

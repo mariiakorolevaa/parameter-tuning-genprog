@@ -38,12 +38,17 @@ def run_optimization(gen_parameters):
     return rand_params, fitness_and_time
 
 
-def rs(gen_parameters: GeneralParameters):
+def rs(gen_parameters: GeneralParameters, time=None):
+    message = ""
     best_fitness = 1
     best_params = []
     time_for_best_params = 0
+    start_time = time.time()
+    end_time = start_time
+    iteration = 0
 
     for i in range(gen_parameters.max_iter):
+        iteration += 1
         rand_params, fitness_and_time = run_optimization(gen_parameters)
         fitness = fitness_and_time[0]
         time = fitness_and_time[1]
@@ -51,6 +56,16 @@ def rs(gen_parameters: GeneralParameters):
             best_fitness = fitness
             best_params = rand_params
             time_for_best_params = time
+            if gen_parameters.desired_fitness <= best_fitness:
+                message = "Desired fitness reached in iteration " + str(iteration)
+                end_time = time.time()
+                break
 
-    tabulate_results = [["best params", "best fitness", "time"], [best_params, best_fitness, time_for_best_params]]
+    if iteration >= gen_parameters.max_iter:
+        end_time = time.time()
+        message = "Maximum number of iterations reached"
+
+    formatted_time = time.strftime("%H:%M:%S", time.gmtime(end_time - start_time))
+    tabulate_results = [["best params", "best fitness", "time", "search time", "result"],
+                        [best_params, 1 / best_fitness, time_for_best_params, formatted_time, message]]
     return tabulate_results
