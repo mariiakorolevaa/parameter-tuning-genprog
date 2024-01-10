@@ -1,4 +1,5 @@
 import numpy as np
+import time as tme
 
 from fitness.fitness_functions import fitness_function
 from parameters.fitness_parameters import FitnessParameters
@@ -38,12 +39,12 @@ def run_optimization(gen_parameters):
     return rand_params, fitness_and_time
 
 
-def rs(gen_parameters: GeneralParameters, time=None):
+def rs(gen_parameters: GeneralParameters):
     message = ""
     best_fitness = 1
     best_params = []
     time_for_best_params = 0
-    start_time = time.time()
+    start_time = tme.time()
     end_time = start_time
     iteration = 0
 
@@ -62,10 +63,10 @@ def rs(gen_parameters: GeneralParameters, time=None):
                 break
 
     if iteration >= gen_parameters.max_iter:
-        end_time = time.time()
+        end_time = tme.time()
         message = "Maximum number of iterations reached"
 
-    formatted_time = time.strftime("%H:%M:%S", time.gmtime(end_time - start_time))
+    formatted_time = tme.strftime("%H:%M:%S", tme.gmtime(end_time - start_time))
     tabulate_results = [["best params", "best fitness", "time", "search time", "result"],
                         [best_params, 1 / best_fitness, time_for_best_params, formatted_time, message]]
     return tabulate_results
