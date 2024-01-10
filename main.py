@@ -1,4 +1,5 @@
 import argparse
+import os
 
 from termcolor import colored
 from tabulate import tabulate
@@ -28,11 +29,31 @@ def main(arguments):
     if arguments.mode == "rs":
         results = rs(gen_params)
         formatted_results = tabulate(results)
+        # write results to txt file
+        output_file_path = "FINAL-results.txt"
+
+        file_exists = os.path.exists(output_file_path)
+
+        with open(output_file_path, 'a') as file:
+            if file_exists:
+                file.write('\n\n')
+            file.write(formatted_results)
+
         print(colored('Results:', 'green', attrs=['bold']))
         print(formatted_results)
     elif arguments.mode == "de":
         results = de(gen_params)
         formatted_results = tabulate(results)
+
+        # write results to txt file
+        output_file_path = "results.txt"
+
+        file_exists = os.path.exists(output_file_path)
+
+        with open(output_file_path, 'a') as file:
+            if file_exists:
+                file.write('\n\n')
+            file.write(formatted_results)
         print(colored('Results:', 'green', attrs=['bold']))
         print(formatted_results)
 
