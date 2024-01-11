@@ -1,4 +1,5 @@
 import os
+import subprocess
 
 import pandas as pd
 
@@ -10,13 +11,13 @@ def run_command_to_repair(parameters: GeneralParameters):
     os.chdir(parameters.whisker_path)
 
     command = "./prepare_experiment.py settings/repair.ini"
-    os.system(command)
+    subprocess.run(command, shell=True, check=True)
 
     command = "./1_submit_cluster_job.sh"
-    os.system(command)
+    subprocess.run(command, shell=True, check=True)
 
     command = "python utils/collect_results.py -r results/"
-    os.system(command)
+    subprocess.run(command, shell=True, check=True)
 
 
 def run_cmd_and_get_fitness(parameters):
