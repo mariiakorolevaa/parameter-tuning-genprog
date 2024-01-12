@@ -24,8 +24,7 @@ def run_cmd_and_get_fitness(parameters):
     run_command_to_repair(parameters)
 
     try:
-        # Указать путь к папке с экспериментами
-        experiments_path = "/scratch/koroleva/whisker-cluster-experiments/results"
+        experiments_path = parameters.path_to_csv
 
         # Get a list of all folders in the experiments path
         experiment_folders = [folder for folder in os.listdir(experiments_path) if
@@ -41,7 +40,7 @@ def run_cmd_and_get_fitness(parameters):
             file_path = os.path.join(folder_path, "output.csv")
             if os.path.exists(file_path):
                 data = pd.read_csv(file_path)
-                merged_data = merged_data.append(data, ignore_index=True)
+                merged_data = pd.concat([merged_data, data], ignore_index=True)
 
         # Save the merged data to a csv file
         output_path = os.path.join(experiments_path, "output_merged.csv")
