@@ -49,11 +49,13 @@ def main(arguments):
         output_file_path = "results.txt"
 
         file_exists = os.path.exists(output_file_path)
-
-        with open(output_file_path, 'a') as file:
-            if file_exists:
+        if not file_exists:
+            with open(output_file_path, 'w') as file:
+                file.write(formatted_results)
+        else:
+            with open(output_file_path, 'a') as file:
                 file.write('\n\n')
-            file.write(formatted_results)
+                file.write(formatted_results)
         print(colored('Results:', 'green', attrs=['bold']))
         print(formatted_results)
 
