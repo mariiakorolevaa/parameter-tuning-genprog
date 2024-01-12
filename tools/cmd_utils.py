@@ -23,10 +23,34 @@ def run_command_to_repair(parameters: GeneralParameters):
 def run_cmd_and_get_fitness(parameters):
     run_command_to_repair(parameters)
 
-    # process the csv file with the results
     try:
-        df = pd.read_csv(parameters.path_to_csv, converters={'viable': lambda x: True if x == 'true' else False})
-    except pd.errors.EmptyDataError:
+        # Указать путь к папке с экспериментами
+        experiments_path = "/scratch/koroleva/whisker-cluster-experiments/results"
+
+        # Get a list of all folders in the experiments path
+        experiment_folders = [folder for folder in os.listdir(experiments_path) if
+                              os.path.isdir(os.path.join(experiments_path, folder))]
+
+        merged_data = pd.DataFrame()
+
+        # Iterate over all folders of experiments
+        for folder in experiment_folders:
+            folder_path = os.path.join(experiments_path, folder)
+
+            # Check if the output file exists
+            file_path = os.path.join(folder_path, "output.csv")
+            if os.path.exists(file_path):
+                data = pd.read_csv(file_path)
+                merged_data = merged_data.append(data, ignore_index=True)
+
+        # Save the merged data to a csv file
+        output_path = os.path.join(experiments_path, "output_merged.csv")
+        merged_data.to_csv(output_path, index=False)
+        print("Merged data saved to: ", output_path)
+        df = pd.read_csv(output_path, converters={'viable': lambda x: True if x == 'true' else False})
+        print("Merge data read from: ", output_path)
+    except Exception as e:
+        print(e)
         return 1
     # remove all records where viable is false
     # sort by fitness (descending) and time (ascending)

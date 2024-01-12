@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="changes for cluster execution">
+    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="bug fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/cmd_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/cmd_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705013284421</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="bug fix">
+      <option name="closed" value="true" />
+      <created>1705018359064</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1705018359064</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -315,7 +324,6 @@
     <MESSAGE value="bug fix RS and DE" />
     <MESSAGE value="files renamed" />
     <MESSAGE value="new directories created and files reorganized" />
-    <MESSAGE value="bug fix" />
     <MESSAGE value="config file path as cmd option" />
     <MESSAGE value="custom implementation of the RS algorithm because of problems with parallelization" />
     <MESSAGE value="all types of experiments are passed. need to refactor the code" />
@@ -323,7 +331,8 @@
     <MESSAGE value="DE parallel execution.&#10;formatted output of the results." />
     <MESSAGE value="thread class deleted" />
     <MESSAGE value="changes for cluster execution" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes for cluster execution" />
+    <MESSAGE value="bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
