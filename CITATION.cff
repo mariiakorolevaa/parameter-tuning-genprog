@@ -1,0 +1,7 @@
+authors:
+  - name: Mariia Koroleva
+    affiliation: University of Passau
+    email: korole02@ads.uni-passau.de, mkorol2023@gmail.com
+title: Parameter tuning for Automatic Program Repair of Scratch Programs
+version: "1.0"
+repository: https://github.com/mariiakorolevaa/parameter-tuning-genprog
