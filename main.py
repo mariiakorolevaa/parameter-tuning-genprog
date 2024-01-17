@@ -1,7 +1,6 @@
 import argparse
 import os
 
-from termcolor import colored
 from tabulate import tabulate
 
 from algorithm.de_scipy import de
@@ -39,7 +38,7 @@ def main(arguments):
                 file.write('\n\n')
             file.write(formatted_results)
 
-        print(colored('Results:', 'green', attrs=['bold']))
+        print('Results:')
         print(formatted_results)
     elif arguments.mode == "de":
         results = de(gen_params)
@@ -56,7 +55,7 @@ def main(arguments):
             with open(output_file_path, 'a') as file:
                 file.write('\n\n')
                 file.write(formatted_results)
-        print(colored('Results:', 'green', attrs=['bold']))
+        print('Results:')
         print(formatted_results)
 
     else:
