@@ -4,7 +4,7 @@ import numpy as np
 from scipy.optimize import differential_evolution
 
 from fitness.fitness_functions import fitness_function_de, stopping_criteria, get_best_params, get_time_for_best_params, \
-    get_iteration
+    get_iteration, Stopper
 from parameters.fitness_parameters import FitnessParameters
 from parameters.general_parameters import GeneralParameters
 
@@ -44,7 +44,7 @@ def de(gen_parameters: GeneralParameters):
 
     start_time = time.time()
     end_time = start_time
-
+    my_stopper = Stopper()
     result = differential_evolution(
         func=fitness_function_de,
         bounds=bounds,
@@ -58,7 +58,7 @@ def de(gen_parameters: GeneralParameters):
         maxiter=gen_parameters.max_iter,
         popsize=10,
         workers=1,
-        callback=stopping_criteria
+        callback=my_stopper
     )
     stop_time = time.time()
     iteration = get_iteration()
