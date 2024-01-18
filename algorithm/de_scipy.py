@@ -60,7 +60,7 @@ def de(gen_parameters: GeneralParameters):
         strategy='best1bin',
         mutation=(0.5, 1),
         recombination=0.7,
-        popsize=1,
+        popsize=15,
         maxiter=gen_parameters.max_iter,
         disp=True,
         workers=1,
