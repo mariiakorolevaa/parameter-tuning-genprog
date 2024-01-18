@@ -51,6 +51,8 @@ def de(gen_parameters: GeneralParameters):
 
     print("type of callback: ", type(stopping_criteria))
 
+    stopper = Stopper(gen_parameters.desired_fitness)
+
     result = differential_evolution(
         func=fitness_function_de,
         bounds=bounds,
@@ -62,7 +64,7 @@ def de(gen_parameters: GeneralParameters):
         disp=True,
         popsize=10,
         workers=1,
-        callback=stopping_criteria,
+        callback=stopper.__call__,
         polish=False
     )
     stop_time = time.time()
@@ -95,3 +97,14 @@ def de(gen_parameters: GeneralParameters):
     tabulate_results = [["ALGORITHM", "best params", "best fitness", "time", "search time", "result"],
                         ["DE", best_params, best_fitness, time_for_best_params, formatted_time, message]]
     return tabulate_results
+
+
+class Stopper:
+    def __init__(self, desired_fitness):
+        self.desired_fitness = desired_fitness
+
+    def __call__(self, xk, convergence):
+        if stopping_criteria(xk, convergence):
+            return True
+        else:
+            return False
