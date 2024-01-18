@@ -214,7 +214,7 @@ class Stopper(object):
     def __init__(self, target_value=0.12):
         self.target_value = target_value
 
-    def __call__(self, xk=None, convergence=None):
+    def __call__(self, xk, convergence):
         print("Stopper called")
         print("convergence.fun: ", convergence.fun)
         if convergence is not None and convergence.fun <= self.target_value:
