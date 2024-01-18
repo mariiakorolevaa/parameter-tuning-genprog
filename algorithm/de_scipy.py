@@ -57,7 +57,7 @@ def de(gen_parameters: GeneralParameters):
         disp=False,
         maxiter=gen_parameters.max_iter,
         popsize=100,
-        workers=10,
+        workers=1,
         callback=stopping_criteria
     )
     stop_time = time.time()
