@@ -73,19 +73,20 @@ def de(gen_parameters: GeneralParameters):
     else:
         best_params = best_params[:2]
     best_fitness = result.fun
-
+    time_for_best_params = get_time_for_best_params()
     print("best fitness: ", best_fitness)
     print("best params: ", best_params)
-    print("time for best params: ", get_time_for_best_params())
+    print("time for best params: ", time_for_best_params)
 
     if iteration >= gen_parameters.max_iter:
         end_time = time.time()
         message = "Maximum number of iterations reached"
     else:
         message = "Desired fitness reached in iteration " + str(iteration)
+        end_time = time.time()
 
     # time in format hh:mm:ss
     formatted_time = time.strftime("%H:%M:%S", time.gmtime(end_time - start_time))
     tabulate_results = [["ALGORITHM", "best params", "best fitness", "time", "search time", "result"],
-                        ["DE", best_params, 1 / best_fitness, formatted_time, message]]
+                        ["DE", best_params, best_fitness, time_for_best_params, formatted_time, message]]
     return tabulate_results
