@@ -49,9 +49,10 @@ def de(gen_parameters: GeneralParameters):
     start_time = time.time()
     end_time = start_time
 
-    print("type of callback: ", type(stopping_criteria))
-
     stopper = Stopper(gen_parameters.desired_fitness)
+
+    print("type of callback: ", type(stopper))
+    print("is callable: ", callable(stopper))
 
     result = differential_evolution(
         func=fitness_function_de,
