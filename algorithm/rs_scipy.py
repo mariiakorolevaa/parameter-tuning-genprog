@@ -1,3 +1,5 @@
+import time
+
 import numpy as np
 import time as tme
 
@@ -52,11 +54,11 @@ def rs(gen_parameters: GeneralParameters):
         iteration += 1
         rand_params, fitness_and_time = run_optimization(gen_parameters)
         fitness = fitness_and_time[0]
-        time = fitness_and_time[1]
+        exec_time = fitness_and_time[1]
         if fitness < best_fitness:
             best_fitness = fitness
             best_params = rand_params
-            time_for_best_params = time
+            time_for_best_params = exec_time
             if gen_parameters.desired_fitness >= best_fitness:
                 message = "Desired fitness reached in iteration " + str(iteration)
                 end_time = time.time()
