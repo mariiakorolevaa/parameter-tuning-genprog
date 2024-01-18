@@ -47,7 +47,6 @@ def de(gen_parameters: GeneralParameters):
     fitness_parameters = FitnessParameters(rand_parameters=rand_params, general_parameters=gen_parameters)
 
     start_time = time.time()
-    end_time = start_time
 
     stopper = Stopper(gen_parameters.desired_fitness)
 
@@ -61,12 +60,12 @@ def de(gen_parameters: GeneralParameters):
         strategy='best1bin',
         mutation=(0.5, 1),
         recombination=0.7,
+        popsize=1,
         maxiter=gen_parameters.max_iter,
         disp=True,
         workers=1,
         callback=stopper,
     )
-    stop_time = time.time()
     iteration = get_iteration()
 
     best_params = get_best_params()
