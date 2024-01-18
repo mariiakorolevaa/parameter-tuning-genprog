@@ -44,7 +44,7 @@ def de(gen_parameters: GeneralParameters):
 
     start_time = time.time()
     end_time = start_time
-    my_stopper = Stopper()
+    stopper = Stopper(target_value=0.12)
     result = differential_evolution(
         func=fitness_function_de,
         bounds=bounds,
@@ -58,7 +58,7 @@ def de(gen_parameters: GeneralParameters):
         maxiter=gen_parameters.max_iter,
         popsize=10,
         workers=1,
-        callback=stopping_criteria
+        callback=stopper
     )
     stop_time = time.time()
     iteration = get_iteration()
