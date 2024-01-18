@@ -48,7 +48,8 @@ def de(gen_parameters: GeneralParameters):
 
     start_time = time.time()
     end_time = start_time
-    stopper = Stopper(target_value=0.12)
+
+    print("type of callback: ", type(stopping_criteria))
 
     result = differential_evolution(
         func=fitness_function_de,
@@ -61,7 +62,7 @@ def de(gen_parameters: GeneralParameters):
         disp=True,
         popsize=10,
         workers=1,
-        callback=my_callback,
+        callback=stopping_criteria,
         polish=False
     )
     stop_time = time.time()

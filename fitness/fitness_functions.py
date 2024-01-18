@@ -208,16 +208,3 @@ def round_pop_size(pop_size):
 def round_el_size(el_size):
     valid_values = list(range(2, 10, 2))
     return min(valid_values, key=lambda x: abs(x - el_size))
-
-
-class Stopper(object):
-    def __init__(self, target_value=0.12):
-        self.target_value = target_value
-
-    def __call__(self, xk):
-        print("Stopper called")
-        if stopping_criteria_reached:
-            print("Terminating optimization: target value reached")
-            return True
-        else:
-            return False
