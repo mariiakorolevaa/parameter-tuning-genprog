@@ -215,6 +215,7 @@ class Stopper(object):
         self.target_value = target_value
 
     def __call__(self, xk, convergence=None, *args, **kwds):
+        print("Stopper called")
         if convergence is not None and convergence.fun <= self.target_value:
             print("Terminating optimization: target value reached")
             return True
