@@ -63,7 +63,7 @@ def de(gen_parameters: GeneralParameters):
         recombination=0.7,
         seed=None,
         disp=True,
-        popsize=10,
+        popsize=2,
         workers=1,
         callback=stopper,
         polish=False
