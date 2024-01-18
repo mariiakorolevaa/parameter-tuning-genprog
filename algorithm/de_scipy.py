@@ -65,7 +65,7 @@ def de(gen_parameters: GeneralParameters):
         disp=True,
         popsize=10,
         workers=1,
-        callback=stopper.__call__,
+        callback=stopper,
         polish=False
     )
     stop_time = time.time()
