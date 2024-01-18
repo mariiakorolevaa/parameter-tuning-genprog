@@ -70,5 +70,5 @@ def rs(gen_parameters: GeneralParameters):
 
     formatted_time = tme.strftime("%H:%M:%S", tme.gmtime(end_time - start_time))
     tabulate_results = [["ALGORITHM", "best params", "best fitness", "time", "search time", "result"],
-                        ["RS", best_params, 1 / best_fitness, time_for_best_params, formatted_time, message]]
+                        ["RS", best_params, best_fitness, time_for_best_params, formatted_time, message]]
     return tabulate_results
