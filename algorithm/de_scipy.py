@@ -46,8 +46,8 @@ def de(gen_parameters: GeneralParameters):
     end_time = start_time
     stopper = Stopper(target_value=0.12)
 
-    def callback(param, convergence=0.):
-        return True
+    def callback(xk, convergence):
+        print("CALLBACK CALLED!!!")
 
     result = differential_evolution(
         func=fitness_function_de,
