@@ -58,7 +58,8 @@ def de(gen_parameters: GeneralParameters):
         maxiter=gen_parameters.max_iter,
         popsize=10,
         workers=1,
-        callback=stopper
+        callback=stopper,
+        polish=False
     )
     stop_time = time.time()
     iteration = get_iteration()
