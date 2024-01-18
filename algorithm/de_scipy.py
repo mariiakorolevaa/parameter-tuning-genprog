@@ -4,7 +4,7 @@ import numpy as np
 from scipy.optimize import differential_evolution
 
 from fitness.fitness_functions import fitness_function_de, stopping_criteria, get_best_params, get_time_for_best_params, \
-    get_iteration, Stopper
+    get_iteration
 from parameters.fitness_parameters import FitnessParameters
 from parameters.general_parameters import GeneralParameters
 
