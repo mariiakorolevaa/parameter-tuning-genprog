@@ -79,7 +79,7 @@ def fitness_function(parameters: FitnessParameters):
         json_utils.replace_json_int(population_size, elitism_size)
 
     fitness, time = run_cmd_and_get_fitness(parameters.general_parameters)
-
+    print("fitness: ", fitness)
     current_fitness = 1 / fitness
     if current_fitness < best_fitness:
         best_fitness = current_fitness
