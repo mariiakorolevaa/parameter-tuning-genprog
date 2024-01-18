@@ -167,7 +167,7 @@ def fitness_function_de(x, *args):
 
         time_for_best_params = time
 
-    if best_fitness < parameters.general_parameters.desired_fitness:
+    if best_fitness <= parameters.general_parameters.desired_fitness:
         global stopping_criteria_reached
         stopping_criteria_reached = True
 

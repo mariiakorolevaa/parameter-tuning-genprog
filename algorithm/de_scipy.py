@@ -37,7 +37,7 @@ def de(gen_parameters: GeneralParameters):
         else:
             bounds = [(0, 1), (0, 1), (0, 1), (0, 1)]
     else:
-        bounds = [(8, 17), (2, 4)]
+        bounds = [(12, 49), (2, 9)]
     rand_params = generate_random_parameters_int() if not gen_parameters.is_rationals else generate_random_parameters_float(
         gen_parameters.is_headless)
     fitness_parameters = FitnessParameters(rand_parameters=rand_params, general_parameters=gen_parameters)
