@@ -61,12 +61,10 @@ def de(gen_parameters: GeneralParameters):
         strategy='best1bin',
         mutation=(0.5, 1),
         recombination=0.7,
-        seed=None,
+        maxiter=gen_parameters.max_iter,
         disp=True,
-        popsize=2,
         workers=1,
         callback=stopper,
-        polish=False
     )
     stop_time = time.time()
     iteration = get_iteration()
