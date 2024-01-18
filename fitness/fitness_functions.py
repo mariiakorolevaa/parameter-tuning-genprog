@@ -211,10 +211,14 @@ def round_el_size(el_size):
 
 
 class Stopper(object):
-    global stopping_criteria_reached
-
     def __init__(self, target_value=0.12):
         self.target_value = target_value
 
     def __call__(self, xk, convergence=None, *args, **kwds):
-        return stopping_criteria_reached
+        print("Stopper called")
+        print("convergence.fun: ", convergence.fun)
+        if convergence is not None and convergence.fun <= self.target_value:
+            print("Terminating optimization: target value reached")
+            return True
+        else:
+            return False
