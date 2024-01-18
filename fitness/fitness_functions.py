@@ -166,7 +166,10 @@ def fitness_function_de(x, *args):
             best_params[3] = mutation_change_rate
 
         time_for_best_params = time
-
+    print("fitness: ", fitness)
+    print("current_fitness: ", current_fitness)
+    print("best_fitness: ", best_fitness)
+    print("current iteration: ", iteration)
     if best_fitness <= parameters.general_parameters.desired_fitness:
         global stopping_criteria_reached
         stopping_criteria_reached = True
