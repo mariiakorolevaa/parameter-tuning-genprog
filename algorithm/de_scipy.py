@@ -106,6 +106,8 @@ class Stopper:
 
     def __call__(self, xk, convergence):
         if stopping_criteria(xk, convergence):
+            print("stopping criteria TRUE")
             return True
         else:
+            print("stopping criteria FALSE")
             return False
