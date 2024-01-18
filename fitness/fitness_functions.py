@@ -170,16 +170,18 @@ def fitness_function_de(x, *args):
     print("current_fitness: ", current_fitness)
     print("best_fitness: ", best_fitness)
     print("current iteration: ", iteration)
+    print("parameters.general_parameters.desired_fitness: ", parameters.general_parameters.desired_fitness)
     if best_fitness <= parameters.general_parameters.desired_fitness:
         global stopping_criteria_reached
         stopping_criteria_reached = True
+        print("stopping criteria reached")
 
     return current_fitness
 
 
 def stopping_criteria(xk, convergence):
     global stopping_criteria_reached
-
+    print("stopping_criteria_function called")
     if stopping_criteria_reached:
         if len(xk) == 2:
             xk[0] = best_params[0]
@@ -190,8 +192,9 @@ def stopping_criteria(xk, convergence):
             xk[2] = best_params[2]
             xk[3] = best_params[3]
 
+        print("stopping_criteria_function returning True")
         return True
-
+    print("stopping_criteria_function returning False")
     return False
 
 
