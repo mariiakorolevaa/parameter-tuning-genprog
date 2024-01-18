@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="trying to find the problem in DE">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="trying to find the problem in DE" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,22 +129,6 @@
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
       <updated>1701881365074</updated>
-    </task>
-    <task id="LOCAL-00013" summary="custom implementation of the RS algorithm because of problems with parallelization">
-      <option name="closed" value="true" />
-      <created>1703869604785</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1703869604785</updated>
-    </task>
-    <task id="LOCAL-00014" summary="all types of experiments are passed. need to refactor the code">
-      <option name="closed" value="true" />
-      <created>1704149200528</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1704149200528</updated>
     </task>
     <task id="LOCAL-00015" summary="RS parallel execution.&#10;formatted output of the results.">
       <option name="closed" value="true" />
@@ -476,7 +458,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705597339068</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705599640179</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1705599640179</updated>
+    </task>
+    <task id="LOCAL-00057" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705599725701</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1705599725701</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

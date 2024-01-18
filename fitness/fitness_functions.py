@@ -103,8 +103,11 @@ def fitness_function(parameters: FitnessParameters):
 def fitness_function_de(x, *args):
     global best_fitness, best_params, population_size, \
         elitism_size, crossover_rate, mutation_rate, \
-        mutation_insertion_rate, mutation_deletion_rate, mutation_change_rate, time_for_best_params, iteration
+        mutation_insertion_rate, mutation_deletion_rate, mutation_change_rate, time_for_best_params, iteration, \
+        stopping_criteria_reached
 
+    if stopping_criteria_reached:
+        return best_fitness
     parameters = args[0]
     json_utils = JsonUtils(parameters.general_parameters.path_to_config)
 
