@@ -57,7 +57,7 @@ def rs(gen_parameters: GeneralParameters):
             best_fitness = fitness
             best_params = rand_params
             time_for_best_params = time
-            if gen_parameters.desired_fitness <= best_fitness:
+            if gen_parameters.desired_fitness >= best_fitness:
                 message = "Desired fitness reached in iteration " + str(iteration)
                 end_time = time.time()
                 break
