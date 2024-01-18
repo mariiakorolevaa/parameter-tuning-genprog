@@ -9,6 +9,10 @@ from parameters.fitness_parameters import FitnessParameters
 from parameters.general_parameters import GeneralParameters
 
 
+def my_callback(xk, convergence):
+    print("CALLBACK CALLED!!!")
+
+
 def generate_random_parameters_int():
     population_size = np.random.randint(12, 49)
     population_size -= population_size % 4
@@ -46,9 +50,6 @@ def de(gen_parameters: GeneralParameters):
     end_time = start_time
     stopper = Stopper(target_value=0.12)
 
-    def callback(xk, convergence):
-        print("CALLBACK CALLED!!!")
-
     result = differential_evolution(
         func=fitness_function_de,
         bounds=bounds,
@@ -60,7 +61,7 @@ def de(gen_parameters: GeneralParameters):
         disp=True,
         popsize=10,
         workers=1,
-        callback=callback,
+        callback=my_callback,
         polish=False
     )
     stop_time = time.time()
