@@ -45,6 +45,10 @@ def de(gen_parameters: GeneralParameters):
     start_time = time.time()
     end_time = start_time
     stopper = Stopper(target_value=0.12)
+
+    def callback(param, convergence=0.):
+        return True
+
     result = differential_evolution(
         func=fitness_function_de,
         bounds=bounds,
@@ -58,7 +62,7 @@ def de(gen_parameters: GeneralParameters):
         maxiter=gen_parameters.max_iter,
         popsize=10,
         workers=1,
-        callback=stopper,
+        callback=callback,
         polish=False
     )
     stop_time = time.time()
