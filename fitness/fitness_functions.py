@@ -103,8 +103,9 @@ def fitness_function(parameters: FitnessParameters):
 def fitness_function_de(x, *args):
     global best_fitness, best_params, population_size, \
         elitism_size, crossover_rate, mutation_rate, \
-        mutation_insertion_rate, mutation_deletion_rate, mutation_change_rate, time_for_best_params, iteration, \
-        stopping_criteria_reached
+        mutation_insertion_rate, mutation_deletion_rate, mutation_change_rate, time_for_best_params, iteration
+
+    global stopping_criteria_reached
 
     if stopping_criteria_reached:
         return best_fitness
@@ -175,7 +176,6 @@ def fitness_function_de(x, *args):
     print("current iteration: ", iteration)
     print("parameters.general_parameters.desired_fitness: ", parameters.general_parameters.desired_fitness)
     if best_fitness <= parameters.general_parameters.desired_fitness:
-        global stopping_criteria_reached
         stopping_criteria_reached = True
         print("stopping criteria reached")
 
