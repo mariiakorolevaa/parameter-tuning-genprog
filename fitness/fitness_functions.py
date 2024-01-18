@@ -137,8 +137,8 @@ def fitness_function_de(x, *args):
             elitism_size = best_params[1]  # Use the existing value for elitism_size
         else:
             population_size, elitism_size = x
-        population_size = round(population_size)
-        elitism_size = round(elitism_size)
+        population_size = round_pop_size(population_size)
+        elitism_size = round_el_size(elitism_size)
         if population_size % 4 != 0 or elitism_size % 2 != 0:
             return best_fitness
 
@@ -190,3 +190,15 @@ def stopping_criteria(xk, convergence):
         return True
 
     return False
+
+
+# Round the population size to the nearest valid value
+def round_pop_size(pop_size):
+    valid_values = list(range(12, 50, 4))
+    return min(valid_values, key=lambda x: abs(x - pop_size))
+
+
+# Round the elitism size to the nearest valid value
+def round_el_size(el_size):
+    valid_values = list(range(2, 10, 2))
+    return min(valid_values, key=lambda x: abs(x - el_size))
