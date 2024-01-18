@@ -180,8 +180,8 @@ def fitness_function_de(x, *args):
 
 
 def stopping_criteria(xk, convergence):
-    global stopping_criteria_reached
     print("stopping_criteria_function called")
+    global stopping_criteria_reached
     if stopping_criteria_reached:
         if len(xk) == 2:
             xk[0] = best_params[0]

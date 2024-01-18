@@ -54,7 +54,7 @@ def de(gen_parameters: GeneralParameters):
         mutation=(0.5, 1),
         recombination=0.7,
         seed=None,
-        disp=False,
+        disp=True,
         maxiter=gen_parameters.max_iter,
         popsize=10,
         workers=1,
