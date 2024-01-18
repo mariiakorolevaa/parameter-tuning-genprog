@@ -29,14 +29,17 @@ def main(arguments):
         results = rs(gen_params)
         formatted_results = tabulate(results)
         # write results to txt file
-        output_file_path = "FINAL-results.txt"
+        output_file_path = "RS-results.txt"
 
         file_exists = os.path.exists(output_file_path)
 
-        with open(output_file_path, 'a') as file:
-            if file_exists:
+        if not file_exists:
+            with open(output_file_path, 'w') as file:
+                file.write(formatted_results)
+        else:
+            with open(output_file_path, 'a') as file:
                 file.write('\n\n')
-            file.write(formatted_results)
+                file.write(formatted_results)
 
         print('Results:')
         print(formatted_results)
@@ -45,7 +48,7 @@ def main(arguments):
         formatted_results = tabulate(results)
 
         # write results to txt file
-        output_file_path = "results.txt"
+        output_file_path = "DE-results.txt"
 
         file_exists = os.path.exists(output_file_path)
         if not file_exists:
