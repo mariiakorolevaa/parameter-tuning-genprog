@@ -82,7 +82,7 @@ def parse_args():
     parser.add_argument("--whisker_path", type=str, help="Path to the whisker project folder")
     parser.add_argument("--population_size", type=int, help="Population size")
     parser.add_argument("--max_iter", type=int, default=10, help="Maximum number of iterations")
-    parser.add_argument("--desired_fitness", default=0.12, type=float, help="Desired fitness")
+    parser.add_argument("--desired_fitness", default=271, type=float, help="Desired fitness")
 
     return parser.parse_args()
 
