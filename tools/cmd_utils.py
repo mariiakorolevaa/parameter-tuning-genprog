@@ -5,6 +5,10 @@ import pandas as pd
 
 from parameters.general_parameters import GeneralParameters
 
+evaluation_type = "merge"
+
+
+# evaluation_type = "average"
 
 # run the command in command line
 def run_command_to_repair(parameters: GeneralParameters):
@@ -23,36 +27,52 @@ def run_command_to_repair(parameters: GeneralParameters):
 def run_cmd_and_get_fitness(parameters):
     run_command_to_repair(parameters)
 
-    try:
-        experiments_path = parameters.path_to_csv
+    if evaluation_type == "merge":
+        try:
+            experiments_path = parameters.path_to_csv
+            experiment_folders = [folder for folder in os.listdir(experiments_path) if
+                                  os.path.isdir(os.path.join(experiments_path, folder))]
+            merged_data = pd.DataFrame()
+            for folder in experiment_folders:
+                folder_path = os.path.join(experiments_path, folder)
+                file_path = os.path.join(folder_path, "output.csv")
+                if os.path.exists(file_path):
+                    data = pd.read_csv(file_path)
+                    merged_data = pd.concat([merged_data, data], ignore_index=True)
+            output_path = os.path.join(experiments_path, "output_merged.csv")
+            merged_data.to_csv(output_path, index=False)
+            df = pd.read_csv(output_path, converters={'viable': lambda x: True if x == 'true' else False})
+        except Exception as e:
+            print(e)
+            return 1
 
-        # Get a list of all folders in the experiments path
-        experiment_folders = [folder for folder in os.listdir(experiments_path) if
-                              os.path.isdir(os.path.join(experiments_path, folder))]
+        best_fitness, time = sort_by_fitness_and_time(df)
 
-        merged_data = pd.DataFrame()
+    else:
+        try:
+            fitness_time_pairs = []
+            experiments_path = parameters.path_to_csv
+            experiment_folders = [folder for folder in os.listdir(experiments_path) if
+                                  os.path.isdir(os.path.join(experiments_path, folder))]
+            for folder in experiment_folders:
+                folder_path = os.path.join(experiments_path, folder)
+                file_path = os.path.join(folder_path, "output.csv")
+                if os.path.exists(file_path):
+                    f, t = sort_by_fitness_and_time(pd.read_csv(file_path))
+                    print("pair (fitness, time): ", (f, t))
+                    fitness_time_pairs.append((f, t))
 
-        # Iterate over all folders of experiments
-        for folder in experiment_folders:
-            folder_path = os.path.join(experiments_path, folder)
+            best_fitness, time = get_average(fitness_time_pairs)
+            print("average fitness: ", best_fitness)
+            print("average time: ", time)
+        except Exception as e:
+            print(e)
+            return 1
 
-            # Check if the output file exists
-            file_path = os.path.join(folder_path, "output.csv")
-            if os.path.exists(file_path):
-                data = pd.read_csv(file_path)
-                merged_data = pd.concat([merged_data, data], ignore_index=True)
+    return int(best_fitness), int(time)
 
-        # Save the merged data to a csv file
-        output_path = os.path.join(experiments_path, "output_merged.csv")
-        merged_data.to_csv(output_path, index=False)
-        print("Merged data saved to: ", output_path)
-        df = pd.read_csv(output_path, converters={'viable': lambda x: True if x == 'true' else False})
-        print("Merge data read from: ", output_path)
-    except Exception as e:
-        print(e)
-        return 1
-    # remove all records where viable is false
-    # sort by fitness (descending) and time (ascending)
+
+def sort_by_fitness_and_time(df):
     df = df.sort_values(by=['fitness', 'time'], ascending=[False, True])
     fitness_column = df['fitness']
     time_column = df['time']
@@ -69,3 +89,16 @@ def run_cmd_and_get_fitness(parameters):
             break
 
     return int(best_fitness), int(time)
+
+
+def get_average(fitness_time_pairs):
+    average_fitness = 0
+    average_time = 0
+    for pair in fitness_time_pairs:
+        average_fitness += pair[0]
+        average_time += pair[1]
+
+    average_fitness /= len(fitness_time_pairs)
+    average_time /= len(fitness_time_pairs)
+
+    return average_fitness, average_time
