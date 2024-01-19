@@ -80,9 +80,10 @@ def fitness_function(parameters: FitnessParameters):
 
     fitness, time = run_cmd_and_get_fitness(parameters.general_parameters)
     print("fitness: ", fitness)
-    current_fitness = 1 / fitness
-    if current_fitness < best_fitness:
-        best_fitness = current_fitness
+    print("time: ", time)
+    combined_fitness = time / fitness
+    if combined_fitness < best_fitness:
+        best_fitness = combined_fitness
         if not parameters.general_parameters.is_rationals:
             best_params[0] = population_size
             best_params[1] = elitism_size
@@ -97,7 +98,7 @@ def fitness_function(parameters: FitnessParameters):
 
         time_for_best_params = time
 
-    return current_fitness, time
+    return combined_fitness, time
 
 
 def fitness_function_de(x, *args):
@@ -154,9 +155,9 @@ def fitness_function_de(x, *args):
     iteration += 1
     fitness, time = run_cmd_and_get_fitness(parameters.general_parameters)
 
-    current_fitness = 1 / fitness
-    if current_fitness < best_fitness:
-        best_fitness = current_fitness
+    combined_fitness = time / fitness
+    if combined_fitness < best_fitness:
+        best_fitness = combined_fitness
         if not parameters.general_parameters.is_rationals:
             best_params[0] = population_size
             best_params[1] = elitism_size
@@ -171,7 +172,7 @@ def fitness_function_de(x, *args):
 
         time_for_best_params = time
     print("fitness: ", fitness)
-    print("current_fitness: ", current_fitness)
+    print("current_fitness: ", combined_fitness)
     print("best_fitness: ", best_fitness)
     print("current iteration: ", iteration)
     print("parameters.general_parameters.desired_fitness: ", parameters.general_parameters.desired_fitness)
@@ -179,7 +180,7 @@ def fitness_function_de(x, *args):
         stopping_criteria_reached = True
         print("stopping criteria reached")
 
-    return current_fitness
+    return combined_fitness
 
 
 def stopping_criteria(xk, convergence):
