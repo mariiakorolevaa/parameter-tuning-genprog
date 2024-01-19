@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="Test AVERAGE mode">
+    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="Fitness function is changed. Now it includes minimization of the time and maximization of the fitness from csv">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitness/fitness_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitness/fitness_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,22 +131,6 @@
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
       <updated>1701881365074</updated>
-    </task>
-    <task id="LOCAL-00017" summary="thread class deleted">
-      <option name="closed" value="true" />
-      <created>1704475443911</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1704475443911</updated>
-    </task>
-    <task id="LOCAL-00018" summary="changes for cluster execution">
-      <option name="closed" value="true" />
-      <created>1704739827077</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1704739827077</updated>
     </task>
     <task id="LOCAL-00019" summary="changes for cluster execution">
       <option name="closed" value="true" />
@@ -477,7 +460,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705683555685</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Fitness function is changed. Now it includes minimization of the time and maximization of the fitness from csv">
+      <option name="closed" value="true" />
+      <created>1705686755467</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1705686755467</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Fitness function is changed. Now it includes minimization of the time and maximization of the fitness from csv">
+      <option name="closed" value="true" />
+      <created>1705686915299</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1705686915299</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -516,6 +515,7 @@
     <MESSAGE value="trying to find the problem in DE" />
     <MESSAGE value="Added new mode of evaluation: average. Check that average fitness among the best solutions of better" />
     <MESSAGE value="Test AVERAGE mode" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test AVERAGE mode" />
+    <MESSAGE value="Fitness function is changed. Now it includes minimization of the time and maximization of the fitness from csv" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fitness function is changed. Now it includes minimization of the time and maximization of the fitness from csv" />
   </component>
 </project>

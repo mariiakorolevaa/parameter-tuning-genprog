@@ -2,7 +2,7 @@ from parameters.fitness_parameters import FitnessParameters
 from tools.json_utils import JsonUtils
 from tools.cmd_utils import run_cmd_and_get_fitness
 
-best_fitness = 1
+best_fitness = 1000000
 stopping_criteria_reached = False
 best_params = [0, 0, 0, 0]
 time_for_best_params = 0
@@ -79,6 +79,8 @@ def fitness_function(parameters: FitnessParameters):
         json_utils.replace_json_int(population_size, elitism_size)
 
     fitness, time = run_cmd_and_get_fitness(parameters.general_parameters)
+    if time == 0:
+        return best_fitness, time_for_best_params
     print("fitness: ", fitness)
     print("time: ", time)
     combined_fitness = time / fitness
