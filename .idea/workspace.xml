@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="trying to find the problem in DE">
-      <change beforePath="$PROJECT_DIR$/tools/cmd_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/cmd_utils.py" afterDir="false" />
-    </list>
+    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="Added new mode of evaluation: average. Check that average fitness among the best solutions of better" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,14 +129,6 @@
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
       <updated>1701881365074</updated>
-    </task>
-    <task id="LOCAL-00015" summary="RS parallel execution.&#10;formatted output of the results.">
-      <option name="closed" value="true" />
-      <created>1704308619588</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1704308619588</updated>
     </task>
     <task id="LOCAL-00016" summary="DE parallel execution.&#10;formatted output of the results.">
       <option name="closed" value="true" />
@@ -476,7 +466,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705599725701</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Added new mode of evaluation: average. Check that average fitness among the best solutions of better">
+      <option name="closed" value="true" />
+      <created>1705682970469</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1705682970469</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -513,6 +511,7 @@
     <MESSAGE value="termcolor package is not used anymore" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="trying to find the problem in DE" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to find the problem in DE" />
+    <MESSAGE value="Added new mode of evaluation: average. Check that average fitness among the best solutions of better" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new mode of evaluation: average. Check that average fitness among the best solutions of better" />
   </component>
 </project>
