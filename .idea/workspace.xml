@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="Fitness function is changed. Now it includes minimization of the time and maximization of the fitness from csv">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitness/fitness_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitness/fitness_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,14 +132,6 @@
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
       <updated>1701881365074</updated>
-    </task>
-    <task id="LOCAL-00019" summary="changes for cluster execution">
-      <option name="closed" value="true" />
-      <created>1704742310554</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1704742310554</updated>
     </task>
     <task id="LOCAL-00020" summary="changes for cluster execution">
       <option name="closed" value="true" />
@@ -476,7 +469,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705686915299</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Fitness function is changed. Now it includes minimization of the time and maximization of the fitness from csv">
+      <option name="closed" value="true" />
+      <created>1705689442175</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1705689442175</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -1,3 +1,5 @@
+import time
+
 from parameters.fitness_parameters import FitnessParameters
 from tools.json_utils import JsonUtils
 from tools.cmd_utils import run_cmd_and_get_fitness
@@ -78,12 +80,15 @@ def fitness_function(parameters: FitnessParameters):
 
         json_utils.replace_json_int(population_size, elitism_size)
 
-    fitness, time = run_cmd_and_get_fitness(parameters.general_parameters)
-    if time == 0:
+    start_time = time.time()
+    fitness, timee = run_cmd_and_get_fitness(parameters.general_parameters)
+    end_time = time.time()
+    exec_time = end_time - start_time
+    if exec_time == 0:
         return best_fitness, time_for_best_params
     print("fitness: ", fitness)
-    print("time: ", time)
-    combined_fitness = time / fitness
+    print("time: ", exec_time)
+    combined_fitness = exec_time / fitness
     if combined_fitness < best_fitness:
         best_fitness = combined_fitness
         if not parameters.general_parameters.is_rationals:
@@ -98,9 +103,9 @@ def fitness_function(parameters: FitnessParameters):
             best_params[2] = mutation_deletion_rate
             best_params[3] = mutation_change_rate
 
-        time_for_best_params = time
+        time_for_best_params = exec_time
 
-    return combined_fitness, time
+    return combined_fitness, exec_time
 
 
 def fitness_function_de(x, *args):
@@ -155,9 +160,11 @@ def fitness_function_de(x, *args):
         json_utils.replace_json_int(population_size, elitism_size)
 
     iteration += 1
-    fitness, time = run_cmd_and_get_fitness(parameters.general_parameters)
-
-    combined_fitness = time / fitness
+    start_time = time.time()
+    fitness, timee = run_cmd_and_get_fitness(parameters.general_parameters)
+    end_time = time.time()
+    exec_time = end_time - start_time
+    combined_fitness = exec_time / fitness
     if combined_fitness < best_fitness:
         best_fitness = combined_fitness
         if not parameters.general_parameters.is_rationals:
@@ -172,13 +179,13 @@ def fitness_function_de(x, *args):
             best_params[2] = mutation_deletion_rate
             best_params[3] = mutation_change_rate
 
-        time_for_best_params = time
+        time_for_best_params = exec_time
     print("fitness: ", fitness)
     print("current_fitness: ", combined_fitness)
     print("best_fitness: ", best_fitness)
     print("current iteration: ", iteration)
     print("parameters.general_parameters.desired_fitness: ", parameters.general_parameters.desired_fitness)
-    if best_fitness <= parameters.general_parameters.desired_fitness:
+    if best_fitness <= parameters.general_parameters.desired_fitness or iteration >= parameters.general_parameters.max_iter:
         stopping_criteria_reached = True
         print("stopping criteria reached")
 

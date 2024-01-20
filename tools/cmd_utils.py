@@ -73,6 +73,7 @@ def run_cmd_and_get_fitness(parameters):
 
 
 def sort_by_fitness_and_time(df):
+    df = df[df['iteration'] == df['iteration'].max()]
     df = df.sort_values(by=['fitness', 'time'], ascending=[False, True])
     fitness_column = df['fitness']
     time_column = df['time']
