@@ -5,6 +5,7 @@ from tools.json_utils import JsonUtils
 from tools.cmd_utils import run_cmd_and_get_fitness
 
 best_fitness = 1000000
+best_coverage = 0
 stopping_criteria_reached = False
 best_params = [0, 0, 0, 0]
 time_for_best_params = 0
@@ -38,7 +39,7 @@ def get_iteration():
 def fitness_function(parameters: FitnessParameters):
     global best_fitness, best_params, population_size, \
         elitism_size, crossover_rate, mutation_rate, \
-        mutation_insertion_rate, mutation_deletion_rate, mutation_change_rate, time_for_best_params
+        mutation_insertion_rate, mutation_deletion_rate, mutation_change_rate, time_for_best_params, best_coverage
 
     json_utils = JsonUtils(parameters.general_parameters.path_to_config)
     if parameters.general_parameters.is_rationals:
@@ -81,16 +82,18 @@ def fitness_function(parameters: FitnessParameters):
         json_utils.replace_json_int(population_size, elitism_size)
 
     start_time = time.time()
-    fitness, timee = run_cmd_and_get_fitness(parameters.general_parameters)
+    fitness, coverage = run_cmd_and_get_fitness(parameters.general_parameters)
     end_time = time.time()
     exec_time = end_time - start_time
     if exec_time == 0:
         return best_fitness, time_for_best_params
     print("fitness: ", fitness)
+    print("coverage: ", coverage)
     print("time: ", exec_time)
-    combined_fitness = exec_time / fitness
-    if combined_fitness < best_fitness:
+    combined_fitness = exec_time / (fitness + coverage)
+    if combined_fitness <= best_fitness and coverage >= best_coverage:
         best_fitness = combined_fitness
+        best_coverage = coverage
         if not parameters.general_parameters.is_rationals:
             best_params[0] = population_size
             best_params[1] = elitism_size
@@ -111,7 +114,8 @@ def fitness_function(parameters: FitnessParameters):
 def fitness_function_de(x, *args):
     global best_fitness, best_params, population_size, \
         elitism_size, crossover_rate, mutation_rate, \
-        mutation_insertion_rate, mutation_deletion_rate, mutation_change_rate, time_for_best_params, iteration
+        mutation_insertion_rate, mutation_deletion_rate, mutation_change_rate, time_for_best_params, \
+        iteration, best_coverage
 
     global stopping_criteria_reached
 
@@ -161,12 +165,13 @@ def fitness_function_de(x, *args):
 
     iteration += 1
     start_time = time.time()
-    fitness, timee = run_cmd_and_get_fitness(parameters.general_parameters)
+    fitness, coverage = run_cmd_and_get_fitness(parameters.general_parameters)
     end_time = time.time()
     exec_time = end_time - start_time
-    combined_fitness = exec_time / fitness
-    if combined_fitness < best_fitness:
+    combined_fitness = exec_time / (fitness + coverage)
+    if combined_fitness <= best_fitness and coverage >= best_coverage:
         best_fitness = combined_fitness
+        best_coverage = coverage
         if not parameters.general_parameters.is_rationals:
             best_params[0] = population_size
             best_params[1] = elitism_size
