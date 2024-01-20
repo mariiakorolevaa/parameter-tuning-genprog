@@ -55,8 +55,13 @@ def rs(gen_parameters: GeneralParameters):
         rand_params, fitness_and_time = run_optimization(gen_parameters)
         fitness = fitness_and_time[0]
         exec_time = fitness_and_time[1]
+        print("current fitness: ", fitness)
+        print("current exec. time: ", exec_time)
+        print("current iteration: ", iteration)
+        print("best fitness: ", best_fitness)
         if fitness < best_fitness:
             best_fitness = fitness
+            print("new best fitness: ", best_fitness)
             best_params = rand_params
             time_for_best_params = exec_time
             if gen_parameters.desired_fitness >= best_fitness:
