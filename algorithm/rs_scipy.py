@@ -43,7 +43,7 @@ def run_optimization(gen_parameters):
 
 def rs(gen_parameters: GeneralParameters):
     message = ""
-    best_fitness = 1
+    best_fitness = 1000000
     best_params = []
     time_for_best_params = 0
     start_time = tme.time()

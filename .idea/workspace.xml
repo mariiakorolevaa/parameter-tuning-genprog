@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="coverage in combined fitness" />
+    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="some logs to test RS">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,14 +131,6 @@
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
       <updated>1701881365074</updated>
-    </task>
-    <task id="LOCAL-00022" summary="changes for cluster execution">
-      <option name="closed" value="true" />
-      <created>1704847121482</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1704847121482</updated>
     </task>
     <task id="LOCAL-00023" summary="changes for cluster execution">
       <option name="closed" value="true" />
@@ -474,7 +468,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705721801229</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="some logs to test RS">
+      <option name="closed" value="true" />
+      <created>1705789560274</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1705789560274</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -515,6 +517,7 @@
     <MESSAGE value="Test AVERAGE mode" />
     <MESSAGE value="Fitness function is changed. Now it includes minimization of the time and maximization of the fitness from csv" />
     <MESSAGE value="coverage in combined fitness" />
-    <option name="LAST_COMMIT_MESSAGE" value="coverage in combined fitness" />
+    <MESSAGE value="some logs to test RS" />
+    <option name="LAST_COMMIT_MESSAGE" value="some logs to test RS" />
   </component>
 </project>
