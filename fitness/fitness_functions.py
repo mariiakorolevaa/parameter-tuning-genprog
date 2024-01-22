@@ -104,7 +104,9 @@ def fitness_function(parameters: FitnessParameters):
 
         time_for_best_params = exec_time
 
-    with open("/scratch/koroleva/parameter-tuning-genprog/all_results.txt", "a") as f:
+    with open("/scratch/koroleva/parameter-tuning-genprog/RS_all_results.txt", "a") as f:
+        f.write("max_iter: " + str(parameters.general_parameters.max_iter) + "\n")
+        f.write("desired_fitness: " + str(parameters.general_parameters.desired_fitness) + "\n")
         if not parameters.general_parameters.is_rationals:
             f.write("population_size: " + str(population_size) + "\n")
             f.write("elitism_size: " + str(elitism_size) + "\n")
@@ -207,7 +209,10 @@ def fitness_function_de(x, *args):
         stopping_criteria_reached = True
         print("stopping criteria reached")
 
-    with open("/scratch/koroleva/parameter-tuning-genprog/all_results.txt", "a") as f:
+    with open("/scratch/koroleva/parameter-tuning-genprog/DE_all_results.txt", "a") as f:
+        f.write("max_iter: " + str(parameters.general_parameters.max_iter) + "\n")
+        f.write("desired_fitness: " + str(parameters.general_parameters.desired_fitness) + "\n")
+
         if not parameters.general_parameters.is_rationals:
             f.write("population_size: " + str(population_size) + "\n")
             f.write("elitism_size: " + str(elitism_size) + "\n")

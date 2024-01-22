@@ -50,7 +50,7 @@ def rs(gen_parameters: GeneralParameters):
     end_time = start_time
     iteration = 0
 
-    with open("/scratch/koroleva/parameter-tuning-genprog/all_results.txt", "w") as f:
+    with open("/scratch/koroleva/parameter-tuning-genprog/RS_all_results.txt", "w") as f:
         f.write("")
         print("all_results.txt created")
 
