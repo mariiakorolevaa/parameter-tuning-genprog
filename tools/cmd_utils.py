@@ -46,11 +46,11 @@ def run_cmd_and_get_fitness(parameters):
             print(e)
             return 1
 
-        best_fitness, coverage = sort_by_fitness_and_coverage(df)
+        best_fitness = sort_by_fitness(df)
 
     else:
         try:
-            fitness_coverage_pairs = []
+            fitness_list = []
             experiments_path = parameters.path_to_csv
             experiment_folders = [folder for folder in os.listdir(experiments_path) if
                                   os.path.isdir(os.path.join(experiments_path, folder))]
@@ -58,48 +58,36 @@ def run_cmd_and_get_fitness(parameters):
                 folder_path = os.path.join(experiments_path, folder)
                 file_path = os.path.join(folder_path, "output.csv")
                 if os.path.exists(file_path):
-                    f, c = sort_by_fitness_and_coverage(pd.read_csv(file_path))
-                    print("pair (fitness, coverage): ", (f, c))
-                    fitness_coverage_pairs.append((f, c))
+                    f = sort_by_fitness(pd.read_csv(file_path))
+                    fitness_list.append(f)
 
-            best_fitness, coverage = get_average(fitness_coverage_pairs)
+            best_fitness = get_average(fitness_list)
             print("average fitness: ", best_fitness)
-            print("average coverage: ", coverage)
         except Exception as e:
             print(e)
             return 1
 
-    return int(best_fitness), int(coverage)
+    return int(best_fitness)
 
 
-def sort_by_fitness_and_coverage(df):
+def sort_by_fitness(df):
     df = df[df['iteration'] == df['iteration'].max()]
-    df = df.sort_values(by=['fitness', 'coverage'], ascending=[False, False])
+    df = df.sort_values(by=['fitness'], ascending=[False])
     fitness_column = df['fitness']
-    coverage_column = df['coverage']
     best_fitness = 1
-    coverage = 0
     for i in range(len(fitness_column)):
         if fitness_column.iloc[i] != "fitness":
             best_fitness = fitness_column.iloc[i]
             break
 
-    for i in range(len(coverage_column)):
-        if coverage_column.iloc[i] != "coverage":
-            coverage = coverage_column.iloc[i]
-            break
-
-    return int(best_fitness), int(coverage)
+    return int(best_fitness)
 
 
-def get_average(fitness_coverage_pairs):
+def get_average(fitness_list):
     average_fitness = 0
-    average_coverage = 0
-    for pair in fitness_coverage_pairs:
-        average_fitness += pair[0]
-        average_coverage += pair[1]
+    for fitness in fitness_list:
+        average_fitness += fitness
 
-    average_fitness /= len(fitness_coverage_pairs)
-    average_coverage /= len(fitness_coverage_pairs)
+    average_fitness /= len(fitness_list)
 
-    return average_fitness, average_coverage
+    return average_fitness

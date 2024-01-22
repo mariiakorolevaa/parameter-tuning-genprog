@@ -132,14 +132,6 @@
       <option name="project" value="LOCAL" />
       <updated>1701881365074</updated>
     </task>
-    <task id="LOCAL-00023" summary="changes for cluster execution">
-      <option name="closed" value="true" />
-      <created>1704847503688</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1704847503688</updated>
-    </task>
     <task id="LOCAL-00024" summary="changes for cluster execution">
       <option name="closed" value="true" />
       <created>1704860019122</created>
@@ -476,7 +468,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705789560274</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="some logs to test RS">
+      <option name="closed" value="true" />
+      <created>1705794836174</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1705794836174</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
