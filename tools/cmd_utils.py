@@ -5,7 +5,7 @@ import pandas as pd
 
 from parameters.general_parameters import GeneralParameters
 
-evaluation_type = "average"
+evaluation_type = "merge"
 
 
 # evaluation_type = "average"

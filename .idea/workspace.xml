@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="time and coverage are removed from fitness function">
+    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="collect results">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,14 +131,6 @@
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
       <updated>1701881365074</updated>
-    </task>
-    <task id="LOCAL-00025" summary="changes for cluster execution">
-      <option name="closed" value="true" />
-      <created>1705013284421</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1705013284421</updated>
     </task>
     <task id="LOCAL-00026" summary="bug fix">
       <option name="closed" value="true" />
@@ -476,7 +468,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705917707448</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="collect results">
+      <option name="closed" value="true" />
+      <created>1705919214591</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1705919214591</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,7 +494,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="A draft of the future script generating hyperparameters for GenProg algorithm" />
     <MESSAGE value="processing results in csv file" />
     <MESSAGE value="small bugfix" />
     <MESSAGE value="refactoring and add &quot;headless&quot; mode" />
@@ -519,6 +518,7 @@
     <MESSAGE value="coverage in combined fitness" />
     <MESSAGE value="some logs to test RS" />
     <MESSAGE value="time and coverage are removed from fitness function" />
-    <option name="LAST_COMMIT_MESSAGE" value="time and coverage are removed from fitness function" />
+    <MESSAGE value="collect results" />
+    <option name="LAST_COMMIT_MESSAGE" value="collect results" />
   </component>
 </project>
