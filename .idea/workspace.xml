@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="some logs to test RS">
+    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="time and coverage are removed from fitness function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,14 +131,6 @@
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
       <updated>1701881365074</updated>
-    </task>
-    <task id="LOCAL-00024" summary="changes for cluster execution">
-      <option name="closed" value="true" />
-      <created>1704860019122</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1704860019122</updated>
     </task>
     <task id="LOCAL-00025" summary="changes for cluster execution">
       <option name="closed" value="true" />
@@ -476,7 +468,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705794836174</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="time and coverage are removed from fitness function">
+      <option name="closed" value="true" />
+      <created>1705917707448</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1705917707448</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -518,6 +518,7 @@
     <MESSAGE value="Fitness function is changed. Now it includes minimization of the time and maximization of the fitness from csv" />
     <MESSAGE value="coverage in combined fitness" />
     <MESSAGE value="some logs to test RS" />
-    <option name="LAST_COMMIT_MESSAGE" value="some logs to test RS" />
+    <MESSAGE value="time and coverage are removed from fitness function" />
+    <option name="LAST_COMMIT_MESSAGE" value="time and coverage are removed from fitness function" />
   </component>
 </project>

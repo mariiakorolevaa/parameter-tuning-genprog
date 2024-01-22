@@ -53,6 +53,10 @@ def de(gen_parameters: GeneralParameters):
     print("type of callback: ", type(stopper))
     print("is callable: ", callable(stopper))
 
+    with open("/scratch/koroleva/parameter-tuning-genprog/all_results.txt", "w") as f:
+        f.write("")
+        print("all_results.txt created")
+
     result = differential_evolution(
         func=fitness_function_de,
         bounds=bounds,

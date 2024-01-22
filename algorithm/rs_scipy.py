@@ -50,6 +50,10 @@ def rs(gen_parameters: GeneralParameters):
     end_time = start_time
     iteration = 0
 
+    with open("/scratch/koroleva/parameter-tuning-genprog/all_results.txt", "w") as f:
+        f.write("")
+        print("all_results.txt created")
+
     for i in range(gen_parameters.max_iter):
         iteration += 1
         rand_params, fitness_and_time = run_optimization(gen_parameters)

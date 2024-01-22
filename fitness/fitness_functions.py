@@ -104,6 +104,26 @@ def fitness_function(parameters: FitnessParameters):
 
         time_for_best_params = exec_time
 
+    with open("/scratch/koroleva/parameter-tuning-genprog/all_results.txt", "a") as f:
+        if not parameters.general_parameters.is_rationals:
+            f.write("population_size: " + str(population_size) + "\n")
+            f.write("elitism_size: " + str(elitism_size) + "\n")
+
+        elif parameters.general_parameters.is_headless and parameters.general_parameters.is_rationals:
+            f.write("crossover_rate: " + str(crossover_rate) + "\n")
+            f.write("mutation_rate: " + str(mutation_rate) + "\n")
+        else:
+            f.write("crossover_rate: " + str(crossover_rate) + "\n")
+            f.write("mutation_insertion_rate: " + str(mutation_insertion_rate) + "\n")
+            f.write("mutation_deletion_rate: " + str(mutation_deletion_rate) + "\n")
+            f.write("mutation_change_rate: " + str(mutation_change_rate) + "\n")
+        f.write("fitness: " + str(fitness) + "\n")
+        f.write("best_fitness: " + str(best_fitness) + "\n")
+        f.write("current iteration: " + str(iteration) + "\n")
+        f.write("stopping_criteria_reached: " + str(stopping_criteria_reached) + "\n")
+
+        f.write("time: " + str(exec_time) + "\n")
+        f.write("\n")
     return fitness, exec_time
 
 
@@ -187,6 +207,26 @@ def fitness_function_de(x, *args):
         stopping_criteria_reached = True
         print("stopping criteria reached")
 
+    with open("/scratch/koroleva/parameter-tuning-genprog/all_results.txt", "a") as f:
+        if not parameters.general_parameters.is_rationals:
+            f.write("population_size: " + str(population_size) + "\n")
+            f.write("elitism_size: " + str(elitism_size) + "\n")
+
+        elif parameters.general_parameters.is_headless and parameters.general_parameters.is_rationals:
+            f.write("crossover_rate: " + str(crossover_rate) + "\n")
+            f.write("mutation_rate: " + str(mutation_rate) + "\n")
+        else:
+            f.write("crossover_rate: " + str(crossover_rate) + "\n")
+            f.write("mutation_insertion_rate: " + str(mutation_insertion_rate) + "\n")
+            f.write("mutation_deletion_rate: " + str(mutation_deletion_rate) + "\n")
+            f.write("mutation_change_rate: " + str(mutation_change_rate) + "\n")
+        f.write("fitness: " + str(fitness) + "\n")
+        f.write("best_fitness: " + str(best_fitness) + "\n")
+        f.write("current iteration: " + str(iteration) + "\n")
+        f.write("stopping_criteria_reached: " + str(stopping_criteria_reached) + "\n")
+
+        f.write("time: " + str(exec_time) + "\n")
+        f.write("\n")
     return fitness
 
 
