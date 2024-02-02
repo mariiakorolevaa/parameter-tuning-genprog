@@ -1,7 +1,6 @@
 import argparse
 import os
 
-from termcolor import colored
 from tabulate import tabulate
 
 from algorithm.de_scipy import de
@@ -30,31 +29,36 @@ def main(arguments):
         results = rs(gen_params)
         formatted_results = tabulate(results)
         # write results to txt file
-        output_file_path = "FINAL-results.txt"
+        output_file_path = "RS-results.txt"
 
         file_exists = os.path.exists(output_file_path)
 
-        with open(output_file_path, 'a') as file:
-            if file_exists:
+        if not file_exists:
+            with open(output_file_path, 'w') as file:
+                file.write(formatted_results)
+        else:
+            with open(output_file_path, 'a') as file:
                 file.write('\n\n')
-            file.write(formatted_results)
+                file.write(formatted_results)
 
-        print(colored('Results:', 'green', attrs=['bold']))
+        print('Results:')
         print(formatted_results)
     elif arguments.mode == "de":
         results = de(gen_params)
         formatted_results = tabulate(results)
 
         # write results to txt file
-        output_file_path = "results.txt"
+        output_file_path = "DE-results.txt"
 
         file_exists = os.path.exists(output_file_path)
-
-        with open(output_file_path, 'a') as file:
-            if file_exists:
+        if not file_exists:
+            with open(output_file_path, 'w') as file:
+                file.write(formatted_results)
+        else:
+            with open(output_file_path, 'a') as file:
                 file.write('\n\n')
-            file.write(formatted_results)
-        print(colored('Results:', 'green', attrs=['bold']))
+                file.write(formatted_results)
+        print('Results:')
         print(formatted_results)
 
     else:
@@ -78,7 +82,7 @@ def parse_args():
     parser.add_argument("--whisker_path", type=str, help="Path to the whisker project folder")
     parser.add_argument("--population_size", type=int, help="Population size")
     parser.add_argument("--max_iter", type=int, default=10, help="Maximum number of iterations")
-    parser.add_argument("--desired_fitness", default=0.12, type=float, help="Desired fitness")
+    parser.add_argument("--desired_fitness", default=271, type=float, help="Desired fitness")
 
     return parser.parse_args()
 

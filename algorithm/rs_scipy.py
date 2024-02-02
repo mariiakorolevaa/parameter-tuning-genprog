@@ -1,3 +1,5 @@
+import time
+
 import numpy as np
 import time as tme
 
@@ -41,23 +43,32 @@ def run_optimization(gen_parameters):
 
 def rs(gen_parameters: GeneralParameters):
     message = ""
-    best_fitness = 1
+    best_fitness = 1000000
     best_params = []
     time_for_best_params = 0
     start_time = tme.time()
     end_time = start_time
     iteration = 0
 
+    with open("/scratch/koroleva/parameter-tuning-genprog/RS_all_results.txt", "w") as f:
+        f.write("")
+        print("all_results.txt created")
+
     for i in range(gen_parameters.max_iter):
         iteration += 1
         rand_params, fitness_and_time = run_optimization(gen_parameters)
         fitness = fitness_and_time[0]
-        time = fitness_and_time[1]
+        exec_time = fitness_and_time[1]
+        print("current fitness: ", fitness)
+        print("current exec. time: ", exec_time)
+        print("current iteration: ", iteration)
+        print("best fitness: ", best_fitness)
         if fitness < best_fitness:
             best_fitness = fitness
+            print("new best fitness: ", best_fitness)
             best_params = rand_params
-            time_for_best_params = time
-            if gen_parameters.desired_fitness <= best_fitness:
+            time_for_best_params = exec_time
+            if gen_parameters.desired_fitness >= best_fitness:
                 message = "Desired fitness reached in iteration " + str(iteration)
                 end_time = time.time()
                 break
@@ -68,5 +79,5 @@ def rs(gen_parameters: GeneralParameters):
 
     formatted_time = tme.strftime("%H:%M:%S", tme.gmtime(end_time - start_time))
     tabulate_results = [["ALGORITHM", "best params", "best fitness", "time", "search time", "result"],
-                        ["RS", best_params, 1 / best_fitness, time_for_best_params, formatted_time, message]]
+                        ["RS", best_params, best_fitness, time_for_best_params, formatted_time, message]]
     return tabulate_results

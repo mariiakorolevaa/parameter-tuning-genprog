@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="bug fix">
-      <change beforePath="$PROJECT_DIR$/tools/cmd_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/cmd_utils.py" afterDir="false" />
+    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="collect results">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +45,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kiris/Documents/GitHub/parameter-tuning-genprog&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
@@ -79,11 +80,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -136,158 +132,6 @@
       <option name="project" value="LOCAL" />
       <updated>1701881365074</updated>
     </task>
-    <task id="LOCAL-00007" summary="bug fix RS and DE">
-      <option name="closed" value="true" />
-      <created>1702836220572</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1702836220572</updated>
-    </task>
-    <task id="LOCAL-00008" summary="files renamed">
-      <option name="closed" value="true" />
-      <created>1702836620528</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1702836620528</updated>
-    </task>
-    <task id="LOCAL-00009" summary="files renamed">
-      <option name="closed" value="true" />
-      <created>1702836639942</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1702836639942</updated>
-    </task>
-    <task id="LOCAL-00010" summary="new directories created and files reorganized">
-      <option name="closed" value="true" />
-      <created>1702837359652</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1702837359652</updated>
-    </task>
-    <task id="LOCAL-00011" summary="bug fix">
-      <option name="closed" value="true" />
-      <created>1703182374538</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1703182374539</updated>
-    </task>
-    <task id="LOCAL-00012" summary="config file path as cmd option">
-      <option name="closed" value="true" />
-      <created>1703265075111</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1703265075111</updated>
-    </task>
-    <task id="LOCAL-00013" summary="custom implementation of the RS algorithm because of problems with parallelization">
-      <option name="closed" value="true" />
-      <created>1703869604785</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1703869604785</updated>
-    </task>
-    <task id="LOCAL-00014" summary="all types of experiments are passed. need to refactor the code">
-      <option name="closed" value="true" />
-      <created>1704149200528</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1704149200528</updated>
-    </task>
-    <task id="LOCAL-00015" summary="RS parallel execution.&#10;formatted output of the results.">
-      <option name="closed" value="true" />
-      <created>1704308619588</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1704308619588</updated>
-    </task>
-    <task id="LOCAL-00016" summary="DE parallel execution.&#10;formatted output of the results.">
-      <option name="closed" value="true" />
-      <created>1704411837275</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1704411837275</updated>
-    </task>
-    <task id="LOCAL-00017" summary="thread class deleted">
-      <option name="closed" value="true" />
-      <created>1704475443911</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1704475443911</updated>
-    </task>
-    <task id="LOCAL-00018" summary="changes for cluster execution">
-      <option name="closed" value="true" />
-      <created>1704739827077</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1704739827077</updated>
-    </task>
-    <task id="LOCAL-00019" summary="changes for cluster execution">
-      <option name="closed" value="true" />
-      <created>1704742310554</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1704742310554</updated>
-    </task>
-    <task id="LOCAL-00020" summary="changes for cluster execution">
-      <option name="closed" value="true" />
-      <created>1704745134256</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1704745134256</updated>
-    </task>
-    <task id="LOCAL-00021" summary="changes for cluster execution">
-      <option name="closed" value="true" />
-      <created>1704745494552</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1704745494552</updated>
-    </task>
-    <task id="LOCAL-00022" summary="changes for cluster execution">
-      <option name="closed" value="true" />
-      <created>1704847121482</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1704847121482</updated>
-    </task>
-    <task id="LOCAL-00023" summary="changes for cluster execution">
-      <option name="closed" value="true" />
-      <created>1704847503688</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1704847503688</updated>
-    </task>
-    <task id="LOCAL-00024" summary="changes for cluster execution">
-      <option name="closed" value="true" />
-      <created>1704860019122</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1704860019122</updated>
-    </task>
-    <task id="LOCAL-00025" summary="changes for cluster execution">
-      <option name="closed" value="true" />
-      <created>1705013284421</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1705013284421</updated>
-    </task>
     <task id="LOCAL-00026" summary="bug fix">
       <option name="closed" value="true" />
       <created>1705018359064</created>
@@ -304,7 +148,335 @@
       <option name="project" value="LOCAL" />
       <updated>1705019941869</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="termcolor package is not used anymore">
+      <option name="closed" value="true" />
+      <created>1705515218209</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1705515218209</updated>
+    </task>
+    <task id="LOCAL-00029" summary="bug fix">
+      <option name="closed" value="true" />
+      <created>1705572387497</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1705572387497</updated>
+    </task>
+    <task id="LOCAL-00030" summary="bug fix">
+      <option name="closed" value="true" />
+      <created>1705572689347</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1705572689347</updated>
+    </task>
+    <task id="LOCAL-00031" summary="bug fix">
+      <option name="closed" value="true" />
+      <created>1705572709815</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1705572709815</updated>
+    </task>
+    <task id="LOCAL-00032" summary="bug fix">
+      <option name="closed" value="true" />
+      <created>1705573956797</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1705573956797</updated>
+    </task>
+    <task id="LOCAL-00033" summary="bug fix">
+      <option name="closed" value="true" />
+      <created>1705578669870</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1705578669870</updated>
+    </task>
+    <task id="LOCAL-00034" summary="bug fix">
+      <option name="closed" value="true" />
+      <created>1705580311737</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1705580311737</updated>
+    </task>
+    <task id="LOCAL-00035" summary="bug fix">
+      <option name="closed" value="true" />
+      <created>1705580387283</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1705580387283</updated>
+    </task>
+    <task id="LOCAL-00036" summary="bug fix">
+      <option name="closed" value="true" />
+      <created>1705580839896</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1705580839896</updated>
+    </task>
+    <task id="LOCAL-00037" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705581342389</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1705581342389</updated>
+    </task>
+    <task id="LOCAL-00038" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705581859156</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1705581859156</updated>
+    </task>
+    <task id="LOCAL-00039" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705582492357</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1705582492357</updated>
+    </task>
+    <task id="LOCAL-00040" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705582505723</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1705582505723</updated>
+    </task>
+    <task id="LOCAL-00041" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705582787109</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1705582787109</updated>
+    </task>
+    <task id="LOCAL-00042" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705583961043</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1705583961043</updated>
+    </task>
+    <task id="LOCAL-00043" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705585309567</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1705585309567</updated>
+    </task>
+    <task id="LOCAL-00044" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705587014453</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1705587014453</updated>
+    </task>
+    <task id="LOCAL-00045" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705587995276</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1705587995276</updated>
+    </task>
+    <task id="LOCAL-00046" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705589089042</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1705589089042</updated>
+    </task>
+    <task id="LOCAL-00047" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705589511669</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1705589511669</updated>
+    </task>
+    <task id="LOCAL-00048" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705590212725</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1705590212725</updated>
+    </task>
+    <task id="LOCAL-00049" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705591073663</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1705591073663</updated>
+    </task>
+    <task id="LOCAL-00050" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705591113451</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1705591113451</updated>
+    </task>
+    <task id="LOCAL-00051" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705591349766</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1705591349766</updated>
+    </task>
+    <task id="LOCAL-00052" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705591416934</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1705591416934</updated>
+    </task>
+    <task id="LOCAL-00053" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705591545853</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1705591545853</updated>
+    </task>
+    <task id="LOCAL-00054" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705592192458</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1705592192458</updated>
+    </task>
+    <task id="LOCAL-00055" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705597339068</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1705597339068</updated>
+    </task>
+    <task id="LOCAL-00056" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705599640179</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1705599640179</updated>
+    </task>
+    <task id="LOCAL-00057" summary="trying to find the problem in DE">
+      <option name="closed" value="true" />
+      <created>1705599725701</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1705599725701</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Added new mode of evaluation: average. Check that average fitness among the best solutions of better">
+      <option name="closed" value="true" />
+      <created>1705682970469</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1705682970469</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Test AVERAGE mode">
+      <option name="closed" value="true" />
+      <created>1705683555685</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1705683555685</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Fitness function is changed. Now it includes minimization of the time and maximization of the fitness from csv">
+      <option name="closed" value="true" />
+      <created>1705686755467</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1705686755467</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Fitness function is changed. Now it includes minimization of the time and maximization of the fitness from csv">
+      <option name="closed" value="true" />
+      <created>1705686915299</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1705686915299</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Fitness function is changed. Now it includes minimization of the time and maximization of the fitness from csv">
+      <option name="closed" value="true" />
+      <created>1705689442175</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1705689442175</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Fitness function is changed. Now it includes minimization of the time and maximization of the fitness from csv">
+      <option name="closed" value="true" />
+      <created>1705717968920</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1705717968920</updated>
+    </task>
+    <task id="LOCAL-00064" summary="coverage in combined fitness">
+      <option name="closed" value="true" />
+      <created>1705721801229</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1705721801229</updated>
+    </task>
+    <task id="LOCAL-00065" summary="some logs to test RS">
+      <option name="closed" value="true" />
+      <created>1705789560274</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1705789560274</updated>
+    </task>
+    <task id="LOCAL-00066" summary="some logs to test RS">
+      <option name="closed" value="true" />
+      <created>1705794836174</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1705794836174</updated>
+    </task>
+    <task id="LOCAL-00067" summary="time and coverage are removed from fitness function">
+      <option name="closed" value="true" />
+      <created>1705917707448</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1705917707448</updated>
+    </task>
+    <task id="LOCAL-00068" summary="collect results">
+      <option name="closed" value="true" />
+      <created>1705919214591</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1705919214591</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -322,7 +494,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="A draft of the future script generating hyperparameters for GenProg algorithm" />
     <MESSAGE value="processing results in csv file" />
     <MESSAGE value="small bugfix" />
     <MESSAGE value="refactoring and add &quot;headless&quot; mode" />
@@ -338,45 +509,16 @@
     <MESSAGE value="DE parallel execution.&#10;formatted output of the results." />
     <MESSAGE value="thread class deleted" />
     <MESSAGE value="changes for cluster execution" />
+    <MESSAGE value="termcolor package is not used anymore" />
     <MESSAGE value="bug fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fitness/fitness_functions.py</url>
-          <line>156</line>
-          <option name="timeStamp" value="200" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fitness/fitness_functions.py</url>
-          <line>159</line>
-          <option name="timeStamp" value="201" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fitness/fitness_functions.py</url>
-          <line>162</line>
-          <option name="timeStamp" value="202" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fitness/fitness_functions.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="203" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/algorithm/de_scipy.py</url>
-          <line>65</line>
-          <option name="timeStamp" value="204" />
-        </line-breakpoint>
-      </breakpoints>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="trying to find the problem in DE" />
+    <MESSAGE value="Added new mode of evaluation: average. Check that average fitness among the best solutions of better" />
+    <MESSAGE value="Test AVERAGE mode" />
+    <MESSAGE value="Fitness function is changed. Now it includes minimization of the time and maximization of the fitness from csv" />
+    <MESSAGE value="coverage in combined fitness" />
+    <MESSAGE value="some logs to test RS" />
+    <MESSAGE value="time and coverage are removed from fitness function" />
+    <MESSAGE value="collect results" />
+    <option name="LAST_COMMIT_MESSAGE" value="collect results" />
   </component>
 </project>
