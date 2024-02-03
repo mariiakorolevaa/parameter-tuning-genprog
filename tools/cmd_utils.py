@@ -28,50 +28,29 @@ def run_command_to_repair(parameters: GeneralParameters):
 def run_cmd_and_get_fitness(parameters):
     run_command_to_repair(parameters)
 
-    if evaluation_type == "merge":
-        try:
-            experiments_path = parameters.path_to_csv
-            experiment_folders = [folder for folder in os.listdir(experiments_path) if
-                                  os.path.isdir(os.path.join(experiments_path, folder))]
-            merged_data = pd.DataFrame()
-            for folder in experiment_folders:
-                folder_path = os.path.join(experiments_path, folder)
-                file_path = os.path.join(folder_path, "output.csv")
-                if os.path.exists(file_path):
-                    data = pd.read_csv(file_path)
-                    merged_data = pd.concat([merged_data, data], ignore_index=True)
-            output_path = os.path.join(experiments_path, "output_merged.csv")
-            merged_data.to_csv(output_path, index=False)
-            df = pd.read_csv(output_path, converters={'viable': lambda x: True if x == 'true' else False})
-        except Exception as e:
-            print(e)
-            return 1
+    try:
+        experiments_path = parameters.path_to_csv
+        experiment_folders = [folder for folder in os.listdir(experiments_path) if
+                              os.path.isdir(os.path.join(experiments_path, folder))]
+        merged_data = pd.DataFrame()
+        for folder in experiment_folders:
+            folder_path = os.path.join(experiments_path, folder)
+            file_path = os.path.join(folder_path, "output.csv")
+            if os.path.exists(file_path):
+                data = pd.read_csv(file_path)
+                merged_data = pd.concat([merged_data, data], ignore_index=True)
+        output_path = os.path.join(experiments_path, "output_merged.csv")
+        merged_data.to_csv(output_path, index=False)
+        df = pd.read_csv(output_path, converters={'viable': lambda x: True if x == 'true' else False})
+    except Exception as e:
+        print(e)
+        return 1
 
-        best_fitness, hash_code = get_best_fitness(df)
-        if is_best_iteration_mode:
-            best_iteration = get_iteration_solution_appeared(df, hash_code)
-            print("best iteration: ", best_iteration)
+    best_fitness, hash_code = get_best_fitness(df)
+    best_iteration, max_iteration = get_iteration(df, hash_code)
+    print("best iteration: ", best_iteration)
 
-    else:
-        try:
-            fitness_list = []
-            experiments_path = parameters.path_to_csv
-            experiment_folders = [folder for folder in os.listdir(experiments_path) if
-                                  os.path.isdir(os.path.join(experiments_path, folder))]
-            for folder in experiment_folders:
-                folder_path = os.path.join(experiments_path, folder)
-                file_path = os.path.join(folder_path, "output.csv")
-                if os.path.exists(file_path):
-                    f = get_best_fitness(pd.read_csv(file_path))
-                    fitness_list.append(f)
-
-            best_fitness = get_average(fitness_list)
-            print("average fitness: ", best_fitness)
-        except Exception as e:
-            print(e)
-            return 1
-
-    return int(best_fitness)
+    return int(best_fitness), best_iteration, max_iteration
 
 
 def get_best_fitness(df):
@@ -100,10 +79,11 @@ def get_average(fitness_list):
     return average_fitness
 
 
-def get_iteration_solution_appeared(df, hash_code):
+def get_iteration(df, hash_code):
     best_iteration = None
+    max_iteration = df['iteration'].max()
     for index, row in df.iterrows():
         if row['hashCode'] == hash_code:
             best_iteration = int(row['iteration'])
             break
-    return best_iteration
+    return best_iteration, max_iteration

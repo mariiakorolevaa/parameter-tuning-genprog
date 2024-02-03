@@ -80,7 +80,7 @@ def fitness_function(parameters: FitnessParameters):
         json_utils.replace_json_int(population_size, elitism_size)
 
     start_time = time.time()
-    fitness = run_cmd_and_get_fitness(parameters.general_parameters)
+    fitness, best_iteration, max_iteration = run_cmd_and_get_fitness(parameters.general_parameters)
     fitness = 1 / fitness
     end_time = time.time()
     exec_time = end_time - start_time
@@ -122,6 +122,8 @@ def fitness_function(parameters: FitnessParameters):
         f.write("fitness: " + str(fitness) + "\n")
         f.write("best_fitness: " + str(best_fitness) + "\n")
         f.write("current iteration: " + str(iteration) + "\n")
+        f.write("solution was found at: " + str(best_iteration) + " iteration\n")
+        f.write("max number of iterations: " + str(max_iteration) + "\n")
         f.write("stopping_criteria_reached: " + str(stopping_criteria_reached) + "\n")
 
         f.write("time: " + str(exec_time) + "\n")
@@ -183,7 +185,7 @@ def fitness_function_de(x, *args):
 
     iteration += 1
     start_time = time.time()
-    fitness = run_cmd_and_get_fitness(parameters.general_parameters)
+    fitness, best_iteration, max_iteration  = run_cmd_and_get_fitness(parameters.general_parameters)
     fitness = 1 / fitness
     end_time = time.time()
     exec_time = end_time - start_time
@@ -227,7 +229,9 @@ def fitness_function_de(x, *args):
             f.write("mutation_change_rate: " + str(mutation_change_rate) + "\n")
         f.write("fitness: " + str(fitness) + "\n")
         f.write("best_fitness: " + str(best_fitness) + "\n")
-        f.write("current iteration: " + str(iteration) + "\n")
+        f.write("current step: " + str(iteration) + "\n")
+        f.write("solution was found at: " + str(best_iteration) + " iteration\n")
+        f.write("max number of iterations: " + str(max_iteration) + "\n")
         f.write("stopping_criteria_reached: " + str(stopping_criteria_reached) + "\n")
 
         f.write("time: " + str(exec_time) + "\n")
