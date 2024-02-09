@@ -1,8 +1,8 @@
 import time
 
 from parameters.fitness_parameters import FitnessParameters
-from tools.json_utils import JsonUtils
-from tools.cmd_utils import run_cmd_and_get_fitness
+from tools.json_files import JsonUtils
+from tools.cmd import run_cmd_and_get_fitness
 
 best_fitness = 1000000
 stopping_criteria_reached = False
