@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="Added a mode when we identify when the best iteration appeared">
-      <change afterPath="$PROJECT_DIR$/tools/convert_txt_to_csv.py" afterDir="false" />
+    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="Saving results to csv file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitness/fitness_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitness/fitness_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/cmd_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/cmd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/generation_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/generation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/json_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/json_files.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/convert_txt_to_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/convert_txt_to_csv.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,14 +158,6 @@
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
       <updated>1701881365074</updated>
-    </task>
-    <task id="LOCAL-00027" summary="bug fix">
-      <option name="closed" value="true" />
-      <created>1705019941868</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1705019941869</updated>
     </task>
     <task id="LOCAL-00028" summary="termcolor package is not used anymore">
       <option name="closed" value="true" />
@@ -508,7 +495,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706991344880</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Saving results to csv file">
+      <option name="closed" value="true" />
+      <created>1707502807730</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1707502807730</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -526,7 +521,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="small bugfix" />
     <MESSAGE value="refactoring and add &quot;headless&quot; mode" />
     <MESSAGE value="added DE, RS algorithms using scipy lib" />
     <MESSAGE value="refactoring and bug fix of the parallelization of RS and DE" />
@@ -551,6 +545,7 @@
     <MESSAGE value="time and coverage are removed from fitness function" />
     <MESSAGE value="collect results" />
     <MESSAGE value="Added a mode when we identify when the best iteration appeared" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a mode when we identify when the best iteration appeared" />
+    <MESSAGE value="Saving results to csv file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Saving results to csv file" />
   </component>
 </project>

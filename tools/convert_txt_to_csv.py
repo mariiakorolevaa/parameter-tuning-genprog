@@ -8,12 +8,15 @@ def transform_text_to_csv(input_file, output_file):
     data = []
     temp_dict = {}
     for line in lines:
-        if line.strip():
+        if line.strip() and ':' in line:
             key, value = line.strip().split(': ')
             temp_dict[key] = value
-        else:
+        elif temp_dict:
             data.append(temp_dict)
             temp_dict = {}
+
+    if temp_dict:
+        data.append(temp_dict)
 
     df = pd.DataFrame(data)
 
