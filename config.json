@@ -1,0 +1,12 @@
+{
+    "mode": "de",
+    "is_rationals": true,
+    "path_to_config": "/scratch/koroleva/whisker-cluster-experiments/configs/repair/genProg-headless-chicken.json",
+    "path_to_repair": "/scratch/koroleva/whisker-cluster-experiments/projects/1-single-artificial-faults/ForeverInsideLoop.sb3",
+    "path_to_test": "/scratch/koroleva/whisker-cluster-experiments/tests/ForeverInsideLoop.js",
+    "path_to_csv": "/scratch/koroleva/whisker-cluster-experiments/results/",
+    "is_headless": true,
+    "whisker_path": "/scratch/koroleva/whisker-cluster-experiments/",
+    "max_iter": 20,
+    "desired_fitness": 0.000001
+}

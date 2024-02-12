@@ -1,4 +1,5 @@
 import argparse
+import json
 import os
 from tabulate import tabulate
 from algorithm.de_scipy import de
@@ -56,22 +57,24 @@ def write_results_to_file(file_path, results):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Parameter tuning for Scratch program repair.")
-    parser.add_argument("--is_rationals", action="store_true", help="Use rational numbers for parameters")
-    parser.add_argument("--mode", choices=["rs", "de"], default="rs",
-                        help="Optimization mode (random search or differential evolution)")
-    parser.add_argument("--is_headless", default=True, action="store_true", help="Run in headless mode")
-    parser.add_argument("--acceleration_factor", type=int, help="Acceleration factor")
-    parser.add_argument("--path_to_repair", type=str, help="Path to the scratch project to be repaired")
-    parser.add_argument("--path_to_test", type=str, help="Path to the file with the tests")
-    parser.add_argument("--path_to_output", type=str, help="Path to the output folder")
-    parser.add_argument("--path_to_csv", type=str, help="Path to the csv file")
-    parser.add_argument("--path_to_config", type=str, help="Path to the config file")
-    parser.add_argument("--whisker_path", type=str, help="Path to the whisker project folder")
-    parser.add_argument("--population_size", type=int, help="Population size")
-    parser.add_argument("--max_iter", type=int, default=10, help="Maximum number of iterations")
-    parser.add_argument("--desired_fitness", default=271, type=float, help="Desired fitness")
-    return parser.parse_args()
+    with open('config.json', 'r') as f:
+        config_data = json.load(f)
+
+    return argparse.Namespace(
+        is_rationals=config_data.get('is_rationals', False),
+        mode=config_data.get('mode', default='rs'),
+        is_headless=config_data.get('is_headless', default=True),
+        acceleration_factor=config_data.get('acceleration_factor', default=None),
+        path_to_repair=config_data.get('path_to_repair', default=None),
+        path_to_test=config_data.get('path_to_test', default=None),
+        path_to_output=config_data.get('path_to_output', default=None),
+        path_to_csv=config_data.get('path_to_csv', default=None),
+        path_to_config=config_data.get('path_to_config', default=None),
+        whisker_path=config_data.get('whisker_path', default=None),
+        population_size=config_data.get('population_size', default=None),
+        max_iter=config_data.get('max_iter', default=10),
+        desired_fitness=config_data.get('desired_fitness', default=0.00000001)
+    )
 
 
 if __name__ == "__main__":
