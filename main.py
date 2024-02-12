@@ -40,7 +40,8 @@ def main(arguments):
         return
     os.chdir(current_directory)
     transform_text_to_csv(output_file_path_txt, output_file_path_csv)
-    print("Done.")
+    print("Results written to " + output_file_path_csv)
+    print(tabulate(results, headers="keys"))
 
 
 def write_results_to_file(file_path, results):
