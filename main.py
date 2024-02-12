@@ -62,18 +62,18 @@ def parse_args():
 
     return argparse.Namespace(
         is_rationals=config_data.get('is_rationals', False),
-        mode=config_data.get('mode', default='rs'),
-        is_headless=config_data.get('is_headless', default=True),
-        acceleration_factor=config_data.get('acceleration_factor', default=None),
-        path_to_repair=config_data.get('path_to_repair', default=None),
-        path_to_test=config_data.get('path_to_test', default=None),
-        path_to_output=config_data.get('path_to_output', default=None),
-        path_to_csv=config_data.get('path_to_csv', default=None),
-        path_to_config=config_data.get('path_to_config', default=None),
-        whisker_path=config_data.get('whisker_path', default=None),
-        population_size=config_data.get('population_size', default=None),
-        max_iter=config_data.get('max_iter', default=10),
-        desired_fitness=config_data.get('desired_fitness', default=0.00000001)
+        mode=config_data.get('mode', 'rs'),
+        is_headless=config_data.get('is_headless', True),
+        acceleration_factor=config_data.get('acceleration_factor', None),
+        path_to_repair=config_data.get('path_to_repair', None),
+        path_to_test=config_data.get('path_to_test', None),
+        path_to_output=config_data.get('path_to_output', None),
+        path_to_csv=config_data.get('path_to_csv', None),
+        path_to_config=config_data.get('path_to_config', None),
+        whisker_path=config_data.get('whisker_path', None),
+        population_size=config_data.get('population_size', None),
+        max_iter=config_data.get('max_iter', 10),
+        desired_fitness=config_data.get('desired_fitness', 0.00000001)
     )
 
 

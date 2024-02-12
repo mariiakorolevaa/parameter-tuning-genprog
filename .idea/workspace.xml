@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="Saving results to csv file">
-      <change afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="Parsing the arguments from the config.json instead of the command line arguments" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,14 +155,6 @@
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
       <updated>1701881365074</updated>
-    </task>
-    <task id="LOCAL-00031" summary="bug fix">
-      <option name="closed" value="true" />
-      <created>1705572709815</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1705572709815</updated>
     </task>
     <task id="LOCAL-00032" summary="bug fix">
       <option name="closed" value="true" />
@@ -503,7 +492,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707702644429</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Parsing the arguments from the config.json instead of the command line arguments">
+      <option name="closed" value="true" />
+      <created>1707764333497</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1707764333497</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -521,7 +518,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="refactoring and add &quot;headless&quot; mode" />
     <MESSAGE value="added DE, RS algorithms using scipy lib" />
     <MESSAGE value="refactoring and bug fix of the parallelization of RS and DE" />
     <MESSAGE value="bug fix RS and DE" />
@@ -546,6 +542,7 @@
     <MESSAGE value="collect results" />
     <MESSAGE value="Added a mode when we identify when the best iteration appeared" />
     <MESSAGE value="Saving results to csv file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Saving results to csv file" />
+    <MESSAGE value="Parsing the arguments from the config.json instead of the command line arguments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Parsing the arguments from the config.json instead of the command line arguments" />
   </component>
 </project>
