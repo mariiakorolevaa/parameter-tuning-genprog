@@ -96,8 +96,8 @@ def de(gen_parameters: GeneralParameters):
 
     # time in format hh:mm:ss
     formatted_time = time.strftime("%H:%M:%S", time.gmtime(end_time - start_time))
-    tabulate_results = [["ALGORITHM", "best params", "best fitness", "time", "search time", "result"],
-                        ["DE", best_params, best_fitness, time_for_best_params, formatted_time, message]]
+    tabulate_results = [["ALGORITHM", "search time", "result"],
+                        ["DE", formatted_time, message]]
     return tabulate_results
 
 

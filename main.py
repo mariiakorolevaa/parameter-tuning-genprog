@@ -24,24 +24,21 @@ def main(arguments):
         arguments.desired_fitness,
         arguments.whisker_path
     )
-
+    current_directory = os.getcwd()
     if arguments.mode == "rs":
         results = rs(gen_params)
-        formatted_results = tabulate(results)
-
-        output_file_path_txt = "RS-results.txt"
-        output_file_path_csv = "RS-results.csv"
+        # set directory as current directory
+        os.chdir(os.path.dirname(os.path.abspath(__file__)))
+        output_file_path_txt = "RS_all_results.txt"
+        output_file_path_csv = "RS_all_results.csv"
     elif arguments.mode == "de":
         results = de(gen_params)
-        formatted_results = tabulate(results)
-
-        output_file_path_txt = "DE-results.txt"
-        output_file_path_csv = "DE-results.csv"
+        output_file_path_txt = "DE_all_results.txt"
+        output_file_path_csv = "DE_all_results.csv"
     else:
         print("Invalid mode specified.")
         return
-
-    write_results_to_file(output_file_path_txt, formatted_results)
+    os.chdir(current_directory)
     transform_text_to_csv(output_file_path_txt, output_file_path_csv)
     print("Done.")
 
