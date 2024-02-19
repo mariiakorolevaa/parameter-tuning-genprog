@@ -30,7 +30,7 @@ def generate_random_parameters_float(is_headless: bool):
 
 
 def run_optimization(gen_parameters):
-    if gen_parameters.is_rationals:
+    if gen_parameters.is_float:
         rand_params = generate_random_parameters_float(gen_parameters.is_headless)
     else:
         rand_params = generate_random_parameters_int()

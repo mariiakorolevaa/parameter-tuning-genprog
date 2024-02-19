@@ -18,9 +18,8 @@ def main(arguments):
         arguments.path_to_config,
         arguments.acceleration_factor,
         arguments.is_headless,
-        arguments.is_rationals,
+        arguments.is_float,
         1,
-        arguments.population_size,
         arguments.max_iter,
         arguments.desired_fitness,
         arguments.whisker_path
@@ -61,7 +60,7 @@ def parse_args():
         config_data = json.load(f)
 
     return argparse.Namespace(
-        is_rationals=config_data.get('is_rationals', False),
+        is_float=config_data.get('is_float', False),
         mode=config_data.get('mode', 'rs'),
         is_headless=config_data.get('is_headless', True),
         acceleration_factor=config_data.get('acceleration_factor', None),
@@ -71,7 +70,6 @@ def parse_args():
         path_to_csv=config_data.get('path_to_csv', None),
         path_to_config=config_data.get('path_to_config', None),
         whisker_path=config_data.get('whisker_path', None),
-        population_size=config_data.get('population_size', None),
         max_iter=config_data.get('max_iter', 10),
         desired_fitness=config_data.get('desired_fitness', 0.00000001)
     )

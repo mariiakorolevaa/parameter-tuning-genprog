@@ -35,14 +35,14 @@ def generate_random_parameters_float(is_headless: bool):
 
 
 def de(gen_parameters: GeneralParameters):
-    if gen_parameters.is_rationals:
+    if gen_parameters.is_float:
         if gen_parameters.is_headless:
             bounds = [(0, 1), (0, 1)]
         else:
             bounds = [(0, 1), (0, 1), (0, 1), (0, 1)]
     else:
         bounds = [(12, 49), (2, 9)]
-    rand_params = generate_random_parameters_int() if not gen_parameters.is_rationals else generate_random_parameters_float(
+    rand_params = generate_random_parameters_int() if not gen_parameters.is_float else generate_random_parameters_float(
         gen_parameters.is_headless)
     fitness_parameters = FitnessParameters(rand_parameters=rand_params, general_parameters=gen_parameters)
 
@@ -74,7 +74,7 @@ def de(gen_parameters: GeneralParameters):
 
     best_params = get_best_params()
     # get as many elements as there are parameters
-    if gen_parameters.is_rationals:
+    if gen_parameters.is_float:
         if gen_parameters.is_headless:
             best_params = best_params[:2]
         else:

@@ -41,7 +41,7 @@ def fitness_function(parameters: FitnessParameters):
         mutation_insertion_rate, mutation_deletion_rate, mutation_change_rate, time_for_best_params
 
     json_utils = JsonUtils(parameters.general_parameters.path_to_config)
-    if parameters.general_parameters.is_rationals:
+    if parameters.general_parameters.is_float:
         print("rationals mode")
         if parameters.general_parameters.is_headless:
             crossover_rate, mutation_rate = parameters.rand_params
@@ -90,10 +90,10 @@ def fitness_function(parameters: FitnessParameters):
     print("time: ", exec_time)
     if fitness < best_fitness:
         best_fitness = fitness
-        if not parameters.general_parameters.is_rationals:
+        if not parameters.general_parameters.is_float:
             best_params[0] = population_size
             best_params[1] = elitism_size
-        elif parameters.general_parameters.is_headless and parameters.general_parameters.is_rationals:
+        elif parameters.general_parameters.is_headless and parameters.general_parameters.is_float:
             best_params[0] = crossover_rate
             best_params[1] = mutation_rate
         else:
@@ -107,11 +107,11 @@ def fitness_function(parameters: FitnessParameters):
     with open("/scratch/koroleva/parameter-tuning-genprog/RS_all_results.txt", "a") as f:
         f.write("max_iter: " + str(parameters.general_parameters.max_iter) + "\n")
         f.write("desired_fitness: " + str(parameters.general_parameters.desired_fitness) + "\n")
-        if not parameters.general_parameters.is_rationals:
+        if not parameters.general_parameters.is_float:
             f.write("population_size: " + str(population_size) + "\n")
             f.write("elitism_size: " + str(elitism_size) + "\n")
 
-        elif parameters.general_parameters.is_headless and parameters.general_parameters.is_rationals:
+        elif parameters.general_parameters.is_headless and parameters.general_parameters.is_float:
             f.write("crossover_rate: " + str(crossover_rate) + "\n")
             f.write("mutation_rate: " + str(mutation_rate) + "\n")
         else:
@@ -144,7 +144,7 @@ def fitness_function_de(x, *args):
     parameters = args[0]
     json_utils = JsonUtils(parameters.general_parameters.path_to_config)
 
-    if parameters.general_parameters.is_rationals:
+    if parameters.general_parameters.is_float:
         print("rationals mode")
         if parameters.general_parameters.is_headless:
             print("headless mode, number of parameters: ", len(x))
@@ -191,10 +191,10 @@ def fitness_function_de(x, *args):
     exec_time = end_time - start_time
     if fitness < best_fitness:
         best_fitness = fitness
-        if not parameters.general_parameters.is_rationals:
+        if not parameters.general_parameters.is_float:
             best_params[0] = population_size
             best_params[1] = elitism_size
-        elif parameters.general_parameters.is_headless and parameters.general_parameters.is_rationals:
+        elif parameters.general_parameters.is_headless and parameters.general_parameters.is_float:
             best_params[0] = crossover_rate
             best_params[1] = mutation_rate
         else:
@@ -215,11 +215,11 @@ def fitness_function_de(x, *args):
         f.write("max_iter: " + str(parameters.general_parameters.max_iter) + "\n")
         f.write("desired_fitness: " + str(parameters.general_parameters.desired_fitness) + "\n")
 
-        if not parameters.general_parameters.is_rationals:
+        if not parameters.general_parameters.is_float:
             f.write("population_size: " + str(population_size) + "\n")
             f.write("elitism_size: " + str(elitism_size) + "\n")
 
-        elif parameters.general_parameters.is_headless and parameters.general_parameters.is_rationals:
+        elif parameters.general_parameters.is_headless and parameters.general_parameters.is_float:
             f.write("crossover_rate: " + str(crossover_rate) + "\n")
             f.write("mutation_rate: " + str(mutation_rate) + "\n")
         else:
