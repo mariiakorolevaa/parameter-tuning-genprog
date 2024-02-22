@@ -37,10 +37,3 @@ def transform_text_to_csv(input_file, output_file):
     df = df.rename(columns=column_mapping)
 
     df.to_csv(output_file, index=False)
-
-
-# input_file: C:\Users\kiris\Desktop\Result\Medium\ForeverInsideLoop\Iterations\float\RS_Experiments.txt
-# output_file: C:\Users\kiris\Desktop\Result\Medium\ForeverInsideLoop\Iterations\float\RS_Experiments.csv
-input_file = "C:\\Users\\kiris\\Desktop\\Result\\Hard\\Spaceship\\Iterations\\float\\Experiments.txt"
-output_file = "C:\\Users\\kiris\\Desktop\\Result\\Hard\\Spaceship\\Iterations\\float\\Experiments.csv"
-transform_text_to_csv(input_file, output_file)
