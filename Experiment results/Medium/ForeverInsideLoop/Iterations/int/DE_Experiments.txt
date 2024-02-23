@@ -1,0 +1,853 @@
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 12
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 1
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 222.48232746124268
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 40
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 2
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 102.11508345603943
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 44
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 3
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 112.09121370315552
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 8
+fitness: 0.25
+best_fitness: 0.25
+current step: 4
+solution was found at: 5 iteration
+max number of iterations: 5
+stopping_criteria_reached: False
+time: 152.04697966575623
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 40
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 5
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 112.07261490821838
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 24
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 6
+solution was found at: 7 iteration
+max number of iterations: 7
+stopping_criteria_reached: False
+time: 182.57134127616882
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 16
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current step: 7
+solution was found at: 4 iteration
+max number of iterations: 4
+stopping_criteria_reached: False
+time: 101.88502526283264
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 8
+solution was found at: 6 iteration
+max number of iterations: 6
+stopping_criteria_reached: False
+time: 172.30754780769348
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 36
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current step: 1
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 102.12937927246094
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 48
+elitism_size: 8
+fitness: 0.25
+best_fitness: 0.25
+current step: 2
+solution was found at: 0 iteration
+max number of iterations: 0
+stopping_criteria_reached: False
+time: 81.954030752182
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 44
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 3
+solution was found at: 5 iteration
+max number of iterations: 5
+stopping_criteria_reached: False
+time: 242.60392594337463
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 44
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current step: 4
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 122.20328831672668
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 40
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 5
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 102.16690683364868
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 36
+elitism_size: 8
+fitness: 0.25
+best_fitness: 0.25
+current step: 6
+solution was found at: 2 iteration
+max number of iterations: 2
+stopping_criteria_reached: False
+time: 122.20492792129517
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 32
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 7
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 92.0889024734497
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 8
+solution was found at: 6 iteration
+max number of iterations: 6
+stopping_criteria_reached: False
+time: 172.55735325813293
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 40
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 9
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 102.18354034423828
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 40
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 10
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 112.20851683616638
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 44
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 11
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 112.39549350738525
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 20
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current step: 12
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 61.950769662857056
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 24
+elitism_size: 8
+fitness: 0.25
+best_fitness: 0.25
+current step: 13
+solution was found at: 7 iteration
+max number of iterations: 7
+stopping_criteria_reached: False
+time: 162.37945294380188
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 48
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current step: 14
+solution was found at: 0 iteration
+max number of iterations: 0
+stopping_criteria_reached: False
+time: 82.00054883956909
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 16
+elitism_size: 8
+fitness: 0.25
+best_fitness: 0.25
+current step: 15
+solution was found at: 21 iteration
+max number of iterations: 21
+stopping_criteria_reached: False
+time: 222.79261469841003
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 16
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 16
+solution was found at: 6 iteration
+max number of iterations: 6
+stopping_criteria_reached: False
+time: 102.32230544090271
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 8
+fitness: 0.25
+best_fitness: 0.25
+current step: 17
+solution was found at: 5 iteration
+max number of iterations: 5
+stopping_criteria_reached: False
+time: 152.42432570457458
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 24
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 18
+solution was found at: 7 iteration
+max number of iterations: 7
+stopping_criteria_reached: False
+time: 192.51374077796936
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 20
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 19
+solution was found at: 2 iteration
+max number of iterations: 2
+stopping_criteria_reached: False
+time: 82.05849695205688
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 32
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 20
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 92.13729333877563
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 12
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 21
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 51.776450395584106
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 36
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 22
+solution was found at: 6 iteration
+max number of iterations: 6
+stopping_criteria_reached: False
+time: 242.83871221542358
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 16
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 23
+solution was found at: 7 iteration
+max number of iterations: 7
+stopping_criteria_reached: False
+time: 132.25773978233337
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 36
+elitism_size: 8
+fitness: 0.25
+best_fitness: 0.25
+current step: 24
+solution was found at: 2 iteration
+max number of iterations: 2
+stopping_criteria_reached: False
+time: 122.43899941444397
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 8
+fitness: 0.25
+best_fitness: 0.25
+current step: 25
+solution was found at: 5 iteration
+max number of iterations: 5
+stopping_criteria_reached: False
+time: 152.24624466896057
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 24
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 26
+solution was found at: 7 iteration
+max number of iterations: 7
+stopping_criteria_reached: False
+time: 182.59128212928772
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 40
+elitism_size: 8
+fitness: 0.25
+best_fitness: 0.25
+current step: 27
+solution was found at: 2 iteration
+max number of iterations: 2
+stopping_criteria_reached: False
+time: 122.18112683296204
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 16
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 28
+solution was found at: 7 iteration
+max number of iterations: 7
+stopping_criteria_reached: False
+time: 132.05991435050964
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 24
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 29
+solution was found at: 6 iteration
+max number of iterations: 6
+stopping_criteria_reached: False
+time: 152.2255563735962
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 20
+elitism_size: 8
+fitness: 0.25
+best_fitness: 0.25
+current step: 30
+solution was found at: 6 iteration
+max number of iterations: 6
+stopping_criteria_reached: False
+time: 122.34428715705872
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 31
+solution was found at: 3 iteration
+max number of iterations: 3
+stopping_criteria_reached: False
+time: 122.23573589324951
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 24
+elitism_size: 8
+fitness: 0.25
+best_fitness: 0.25
+current step: 32
+solution was found at: 7 iteration
+max number of iterations: 7
+stopping_criteria_reached: False
+time: 162.3305196762085
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 36
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current step: 33
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 92.08864545822144
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 44
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 34
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 112.23470711708069
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 32
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 35
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 92.01882266998291
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 36
+solution was found at: 6 iteration
+max number of iterations: 6
+stopping_criteria_reached: False
+time: 172.50691199302673
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 16
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 37
+solution was found at: 6 iteration
+max number of iterations: 6
+stopping_criteria_reached: False
+time: 101.99997138977051
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 44
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 38
+solution was found at: 5 iteration
+max number of iterations: 5
+stopping_criteria_reached: False
+time: 242.55979204177856
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 40
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 39
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 102.14771676063538
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 36
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 40
+solution was found at: 6 iteration
+max number of iterations: 6
+stopping_criteria_reached: False
+time: 242.81890082359314
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 32
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 41
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 92.08506083488464
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 20
+elitism_size: 8
+fitness: 0.25
+best_fitness: 0.25
+current step: 42
+solution was found at: 6 iteration
+max number of iterations: 6
+stopping_criteria_reached: False
+time: 122.09625124931335
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 36
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 43
+solution was found at: 6 iteration
+max number of iterations: 6
+stopping_criteria_reached: False
+time: 242.83620262145996
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 32
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 44
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 91.86956715583801
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 24
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 45
+solution was found at: 7 iteration
+max number of iterations: 7
+stopping_criteria_reached: False
+time: 182.5547845363617
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 32
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current step: 46
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 92.26393747329712
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 8
+fitness: 0.25
+best_fitness: 0.25
+current step: 47
+solution was found at: 5 iteration
+max number of iterations: 5
+stopping_criteria_reached: False
+time: 152.3574857711792
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 32
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 48
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 91.90416932106018
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 49
+solution was found at: 3 iteration
+max number of iterations: 3
+stopping_criteria_reached: False
+time: 122.20780634880066
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 32
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current step: 50
+solution was found at: 1 iteration
+max number of iterations: 1
+stopping_criteria_reached: False
+time: 92.09086656570435
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 16
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 51
+solution was found at: 7 iteration
+max number of iterations: 7
+stopping_criteria_reached: False
+time: 132.05679321289062
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 48
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 52
+solution was found at: 0 iteration
+max number of iterations: 0
+stopping_criteria_reached: False
+time: 82.04042792320251
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 24
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 53
+solution was found at: 7 iteration
+max number of iterations: 7
+stopping_criteria_reached: False
+time: 182.79878902435303
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 8
+fitness: 0.25
+best_fitness: 0.25
+current step: 54
+solution was found at: 5 iteration
+max number of iterations: 5
+stopping_criteria_reached: False
+time: 152.41820740699768
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current step: 55
+solution was found at: 2 iteration
+max number of iterations: 2
+stopping_criteria_reached: False
+time: 112.32667422294617
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 36
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 56
+solution was found at: 2 iteration
+max number of iterations: 2
+stopping_criteria_reached: False
+time: 122.65219211578369
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 24
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 57
+solution was found at: 7 iteration
+max number of iterations: 7
+stopping_criteria_reached: False
+time: 182.56280517578125
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 24
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 58
+solution was found at: 7 iteration
+max number of iterations: 7
+stopping_criteria_reached: False
+time: 182.6443383693695
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 59
+solution was found at: 3 iteration
+max number of iterations: 3
+stopping_criteria_reached: False
+time: 122.13168120384216
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 40
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current step: 60
+solution was found at: 4 iteration
+max number of iterations: 4
+stopping_criteria_reached: False
+time: 222.61768555641174
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 61
+solution was found at: 3 iteration
+max number of iterations: 3
+stopping_criteria_reached: False
+time: 122.32493734359741
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 62
+solution was found at: 3 iteration
+max number of iterations: 3
+stopping_criteria_reached: False
+time: 122.32988023757935
+
+max_iter: 100
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current step: 63
+solution was found at: 3 iteration
+max number of iterations: 3
+stopping_criteria_reached: False
+time: 122.47275853157043
+
+

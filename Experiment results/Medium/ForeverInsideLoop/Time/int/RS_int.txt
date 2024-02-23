@@ -1,0 +1,200 @@
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 44
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 172.49634456634521
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 24
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 81.96612763404846
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 40
+elitism_size: 8
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 182.49771213531494
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 36
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 132.30399537086487
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 16
+elitism_size: 6
+fitness: 0.3333333333333333
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 373.28512048721313
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 112.19748425483704
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 40
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 122.19328832626343
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 20
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 112.12761211395264
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 20
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 112.20949387550354
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 20
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 162.4780309200287
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 44
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 122.32430267333984
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 44
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 122.2055835723877
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 16
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 132.55469942092896
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 12
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 112.20609760284424
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 16
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 142.5057725906372
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 44
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 122.29346990585327
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 36
+elitism_size: 6
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 92.08430027961731
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 32
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 112.12564468383789
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 24
+elitism_size: 4
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 82.0636978149414
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 28
+elitism_size: 2
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 112.16594529151917
+

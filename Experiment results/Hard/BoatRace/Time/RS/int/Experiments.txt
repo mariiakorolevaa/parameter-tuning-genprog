@@ -1,0 +1,122 @@
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 16
+elitism_size: 2
+fitness: 0.07692307692307693
+best_fitness: 0.07692307692307693
+current iteration: 0
+stopping_criteria_reached: False
+time: 5608.5989100933075
+
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 48
+elitism_size: 2
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+stopping_criteria_reached: False
+time: 6421.11656165123
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 40
+elitism_size: 2
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+stopping_criteria_reached: False
+time: 5808.07737159729
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 40
+elitism_size: 2
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+stopping_criteria_reached: False
+time: 2843.8608088493347
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 48
+elitism_size: 6
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+stopping_criteria_reached: False
+time: 2762.541383743286
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 24
+elitism_size: 2
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+stopping_criteria_reached: False
+time: 2678.895646095276
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 16
+elitism_size: 4
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+stopping_criteria_reached: False
+time: 2673.9437243938446
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 44
+elitism_size: 8
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+stopping_criteria_reached: False
+time: 2833.235710144043
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 44
+elitism_size: 2
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+stopping_criteria_reached: False
+time: 2802.035126686096
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 40
+elitism_size: 8
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+stopping_criteria_reached: False
+time: 2771.0944085121155
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 40
+elitism_size: 6
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+stopping_criteria_reached: False
+time: 2720.7701432704926
+
+max_iter: 20
+desired_fitness: 1e-06
+population_size: 36
+elitism_size: 6
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+stopping_criteria_reached: False
+time: 2812.153614759445
+
+

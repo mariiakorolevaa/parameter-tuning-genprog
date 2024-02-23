@@ -5,61 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec5b9644-d1a1-485f-aa48-8af19a9b5ff6" name="Changes" comment="add some instruction to README.md file, renamed some variables">
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Iterations/float/All_Experiments.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Iterations/float/Crossover and Mutation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Iterations/float/Crossover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Iterations/float/DE_Experiments.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Iterations/float/DE_Experiments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Iterations/float/Mutation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Iterations/float/Mutation_2d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Iterations/float/RS_Experiments.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Iterations/float/RS_Experiments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Iterations/int/All_Experiments.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Iterations/int/DE_Experiments.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Iterations/int/DE_Experiments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Iterations/int/MaxIter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Iterations/int/RS_Experiments.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Iterations/int/RS_Experiments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Time/DE/float/Experiments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Time/DE/int/Experiments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Time/Elitism size.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Time/Pop size.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Time/RS/float/Experiments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Time/RS/int/Experiments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/BoatRace/Time/Result Int.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/Spaceship/Iterations/float/Experiments.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/Spaceship/Iterations/float/Experiments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/Spaceship/Iterations/int/Experiments.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/Spaceship/Iterations/int/Experiments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Hard/Spaceship/Iterations/int/Solution Found and Max Number Iterations vs Population Size.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Iterations/float/DE_Experiments.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Iterations/float/DE_Experiments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Iterations/float/RS_Experiments.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Iterations/float/RS_Experiments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Iterations/int/DE_Experiments.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Iterations/int/DE_Experiments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Iterations/int/RS_Experiments.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Iterations/int/RS_Experiments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Time/DE_float.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Time/DE_int.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Time/ForeverInsideLoop_float.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Time/ForeverInsideLoop_int_elitism_size.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Time/ForeverInsideLoop_int_pop_size.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Time/RS_float.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Time/RS_int.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Time/Result_float.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Time/Result_int.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Medium/ForeverInsideLoop/Time/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Simple/Max/Time/DE_float.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Simple/Max/Time/DE_int.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Simple/Max/Time/Max_float.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Simple/Max/Time/RS_float.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Simple/Max/Time/RS_int.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Simple/Max/Time/Result_float.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RESULTS OF EXPERIMENTS/Simple/Max/Time/Result_int.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Iterations/float/DE_Experiments.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Iterations/float/DE_Experiments.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Iterations/float/RS_Experiments.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Iterations/float/RS_Experiments.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Iterations/int/DE_Experiments.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Iterations/int/DE_Experiments.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Iterations/int/RS_Experiments.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Iterations/int/RS_Experiments.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Time/float/DE_float.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Time/float/DE_float.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Time/float/ForeverInsideLoop_float.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Time/float/RS_float.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Time/float/RS_float.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Time/int/DE_int.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Time/int/DE_int.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Time/int/ForeverInsideLoop_int_elitism_size.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Time/int/ForeverInsideLoop_int_pop_size.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Time/int/RS_int.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Medium/ForeverInsideLoop/Time/int/RS_int.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/float/DE_float1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/float/DE_float1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/float/DE_float2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/float/DE_float2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/float/Max_float.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/float/RS_float1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/float/RS_float1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/float/RS_float2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/float/RS_float2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/int/DE_int1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/int/DE_int1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/int/DE_int2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/int/DE_int2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/int/RS_int1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/int/RS_int1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/int/RS_int2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Experiment results/Simple/Max/Time/int/RS_int2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/convert_txt_to_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/convert_txt_to_csv.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,20 +84,22 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/kiris/Documents/GitHub/parameter_tuning_genprog/RESULTS OF EXPERIMENTS",
+    "last_opened_file_path": "C:/Users/kiris/Documents/GitHub/parameter_tuning_genprog/Experiment results",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kiris\Documents\GitHub\parameter_tuning_genprog\Experiment results" />
+      <recent name="C:\Users\kiris\Documents\GitHub\parameter_tuning_genprog" />
       <recent name="C:\Users\kiris\Documents\GitHub\parameter_tuning_genprog\RESULTS OF EXPERIMENTS" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kiris\Documents\GitHub\parameter_tuning_genprog\Experiment results" />
       <recent name="C:\Users\kiris\Documents\GitHub\parameter_tuning_genprog\tools" />
       <recent name="C:\Users\kiris\Documents\GitHub\parameter_tuning_genprog\parameters" />
       <recent name="C:\Users\kiris\Documents\GitHub\parameter_tuning_genprog\cmd" />
       <recent name="C:\Users\kiris\Documents\GitHub\parameter_tuning_genprog" />
-      <recent name="C:\Users\kiris\Documents\GitHub\parameter_tuning_genprog\algorithm" />
     </key>
   </component>
   <component name="RunManager" selected="Python.convert_txt_to_csv">
@@ -239,14 +223,6 @@
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
       <updated>1701881365074</updated>
-    </task>
-    <task id="LOCAL-00034" summary="bug fix">
-      <option name="closed" value="true" />
-      <created>1705580311737</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1705580311737</updated>
     </task>
     <task id="LOCAL-00035" summary="bug fix">
       <option name="closed" value="true" />
@@ -584,7 +560,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708370954716</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="add some instruction to README.md file, renamed some variables">
+      <option name="closed" value="true" />
+      <created>1708627787112</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1708627787112</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -628,16 +612,5 @@
     <MESSAGE value="Parsing the arguments from the config.json instead of the command line arguments" />
     <MESSAGE value="add some instruction to README.md file, renamed some variables" />
     <option name="LAST_COMMIT_MESSAGE" value="add some instruction to README.md file, renamed some variables" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/graph.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

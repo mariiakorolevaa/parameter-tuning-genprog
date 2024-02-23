@@ -1,0 +1,200 @@
+max_iter: 20 
+desired_fitness: 0.01
+crossover_rate: 0.7577447676775639
+mutation_rate: 0.12585134078864046
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 283.4632167816162
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.43558012707363036
+mutation_rate: 0.19777162179922847
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 132.41799139976501
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.3279891165625556
+mutation_rate: 0.2911494091031712
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 242.9984221458435
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.9617815626744074
+mutation_rate: 0.22562632388821935
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 92.26999711990356
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.9794274637032906
+mutation_rate: 0.598000970206341
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 242.86574983596802
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.06705599897296455
+mutation_rate: 0.30073730779940455
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 142.55301690101624
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.572412088486035
+mutation_rate: 0.24231950178173378
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 192.57087922096252
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.08981963322466235
+mutation_rate: 0.3221286626538994
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 192.612779378891
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.7688043592589685
+mutation_rate: 0.8665562083937152
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 353.15483832359314
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.8547076141490293
+mutation_rate: 0.09529994130988106
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 72.19253444671631
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.39454709699506074
+mutation_rate: 0.09444113964966483
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 72.11478686332703
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.029070418897673922
+mutation_rate: 0.5174080961239712
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 182.60155725479126
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.7716067480120968
+mutation_rate: 0.12528084307437326
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 82.01261234283447
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.8773374554022797
+mutation_rate: 0.8654948377711902
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 504.11421632766724
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.913117115112009
+mutation_rate: 0.0628449228934086
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 122.33459067344666
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.16996559866647554
+mutation_rate: 0.04452856879248601
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 71.98645853996277
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.7118830448326351
+mutation_rate: 0.7088321906210735
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 363.4603681564331
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.6866607121065197
+mutation_rate: 0.34445141973899174
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 202.84743666648865
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.9863899321878473
+mutation_rate: 0.5231385174207891
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 192.5148298740387
+
+max_iter: 20
+desired_fitness: 0.01
+crossover_rate: 0.7269822120893796
+mutation_rate: 0.9130330554976137
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 0
+stopping_criteria_reached: False
+time: 293.2452666759491
+

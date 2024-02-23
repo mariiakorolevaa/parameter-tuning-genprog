@@ -1,0 +1,200 @@
+max_iter: 20 
+desired_fitness: 0.01
+population_size: 16
+elitism_size: 4
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 1
+stopping_criteria_reached: False
+time: 242.64894914627075
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 40
+elitism_size: 8
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 2
+stopping_criteria_reached: False
+time: 101.92894101142883
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 24
+elitism_size: 6
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 3
+stopping_criteria_reached: False
+time: 152.35257697105408
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 44
+elitism_size: 2
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 4
+stopping_criteria_reached: False
+time: 102.1761121749878
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 28
+elitism_size: 6
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 5
+stopping_criteria_reached: False
+time: 112.1292188167572
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 24
+elitism_size: 4
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 6
+stopping_criteria_reached: False
+time: 122.23261284828186
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 48
+elitism_size: 6
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 7
+stopping_criteria_reached: False
+time: 71.98902559280396
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 32
+elitism_size: 6
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 8
+stopping_criteria_reached: False
+time: 132.28845500946045
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 44
+elitism_size: 8
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 9
+stopping_criteria_reached: False
+time: 82.02502632141113
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 44
+elitism_size: 8
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 10
+stopping_criteria_reached: False
+time: 81.96751475334167
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 48
+elitism_size: 4
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 11
+stopping_criteria_reached: False
+time: 71.91987752914429
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 28
+elitism_size: 8
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 12
+stopping_criteria_reached: False
+time: 91.75829005241394
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 32
+elitism_size: 8
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 13
+stopping_criteria_reached: False
+time: 92.00501203536987
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 24
+elitism_size: 6
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 14
+stopping_criteria_reached: False
+time: 162.43138003349304
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 16
+elitism_size: 6
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 15
+stopping_criteria_reached: False
+time: 112.30119752883911
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 12
+elitism_size: 4
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 16
+stopping_criteria_reached: False
+time: 112.05427622795105
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 32
+elitism_size: 4
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 17
+stopping_criteria_reached: False
+time: 202.52884078025818
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 40
+elitism_size: 8
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 18
+stopping_criteria_reached: False
+time: 102.04593658447266
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 32
+elitism_size: 2
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 19
+stopping_criteria_reached: False
+time: 162.38362050056458
+
+max_iter: 20
+desired_fitness: 0.01
+population_size: 16
+elitism_size: 6
+fitness: 0.09090909090909091
+best_fitness: 0.09090909090909091
+current iteration: 20
+stopping_criteria_reached: True
+time: 112.17961621284485
+

@@ -1,0 +1,200 @@
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.05788735760216546
+mutation_rate: 0.8196927791041801
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 668.0657713413239
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.5382367191107668
+mutation_rate: 0.16363655017960477
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 294.2836368083954
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.7825466977411997
+mutation_rate: 0.6374482001014358
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 284.5813879966736
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.1058853652768964
+mutation_rate: 0.9878207389271404
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 455.42023754119873
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.7673830414585979
+mutation_rate: 0.4918547824610997
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 214.35993766784668
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.8096929598541415
+mutation_rate: 0.25137333718438115
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 415.6052429676056
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.40799828289337936
+mutation_rate: 0.8251877058187268
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 324.6490173339844
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.034810289803874905
+mutation_rate: 0.5685175802736552
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 517.396436214447
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.3206206067003061
+mutation_rate: 0.0962067856750094
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 203.42450380325317
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.8682450504916056
+mutation_rate: 0.5494534644995941
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 173.56085872650146
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.26557763061988093
+mutation_rate: 0.29350037409327434
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 344.87271642684937
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.6621217919392887
+mutation_rate: 0.005971447579899425
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 373.77451372146606
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.5724711199988964
+mutation_rate: 0.5654250510602074
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 484.2981171607971
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.927389168092823
+mutation_rate: 0.6421197412731707
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 303.64725637435913
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.9252467551453609
+mutation_rate: 0.14484887778713662
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 253.1275601387024
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.8572272200234938
+mutation_rate: 0.20379457617997032
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 212.99412393569946
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.6026482227882642
+mutation_rate: 0.6564720383421352
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 253.36362648010254
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.3972821612507752
+mutation_rate: 0.5430309101238291
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 163.2006323337555
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.027746469275098273
+mutation_rate: 0.2129204049108191
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 162.9727704524994
+
+max_iter: 20
+desired_fitness: 0.2
+crossover_rate: 0.014873434464895863
+mutation_rate: 0.7598397345331267
+fitness: 0.25
+best_fitness: 0.25
+current iteration: 0
+stopping_criteria_reached: False
+time: 363.84381771087646
+

@@ -1,0 +1,758 @@
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.0008316370223022673
+mutation_rate: 0.31460399324992117
+fitness: 0.0625
+best_fitness: 0.0625
+current iteration: 0
+solution was found at: 43 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2764.7105050086975
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.276913719508017
+mutation_rate: 0.6438952348348758
+fitness: 0.0625
+best_fitness: 0.0625
+current iteration: 0
+solution was found at: 31 iteration
+max number of iterations: 33
+stopping_criteria_reached: False
+time: 2653.518620491028
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.2589841753307903
+mutation_rate: 0.03559392185423271
+fitness: 0.0625
+best_fitness: 0.0625
+current iteration: 0
+solution was found at: 16 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 1850.1499342918396
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.5371912395435878
+mutation_rate: 0.03647914962553034
+fitness: 0.0625
+best_fitness: 0.0625
+current iteration: 0
+solution was found at: 36 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2141.446480512619
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.5322851112418199
+mutation_rate: 0.8482640574976164
+fitness: 0.0625
+best_fitness: 0.0625
+current iteration: 0
+solution was found at: 26 iteration
+max number of iterations: 28
+stopping_criteria_reached: False
+time: 2673.8808031082153
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.8566383355491811
+mutation_rate: 0.6573987511171437
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 25 iteration
+max number of iterations: 30
+stopping_criteria_reached: False
+time: 2653.9248609542847
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.8176011401011202
+mutation_rate: 0.4064724668705698
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 34 iteration
+max number of iterations: 36
+stopping_criteria_reached: False
+time: 2664.0098218917847
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.7543181295649467
+mutation_rate: 0.932103527711946
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 25 iteration
+max number of iterations: 27
+stopping_criteria_reached: False
+time: 2724.1375844478607
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.06434630868617575
+mutation_rate: 0.5000777122336626
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 36 iteration
+max number of iterations: 40
+stopping_criteria_reached: False
+time: 2714.2059955596924
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.6944262575647634
+mutation_rate: 0.6384495827087417
+fitness: 0.0625
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 30 iteration
+max number of iterations: 31
+stopping_criteria_reached: False
+time: 2663.916255712509
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.06248900358130871
+mutation_rate: 0.429548320242638
+fitness: 0.06666666666666667
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 38 iteration
+max number of iterations: 41
+stopping_criteria_reached: False
+time: 2694.026982307434
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.9624640146259779
+mutation_rate: 0.7238562902293832
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 49 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 4050.2391200065613
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.8677582296729879
+mutation_rate: 0.8752696607699567
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 49 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 4281.506242990494
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.5367658447069104
+mutation_rate: 0.8527321868631785
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 48 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 4161.527901887894
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.6161679535210653
+mutation_rate: 0.7240191334028181
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 48 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3799.7358798980713
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.9708234415423062
+mutation_rate: 0.1860311575487974
+fitness: 0.0625
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 48 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2593.228846549988
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.32972224104722736
+mutation_rate: 0.4958167961270681
+fitness: 0.0625
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 48 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3095.9887495040894
+
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.1426476322036645
+mutation_rate: 0.3082279546645631
+fitness: 0.0625
+best_fitness: 0.0625
+current iteration: 0
+solution was found at: 43 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2624.760731935501
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.32762903481219097
+mutation_rate: 0.16799724339872157
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 34 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2093.7788400650024
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.21917320296864273
+mutation_rate: 0.554303487547982
+fitness: 0.0625
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 38 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3318.7967004776
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.9829248572807185
+mutation_rate: 0.4707988894954035
+fitness: 0.0625
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 39 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3297.6590070724487
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.8066377691226532
+mutation_rate: 0.23557682407533076
+fitness: 0.0625
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 31 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2664.6617534160614
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.7558205176797637
+mutation_rate: 0.25333791175486053
+fitness: 0.0625
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 47 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2724.4855704307556
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.7205211191499157
+mutation_rate: 0.9755958398409625
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 46 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 4553.167793512344
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.7218914998236795
+mutation_rate: 0.12317610647739541
+fitness: 0.058823529411764705
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 45 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2181.9058735370636
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.9923607810725588
+mutation_rate: 0.05034863862163563
+fitness: 0.0625
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 46 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2201.614553451538
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.029244082854117504
+mutation_rate: 0.9274988095745351
+fitness: 0.0625
+best_fitness: 0.058823529411764705
+current iteration: 0
+solution was found at: 49 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 4492.738865613937
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.6230455737773417
+mutation_rate: 0.688666308305204
+fitness: 0.05555555555555555
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 42 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3869.872350692749
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.01378939754380648
+mutation_rate: 0.07133759436665854
+fitness: 0.06666666666666667
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 45 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 1619.5067038536072
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.4663294124832862
+mutation_rate: 0.9577908406321238
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 48 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 4542.597849369049
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.6847672860013866
+mutation_rate: 0.7784287247759337
+fitness: 0.0625
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 48 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 4000.3704509735107
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.03811290044024984
+mutation_rate: 0.5018008368684806
+fitness: 0.0625
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 46 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3065.922467470169
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.5394310651246244
+mutation_rate: 0.9645206065644856
+fitness: 0.0625
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 47 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 4673.722553253174
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.6684644888647472
+mutation_rate: 0.6588247703380288
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 42 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3768.936778783798
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.8203236145656241
+mutation_rate: 0.3240670222865236
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 37 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3106.2139809131622
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.23366168352926486
+mutation_rate: 0.6753399938647973
+fitness: 0.06666666666666667
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 41 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3688.4954600334167
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.48539653615368517
+mutation_rate: 0.9140810948352697
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 48 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 4371.486524343491
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.6846380309203293
+mutation_rate: 0.2638269344626344
+fitness: 0.0625
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 37 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2633.8395879268646
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.6274055915702216
+mutation_rate: 0.24203768400627046
+fitness: 0.0625
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 43 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2433.188695669174
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.09036762479001581
+mutation_rate: 0.25757070345543054
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 35 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2332.3874428272247
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.06560885951713757
+mutation_rate: 0.4493299712718841
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 43 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3015.3114500045776
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.06277795418475907
+mutation_rate: 0.5109322271924214
+fitness: 0.0625
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 42 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3216.1684539318085
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.8781578927397601
+mutation_rate: 0.4738410420055372
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 40 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3187.698435306549
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.23510943380185856
+mutation_rate: 0.8567086332094882
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 47 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 4276.465687036514
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.3298634066423788
+mutation_rate: 0.9471155103464126
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 41 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 4548.891327381134
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.7709960176034728
+mutation_rate: 0.6669690629100464
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 48 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3840.8282268047333
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.8600579219262565
+mutation_rate: 0.9127114707887373
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 49 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 4402.252689123154
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.5165139054325764
+mutation_rate: 0.2906539437252127
+fitness: 0.0625
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 35 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2644.885232925415
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.009498371767980629
+mutation_rate: 0.6394931204743024
+fitness: 0.0625
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 46 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3715.9384529590607
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.7330446595858778
+mutation_rate: 0.6814161153285379
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 44 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3833.504876613617
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.5709260028879897
+mutation_rate: 0.0038050368312528837
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 46 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 1810.2983376979828
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.2545640936570581
+mutation_rate: 0.07465369747217965
+fitness: 0.0625
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 33 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 1730.481291770935
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.17684713753290693
+mutation_rate: 0.2789287401089523
+fitness: 0.06666666666666667
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 48 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2376.4039845466614
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.030086928072554864
+mutation_rate: 0.7234932560317431
+fitness: 0.06666666666666667
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 47 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3870.5630235671997
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.9814323676929135
+mutation_rate: 0.19143116933959248
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 48 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2697.4739389419556
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.6601799185725472
+mutation_rate: 0.12924683830288064
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 31 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2172.1113862991333
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.26209383659658325
+mutation_rate: 0.22833349834952021
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 46 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2232.347831249237
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.7775106609639253
+mutation_rate: 0.955306403956598
+fitness: 0.0625
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 48 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 4614.383972406387
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.3259519831421217
+mutation_rate: 0.2364001557681643
+fitness: 0.0625
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 49 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2302.9052481651306
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.12369501458628973
+mutation_rate: 0.3704188048132314
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 47 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 2673.9864761829376
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.0637584025000314
+mutation_rate: 0.8315986196180566
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 48 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3930.290386915207
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.0924037625190921
+mutation_rate: 0.9824094847802667
+fitness: 0.058823529411764705
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 46 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 4825.301624774933
+
+max_iter: 50
+desired_fitness: 1e-06
+crossover_rate: 0.3568692271187698
+mutation_rate: 0.6565731854761225
+fitness: 0.0625
+best_fitness: 0.05555555555555555
+current iteration: 0
+solution was found at: 45 iteration
+max number of iterations: 49
+stopping_criteria_reached: False
+time: 3669.242716550827
+
+
